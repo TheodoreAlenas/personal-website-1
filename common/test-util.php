@@ -1,6 +1,8 @@
 <?php
 
-function get_wrapped_in_asymmetric_grid(String $component) {
+include_once("common/ends-of-main-html.php");
+
+function wrap_in_asymmetric_grid(string $component) {
 
   return '<div class="test-wrapper">' .
     '<div class="main-container test-layout-tall phone-screen">' .
@@ -20,6 +22,43 @@ function get_wrapped_in_asymmetric_grid(String $component) {
   '</div>' .
 
   '</div>';
+}
+
+function wrap_callable_in_asymmetric_grid(callable $component) {
+
+  return '<div class="test-wrapper">' .
+    '<div class="main-container test-layout-tall phone-screen">' .
+  $component() .
+  '</div>' .
+
+  '<div class="main-container test-layout-almost">' .
+  $component() .
+  '</div>' .
+
+  '<div class="main-container test-layout-below-half phone-screen">' .
+  $component() .
+  '</div>' .
+
+  '<div class="main-container test-layout-above-half">' .
+  $component() .
+  '</div>' .
+
+  '</div>';
+}
+
+function wrap_for_test(string $name, callable $get_test_component) {
+  [$test_subject, $css] = $get_test_component();
+
+  echo get_top_of_file(
+    "Theodore - Test $name",
+    array_merge(
+      [
+        "common/html-body.css",
+        "common/test-layout.css"
+      ],
+      $css));
+  echo $test_subject;
+  echo get_bottom_of_file();
 }
 
 ?>

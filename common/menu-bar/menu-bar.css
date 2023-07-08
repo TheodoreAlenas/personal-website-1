@@ -1,0 +1,77 @@
+.menu-bar {
+  position: sticky;
+  top: 0;
+}
+
+.menu-bar > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-bar .desktop-nav-list,
+.menu-bar .hamburger-nav-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.menu-bar .desktop-nav-list > li:first-child {
+  margin-right: auto;
+}
+
+.menu-bar .desktop-nav-list > li {
+  display: inline-block;
+}
+
+.menu-bar a,
+.menu-bar > nav > span {
+  padding: 1rem 1rem;
+  border: red 1px solid;
+}
+
+.hamburger-nav-list {
+  display: none;
+}
+
+.phone-screen .hamburger-nav-list {
+  display: block;
+  position: absolute;
+}
+.phone-screen .desktop-nav-list {
+  display: none;
+}
+
+.phone-screen .menu-bar > a,
+.phone-screen .menu-bar > span {
+  padding: 0.2rem 1rem;
+}
+
+.hamburger-checkbox,
+.hamburger-label {
+  display: none;
+}
+
+.phone-screen .hamburger-checkbox {
+  display: inline-block;
+  opacity: 50%;
+}
+.phone-screen .hamburger-label {
+  display: inline-block;
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  top: 5px;
+  right: 5px;
+  border: red 3px solid;
+}
+.phone-screen .hamburger-label::before {
+  position: absolute;
+  display: grid;
+  grid-template-areas: "shit";
+}
+.phone-screen .menu-bar > ul {
+  display: none;
+}
+.phone-screen .hamburger-checkbox:checked + label + .hamburger-nav-list {
+  background-color: green;
+}
