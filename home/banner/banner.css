@@ -15,5 +15,5 @@
   grid-template-rows: auto auto;
 }
 .banner-grid > img {
-  width: 5cm;
+  width: 50%;
 }

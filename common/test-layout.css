@@ -7,9 +7,12 @@
   display: grid;
   grid-template-areas:
     "phone big big"
-    "phone medium small"
+    "phone small medium"
     ;
-  grid-template-columns: auto 50% 30%;
+  grid-template-columns: auto 30% 50%;
+}
+.test-wrapper > * {
+  border: black 1px solid;
 }
 
 .test-wrapper > .test-layout-almost { grid-area: big; }
