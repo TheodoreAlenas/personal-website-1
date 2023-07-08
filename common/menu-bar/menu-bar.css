@@ -1,6 +1,7 @@
 .menu-bar {
   position: sticky;
   top: 0;
+  background-color: #eee;
 }
 
 .menu-bar > nav {
@@ -26,12 +27,15 @@
 .menu-bar a,
 .menu-bar > nav > span {
   padding: 1rem 1rem;
+}
+.debug-mode .menu-bar a,
+.debug-mode .menu-bar > nav > span {
   border: red 1px solid;
 }
 
 .phone-screen .menu-bar a,
 .phone-screen .menu-bar > nav > span {
-  padding: 0.2rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .hamburger-nav-list {
@@ -70,11 +74,12 @@
 .phone-screen .hamburger-label {
   display: inline-block;
   position: absolute;
-  height: 2rem;
-  width: 2rem;
+  height: calc(2.5rem - 7px);
+  width: calc(2.5rem - 7px);
   top: 5px;
-  right: 5px;
-  border: red 3px solid;
+  right: 1rem;
+  border: #777 2px solid;
+  border-radius: 5px;
 }
 .phone-screen .hamburger-label::before {
   position: absolute;
@@ -84,7 +89,12 @@
 .phone-screen .menu-bar > ul {
   display: none;
 }
-.phone-screen .hamburger-checkbox:checked + label + .hamburger-nav-list {
+
+.phone-screen .hamburger-checkbox + label + .hamburger-nav-list {
   transform: translateX(calc(100% + 2rem));
   opacity: 0%;
+}
+.phone-screen .hamburger-checkbox:checked + label + .hamburger-nav-list {
+  transform: translateX(0);
+  opacity: 100%;
 }
