@@ -38,11 +38,33 @@ EOHTML;
 }
 
 function get_banner_faces() {
-  return <<<EOHTML
-<div class="banner-faces">
-<img src="images/littles/oof.png">
-</div>
-EOHTML;
+  $e = '<div class="banner-faces">';
+  $littles_dir = opendir("images/littles");
+  if ($littles_dir != false) {
+    while (($image_name = readdir($littles_dir)) != false) {
+      if ($image_name == '.' || $image_name == '..') {
+        continue;
+      }
+      $html = '<img src="images/littles/' .
+        $image_name .
+        '" style="background-image: ' .
+        "url('" .
+        "images/littles-8-times-shorter/" .
+        $image_name .
+        "')" .
+        '">';
+      $e .= $html;
+    }
+    closedir($littles_dir);
+  }
+  $e = $e . '</div>';
+  return $e;
+}
+
+function get_img_from_ls(String $ls) {
+  $r = "";
+  $r = $ls;
+  return $r;
 }
 
 ?>

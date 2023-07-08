@@ -3,21 +3,20 @@
 }
 
 .test-wrapper {
-  width: 1920px;
+  width: calc(400px + 1920px);
   display: grid;
   grid-template-areas:
     "phone big big"
     "phone small medium"
     ;
-  grid-template-columns: auto 30% 50%;
+  grid-template-columns: 400px 920px 1000px;
 }
 .test-wrapper > * {
   border: black 1px solid;
 }
 
-.test-wrapper > .test-layout-almost { grid-area: big; }
-.test-wrapper > .test-layout-tall { grid-area: phone; }
-.test-wrapper > .test-layout-below-half { grid-area: small; }
-.test-wrapper > .test-layout-above-half { grid-area: medium; }
-
+.test-layout-almost { grid-area: big; }
+.test-layout-tall { grid-area: phone; }
+.test-layout-below-half { grid-area: small; }
+.test-layout-above-half { grid-area: medium; }
 

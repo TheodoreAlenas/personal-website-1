@@ -1,7 +1,8 @@
 .banner-faces {
-  font-size: 0;
-  text-align: center;
-  z-index: -1;
+  width: max-content;
+}
+.banner-faces img {
+  height: 2cm;
 }
 .banner-grid {
   display: grid;
@@ -35,4 +36,5 @@
 .banner-back-and-front {
   width: min(100%, 30cm);
   margin: 0 auto;
+  overflow-x: hidden;
 }
