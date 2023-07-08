@@ -3,6 +3,7 @@
 }
 .banner-faces img {
   height: 2cm;
+  background-size: cover;
 }
 .banner-grid {
   display: grid;
