@@ -12,7 +12,7 @@ links:
 target/index.html: home/index.php $(wildcard home/*/*)
 	php $< > $@
 
-target/test.html: common/test.php common/test-layout.css
+target/test.html: common/test.php $(wildcard home/banner/*) $(wildcard common/*)
 	php $< > $@
 
 target/images: images
