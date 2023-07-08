@@ -1,3 +1,19 @@
 .banner-welcome {
-  font-size: 5rem;
+  font-size: 3rem;
+}
+.banner-faces {
+  font-size: 0;
+  text-align: center;
+  z-index: -1;
+}
+.banner-grid {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+.phone-screen .banner-grid {
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+.banner-grid > img {
+  width: 5cm;
 }

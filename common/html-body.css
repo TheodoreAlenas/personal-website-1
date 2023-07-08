@@ -9,3 +9,8 @@ body {
   margin: 0 0;
 }
 
+.phone-screen img {
+  display: block;
+  width: 100%;
+}
+

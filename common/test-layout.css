@@ -1,0 +1,20 @@
+.outline {
+  border: black 3px solid;
+}
+
+.test-wrapper {
+  width: 1920px;
+  display: grid;
+  grid-template-areas:
+    "phone big big"
+    "phone medium small"
+    ;
+  grid-template-columns: auto 50% 30%;
+}
+
+.test-wrapper > .test-layout-almost { grid-area: big; }
+.test-wrapper > .test-layout-tall { grid-area: phone; }
+.test-wrapper > .test-layout-below-half { grid-area: small; }
+.test-wrapper > .test-layout-above-half { grid-area: medium; }
+
+

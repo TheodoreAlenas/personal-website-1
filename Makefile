@@ -1,6 +1,6 @@
 .PHONY: links all clean
 
-all: target/index.html target/images
+all: target/index.html target/test.html target/images
 
 clean:
 	echo removing:; find target -maxdepth 1
@@ -10,6 +10,9 @@ links:
 	ln -s images img
 
 target/index.html: home/index.php $(wildcard home/*/*)
+	php $< > $@
+
+target/test.html: common/test.php common/test-layout.css
 	php $< > $@
 
 target/images: images
