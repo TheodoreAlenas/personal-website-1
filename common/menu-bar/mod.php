@@ -21,8 +21,8 @@ function get_menu_bar(string $title, string $language) {
     get_a_tag("home", $language) .
     "<span>$title</span>" .
     "<ul class='desktop-nav-list'>$li</ul>" .
-    "<ul class='hamburger-nav-list'>$li</ul>" .
     get_hamburger_checkbox_pair() .
+    "<ul class='hamburger-nav-list'>$li</ul>" .
     "</nav></header>";
 }
 

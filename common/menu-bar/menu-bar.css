@@ -29,6 +29,11 @@
   border: red 1px solid;
 }
 
+.phone-screen .menu-bar a,
+.phone-screen .menu-bar > nav > span {
+  padding: 0.2rem 1rem;
+}
+
 .hamburger-nav-list {
   display: none;
 }
@@ -36,6 +41,13 @@
 .phone-screen .hamburger-nav-list {
   display: block;
   position: absolute;
+  top: 2rem;
+  right: 1rem;
+  transition: all ease-in-out 0.1s;
+}
+.phone-screen .hamburger-nav-list a {
+  display: block;
+  padding: 1rem 1rem;
 }
 .phone-screen .desktop-nav-list {
   display: none;
@@ -73,5 +85,6 @@
   display: none;
 }
 .phone-screen .hamburger-checkbox:checked + label + .hamburger-nav-list {
-  background-color: green;
+  transform: translateX(calc(100% + 2rem));
+  opacity: 0%;
 }
