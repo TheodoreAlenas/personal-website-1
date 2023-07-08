@@ -1,31 +1,10 @@
 <?php
 
-function get_wrapped_in_asymmetric_grid(String $component) {
+include_once("home/banner/test.php");
+include_once("common/ends-of-main-html.php");
 
-  return '<div class="test-wrapper">' .
-    '<div class="main-container test-layout-tall phone-screen">' .
-  $component .
-  '</div>' .
+[$banner_test_subject, $banner_css] = get_banner_test_subject();
 
-  '<div class="main-container test-layout-almost">' .
-  $component .
-  '</div>' .
-
-  '<div class="main-container test-layout-below-half phone-screen">' .
-  $component .
-  '</div>' .
-
-  '<div class="main-container test-layout-above-half">' .
-  $component .
-  '</div>' .
-
-  '</div>';
-}
-
-include("home/banner/mod.php");
-[$banner, $banner_css] = get_banner_and_css("en");
-
-include("common/ends-of-main-html.php");
 echo get_top_of_file(
   "Theodore - Test layouts",
   array_merge(
@@ -34,7 +13,8 @@ echo get_top_of_file(
       "common/test-layout.css"
     ],
     $banner_css));
-echo get_wrapped_in_asymmetric_grid($banner);
+echo $banner_test_subject;
 echo get_bottom_of_file();
+
 
 ?>

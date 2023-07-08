@@ -2,7 +2,7 @@
 
 function get_welcome(String $language) {
   if ($language == "gr")
-    return "Χαίρετε!<br>Ονομάζομαι Θοδωρής.";
+    return "Θοδωρής<br>Δημακόπουλος";
   return "Good evening!<br>My name is Theodore.";
 }
 
