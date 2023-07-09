@@ -15,6 +15,8 @@ function get_menu_bar(string $title, string $language) {
     get_a_tag("home", $language),
     $title,
     [
+      "<a href='../gr/index.html'>GR</a>",
+      "<a href='../en/index.html'>EN</a>",
       get_a_tag("portfolio", $language),
       get_a_tag("biography", $language),
       get_a_tag("contact", $language)
