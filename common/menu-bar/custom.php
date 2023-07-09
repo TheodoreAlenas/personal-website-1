@@ -5,10 +5,7 @@ function get_custom_menu_bar_and_css(string $left_element, string $title, array 
 }
 
 function get_menu_bar_css() {
-  return [
-    "common/menu-bar/menu-bar.css",
-    "common/menu-bar/hamburger.css"
-  ];
+  return ["target/menu-bar.css"];
 }
 
 function get_custom_menu_bar(string $left_element, string $title, array $right_elements) {
