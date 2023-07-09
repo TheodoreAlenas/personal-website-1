@@ -1,8 +1,3 @@
-.banner-back-and-front {
-  width: min(100%, 30cm);
-  margin: 0 auto;
-  overflow-x: hidden;
-}
 .banner-faces {
   width: max-content;
 }

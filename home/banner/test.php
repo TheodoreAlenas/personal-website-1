@@ -6,10 +6,12 @@ include_once("home/banner/mod.php");
 function get_banner_test_subject() {
   [$banner_en, $banner_css] = get_banner_and_css("en");
   $banner_gr = get_banner("gr");
+  $en_wrapped = "<div class='newspaper'>" . $banner_en . "</div>";
+  $gr_wrapped = "<div class='newspaper'>" . $banner_gr . "</div>";
   return [
-    wrap_in_asymmetric_grid($banner_en) .
-    wrap_in_asymmetric_grid($banner_gr),
-    $banner_css
+    wrap_in_asymmetric_grid($en_wrapped) .
+    wrap_in_asymmetric_grid($gr_wrapped),
+    array_merge($banner_css, ["common/centering.css"])
   ];
 }
 

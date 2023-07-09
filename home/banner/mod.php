@@ -8,14 +8,9 @@ function get_banner_and_css(String $language) {
 }
 
 function get_banner(String $language) {
-  return <<<EOHTML
-<div class="banner-back-and-front">
-EOHTML .
-get_banner_welcome_face($language) .
-get_banner_faces() .
-<<<EOHTML
-</div>
-EOHTML;
+  return 
+    get_banner_welcome_face($language) .
+    get_banner_faces();
 }
 
 ?>
