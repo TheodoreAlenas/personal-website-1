@@ -2,4 +2,7 @@
   width: min(100%, 30cm);
   margin: 0 auto;
   overflow-x: hidden;
+  border-right: #eee 1px solid;
+  border-left: #eee 1px solid;
 }
+

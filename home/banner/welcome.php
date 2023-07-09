@@ -16,7 +16,7 @@ get_welcome($language) .
 <<<EOHTML
 </span>
 
-<img src="images/face.jpg" style="background-image: url('images/face-16-times-shorter.png');">
+<img src="../images/face.jpg" style="background-image: url('../images/face-16-times-shorter.png');">
 
 </div>
 EOHTML;

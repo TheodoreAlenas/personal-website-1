@@ -23,7 +23,7 @@ function get_menu_bar(string $title, string $language) {
 
 function get_menu_bar_for_test_navigation(string $title) {
   return get_custom_menu_bar(
-    "<a href='index.html'>Normal</a>",
+    "<a href='" . get_link_url("home") . "'>Normal</a>",
     $title,
     [
       "<a href='test-banner.html'>Banner</a>",

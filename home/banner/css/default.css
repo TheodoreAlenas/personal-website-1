@@ -1,3 +1,8 @@
+.banner-wrapper {
+  width: min(30cm, 60%);
+  margin: 10vh auto;
+  overflow-x: hidden;
+}
 .banner-faces {
   width: max-content;
 }
@@ -7,12 +12,12 @@
 }
 .banner-grid {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 8rem;
-  margin: 3rem 3rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+  margin-bottom: -0.5cm;
 }
 .banner-welcome {
-  font-size: 3rem;
+  font-size: min(3rem, 2.5vw);
   margin: auto 0;
 }
 .banner-grid img {

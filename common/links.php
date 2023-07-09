@@ -5,17 +5,17 @@ function get_a_tag(String $which, String $language) {
   return "<a href='$url'>$name</a>";
 }
 
-function get_link_url(String $which, String $language) {
-  return get_link_name_and_url($which, $language)[1];
+function get_link_url(String $which) {
+  return get_link_name_and_url($which, "en")[1];
 }
 
 function get_link_name_and_url(String $which, String $language) {
 
   $all = [
-    ["home", "Home", "Αρχική", "index.html"],
-    ["portfolio", "Portfolio", "Χαρτοφυλάκιο", "portfolio.html"],
-    ["biography", "Biography", "Βιογραφικό", "biography.html"],
-    ["contact", "Contact", "Επικοινωνία", "contact.html"]
+    ["home", "Home", "Αρχική", "../en/index.html"],
+    ["portfolio", "Portfolio", "Χαρτοφυλάκιο", "../en/portfolio.html"],
+    ["biography", "Biography", "Βιογραφικό", "../en/biography.html"],
+    ["contact", "Contact", "Επικοινωνία", "../en/contact.html"]
   ];
 
   foreach ($all as $link) {

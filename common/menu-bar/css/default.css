@@ -5,6 +5,8 @@
   box-shadow: #ccc 0 0 1rem 0;
   border-bottom: #ddd 1px solid;
   line-height: initial;
+  width: min(150rem, 100%);
+  margin: 0 auto;
 }
 
 .menu-bar > nav {

@@ -1,6 +1,6 @@
 .PHONY: links all clean
 
-all: target/index.html target/test-banner.html target/test-menu-bar.html target/images
+all: target/en/index.html target/gr/index.html target/test/banner.html target/test/menu-bar.html target/images
 
 clean:
 	echo removing:; find target -maxdepth 1
@@ -9,13 +9,15 @@ clean:
 links:
 	ln -s images img
 
-target/index.html: home/index.php target/menu-bar.css target/banner.css $(wildcard home/*/*)
+target/%/index.html: home/index-%.php target/menu-bar.css target/banner.css home/mod.php $(wildcard home/*/*) $(wildcard common/*)
+	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
-target/test-banner.html: home/banner/test.php target/menu-bar.css target/banner.css $(wildcard home/banner/*) $(wildcard common/*)
+target/test/banner.html: home/banner/test.php target/menu-bar.css target/banner.css $(wildcard home/banner/*) $(wildcard common/*)
+	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
-target/test-menu-bar.html: common/menu-bar/test.php target/menu-bar.css $(wildcard common/menu-bar/*) $(wildcard common/*)
+target/test/menu-bar.html: common/menu-bar/test.php target/menu-bar.css $(wildcard common/menu-bar/*) $(wildcard common/*)
 	php $< > $@
 
 target/images: images

@@ -29,9 +29,9 @@ function get_littles_from_open_dir($littles_dir) {
 }
 
 function get_img_from_image_name($image_name) {
-  return "<img src=\"images/littles/$image_name\"" .
+  return "<img src=\"../images/littles/$image_name\"" .
     " style=\"background-image: url('" .
-    "images/littles-8-times-shorter/$image_name" .
+    "../images/littles-8-times-shorter/$image_name" .
     "');\">";
 }
 
