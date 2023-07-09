@@ -54,6 +54,10 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+.phone-screen .menu-bar > nav > span {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
 
 .phone-screen .menu-bar a,
 .phone-screen .menu-bar > nav > span {
