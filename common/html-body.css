@@ -9,3 +9,16 @@ body {
   margin: 0 0;
 }
 
+a {
+  text-underline-offset: 0.2rem;
+  color: #228;
+  transition: all linear 0.05s;
+}
+a:visited {
+  color: #806;
+}
+a:hover {
+  text-underline-offset: 0.15rem;
+  color: #008;
+}
+

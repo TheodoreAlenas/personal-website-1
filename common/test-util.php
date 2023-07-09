@@ -1,6 +1,7 @@
 <?php
 
 include_once("common/ends-of-main-html.php");
+include_once("common/menu-bar/mod.php");
 
 function wrap_in_asymmetric_grid(string $component) {
 
@@ -46,8 +47,9 @@ function wrap_callable_in_asymmetric_grid(callable $component) {
   '</div>';
 }
 
-function wrap_for_test(string $name, callable $get_test_component) {
-  [$test_subject, $css] = $get_test_component();
+function wrap_for_test(string $name, callable $get_test_component_and_css) {
+  [$test_subject, $subject_css] = $get_test_component_and_css();
+  [$menu, $menu_css] = get_menu_bar_for_test_navigation_and_css($name);
 
   echo get_top_of_file(
     "Theodore - Test $name",
@@ -56,7 +58,9 @@ function wrap_for_test(string $name, callable $get_test_component) {
         "common/html-body.css",
         "common/test-layout.css"
       ],
-      $css));
+      $subject_css,
+      $menu_css));
+  echo $menu;
   echo $test_subject;
   echo get_bottom_of_file();
 }

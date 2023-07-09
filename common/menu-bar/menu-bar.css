@@ -34,6 +34,13 @@
 .debug-mode .menu-bar > nav > span {
   border: red 1px dashed;
 }
+.menu-bar > nav > *:first-child {
+  padding: 1rem 2rem;
+}
+.menu-bar > nav > .desktop-nav-list > li:last-child > a {
+  padding-right: 2rem;
+}
+
 .menu-bar > nav > span {
   margin-right: auto;
   margin-left: 3rem;
