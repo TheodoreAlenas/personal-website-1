@@ -7,7 +7,10 @@ function get_menu_bar_and_css(string $title, string $language) {
 }
 
 function get_menu_bar_css() {
-  return ["common/menu-bar/menu-bar.css"];
+  return [
+    "common/menu-bar/menu-bar.css",
+    "common/menu-bar/hamburger.css"
+  ];
 }
 
 function get_menu_bar(string $title, string $language) {
@@ -37,7 +40,7 @@ function get_hamburger_checkbox_pair() {
     "<label" .
     " for='hamburger-checkbox-$hamburger_hash'" .
     " class='hamburger-label'" .
-    "></label>";
+    ">⇶</label>";
 }
 
 function wrap_in_li(array $components) {

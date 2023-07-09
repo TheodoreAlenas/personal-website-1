@@ -14,7 +14,11 @@ function get_menu_bar_test_subject() {
   $menu_bar_css = get_menu_bar_css();
   return [
     wrap_callable_in_asymmetric_grid("get_draft_en_menu") .
-    wrap_callable_in_asymmetric_grid("get_draft_gr_menu"),
+    wrap_callable_in_asymmetric_grid("get_draft_gr_menu") .
+    "<div class='hamburger-on'>" .
+    wrap_callable_in_asymmetric_grid("get_draft_en_menu") .
+    wrap_callable_in_asymmetric_grid("get_draft_gr_menu") .
+    "</div>",
     $menu_bar_css
   ];
 }

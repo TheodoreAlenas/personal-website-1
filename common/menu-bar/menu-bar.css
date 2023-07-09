@@ -30,71 +30,14 @@
 }
 .debug-mode .menu-bar a,
 .debug-mode .menu-bar > nav > span {
-  border: red 1px solid;
+  border: red 1px dashed;
 }
 
 .phone-screen .menu-bar a,
 .phone-screen .menu-bar > nav > span {
   padding: 0.5rem 1rem;
 }
-
-.hamburger-nav-list {
-  display: none;
+.debug-mode .menu-bar .hamburger-label {
+  padding: calc(0.5rem - 4px) calc(1rem - 4px);
 }
 
-.phone-screen .hamburger-nav-list {
-  display: block;
-  position: absolute;
-  top: 2rem;
-  right: 1rem;
-  transition: all ease-in-out 0.1s;
-}
-.phone-screen .hamburger-nav-list a {
-  display: block;
-  padding: 1rem 1rem;
-}
-.phone-screen .desktop-nav-list {
-  display: none;
-}
-
-.phone-screen .menu-bar > a,
-.phone-screen .menu-bar > span {
-  padding: 0.2rem 1rem;
-}
-
-.hamburger-checkbox,
-.hamburger-label {
-  display: none;
-}
-
-.phone-screen .hamburger-checkbox {
-  display: inline-block;
-  opacity: 50%;
-}
-.phone-screen .hamburger-label {
-  display: inline-block;
-  position: absolute;
-  height: calc(2.5rem - 7px);
-  width: calc(2.5rem - 7px);
-  top: 5px;
-  right: 1rem;
-  border: #777 2px solid;
-  border-radius: 5px;
-}
-.phone-screen .hamburger-label::before {
-  position: absolute;
-  display: grid;
-  grid-template-areas: "shit";
-}
-.phone-screen .menu-bar > ul {
-  display: none;
-}
-
-.phone-screen .hamburger-checkbox + label + .hamburger-nav-list {
-  transform: translateX(calc(100% + 2rem));
-  opacity: 0%;
-}
-.phone-screen .hamburger-checkbox:checked + label + .hamburger-nav-list {
-  transform: translateX(0);
-  opacity: 100%;
-}
