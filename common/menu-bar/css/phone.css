@@ -10,13 +10,14 @@
 .hamburger-nav-list {
   border-radius: 5px;
   position: absolute;
-  background-color: #eee;
-  border: #888 2px solid;
   top: 3.5rem;
   right: 1rem;
   transition: all ease-in-out 0.1s;
+  background-color: #eee;
+  border: #888 2px solid;
 }
 .hamburger-nav-list a {
+  display: block;
   padding: 1rem 1rem;
   position: relative;
 }
@@ -29,16 +30,12 @@
   background-color: #888;
 }
 
-.menu-bar > a,
-.menu-bar > span {
+.menu-bar > a {
   padding: 0.2rem 1rem;
 }
 
 .hamburger-checkbox {
   opacity: 1%;
-}
-.debug-mode .hamburger-checkbox {
-  opacity: 50%;
 }
 
 .hamburger-label {
@@ -54,7 +51,8 @@
   opacity: 0%;
 }
 .hamburger-checkbox:checked + label + .hamburger-nav-list,
-.hamburger-on .hamburger-checkbox + label + .hamburger-nav-list {
+  .hamburger-on
+.hamburger-checkbox + label + .hamburger-nav-list {
   transform: translateX(0);
   opacity: 100%;
 }
@@ -64,7 +62,11 @@
   line-height: 1.5rem;
 }
 
-.menu-bar a,
+.menu-bar > nav > *:first-child,
 .menu-bar > nav > span {
   padding: 0.5rem 1rem;
+}
+
+.debug-mode .hamburger-checkbox {
+  opacity: 50%;
 }

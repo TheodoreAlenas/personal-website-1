@@ -6,19 +6,19 @@ include_once("common/menu-bar/mod.php");
 function wrap_in_asymmetric_grid(string $component) {
 
   return '<div class="test-wrapper">' .
-    '<div class="main-container debug-mode test-layout-tall phone-screen">' .
+    '<div class="debug-mode test-layout-tall phone-screen">' .
   $component .
   '</div>' .
 
-  '<div class="main-container debug-mode test-layout-almost">' .
+  '<div class="debug-mode test-layout-almost">' .
   $component .
   '</div>' .
 
-  '<div class="main-container debug-mode test-layout-below-half phone-screen">' .
+  '<div class="debug-mode test-layout-below-half phone-screen">' .
   $component .
   '</div>' .
 
-  '<div class="main-container debug-mode test-layout-above-half">' .
+  '<div class="debug-mode test-layout-above-half">' .
   $component .
   '</div>' .
 
@@ -28,19 +28,19 @@ function wrap_in_asymmetric_grid(string $component) {
 function wrap_callable_in_asymmetric_grid(callable $component) {
 
   return '<div class="test-wrapper">' .
-    '<div class="main-container debug-mode test-layout-tall phone-screen">' .
+    '<div class="debug-mode test-layout-tall phone-screen">' .
   $component() .
   '</div>' .
 
-  '<div class="main-container debug-mode test-layout-almost">' .
+  '<div class="debug-mode test-layout-almost">' .
   $component() .
   '</div>' .
 
-  '<div class="main-container debug-mode test-layout-below-half phone-screen">' .
+  '<div class="debug-mode test-layout-below-half phone-screen">' .
   $component() .
   '</div>' .
 
-  '<div class="main-container debug-mode test-layout-above-half">' .
+  '<div class="debug-mode test-layout-above-half">' .
   $component() .
   '</div>' .
 
