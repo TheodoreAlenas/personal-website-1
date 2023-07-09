@@ -1,0 +1,15 @@
+.banner-grid {
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  margin: 1rem 1rem;
+}
+.banner-welcome {
+  font-size: 2rem;
+  text-align: center;
+}
+.banner-grid img {
+  width: 50%;
+  margin: 0 auto;
+}
+
