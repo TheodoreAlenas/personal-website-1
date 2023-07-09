@@ -4,6 +4,7 @@
   background-color: #eee;
   box-shadow: #ccc 0 0 1rem 0;
   border-bottom: #ddd 1px solid;
+  line-height: initial;
 }
 
 .menu-bar > nav {
@@ -16,6 +17,7 @@
 .menu-bar .hamburger-nav-list {
   padding-left: 0;
   list-style: none;
+  margin: 0 0;
 }
 
 .menu-bar .desktop-nav-list > li:first-child {
@@ -26,24 +28,31 @@
   display: inline-block;
 }
 
-.menu-bar a,
-.menu-bar > nav > span {
-  padding: 1rem 1rem;
+.menu-bar a {
+  padding: 2rem 2rem;
+  line-height: 1em;
 }
 .debug-mode .menu-bar a,
 .debug-mode .menu-bar > nav > span {
   border: red 1px dashed;
 }
+.menu-bar .desktop-nav-list > li {
+  margin-top: 2rem;
+}
 .menu-bar > nav > *:first-child {
-  padding: 1rem 2rem;
+  padding: 2rem 4rem;
 }
 .menu-bar > nav > .desktop-nav-list > li:last-child > a {
-  padding-right: 2rem;
+  padding-right: 4rem;
 }
 
 .menu-bar > nav > span {
   margin-right: auto;
   margin-left: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .phone-screen .menu-bar a,
