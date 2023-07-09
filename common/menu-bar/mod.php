@@ -40,7 +40,7 @@ function get_hamburger_checkbox_pair() {
     "<label" .
     " for='hamburger-checkbox-$hamburger_hash'" .
     " class='hamburger-label'" .
-    ">⇶</label>";
+    "> ☰</label>";
 }
 
 function wrap_in_li(array $components) {

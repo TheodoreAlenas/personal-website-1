@@ -2,6 +2,8 @@
   position: sticky;
   top: 0;
   background-color: #eee;
+  box-shadow: #ccc 0 0 1rem 0;
+  border-bottom: #ddd 1px solid;
 }
 
 .menu-bar > nav {
@@ -32,12 +34,20 @@
 .debug-mode .menu-bar > nav > span {
   border: red 1px dashed;
 }
+.menu-bar > nav > span {
+  margin-right: auto;
+  margin-left: 3rem;
+}
 
 .phone-screen .menu-bar a,
 .phone-screen .menu-bar > nav > span {
   padding: 0.5rem 1rem;
 }
 .debug-mode .menu-bar .hamburger-label {
-  padding: calc(0.5rem - 4px) calc(1rem - 4px);
+  line-height: calc(100% - 6px);
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  font-size: 2.5rem;
+  color: #222;
 }
 
