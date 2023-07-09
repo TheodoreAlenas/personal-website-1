@@ -31,14 +31,15 @@
 }
 
 .menu-bar a {
-  padding: 2rem 2rem;
+  padding: 3rem 2rem;
   line-height: 1em;
 }
 .menu-bar .desktop-nav-list > li {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .menu-bar > nav > *:first-child {
-  padding: 2rem 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 .menu-bar > nav > .desktop-nav-list > li:last-child > a {
   padding-right: 4rem;
