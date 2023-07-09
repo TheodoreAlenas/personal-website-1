@@ -35,7 +35,7 @@ EOHTML;
 function get_all_file_contents(array $file_names) {
   $to_return = "";
 
-  foreach ($file_names as $file_name) {
+  foreach (array_unique($file_names) as $file_name) {
     $file = fopen($file_name, "r");
     if ($file == false) {
       continue;

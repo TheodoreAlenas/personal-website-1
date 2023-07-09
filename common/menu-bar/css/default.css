@@ -32,10 +32,6 @@
   padding: 2rem 2rem;
   line-height: 1em;
 }
-.debug-mode .menu-bar a,
-.debug-mode .menu-bar > nav > span {
-  border: red 1px dashed;
-}
 .menu-bar .desktop-nav-list > li {
   margin-top: 2rem;
 }
@@ -54,7 +50,7 @@
   margin-top: auto;
   margin-bottom: auto;
 }
-.debug-mode .menu-bar .hamburger-label {
+.menu-bar .hamburger-label {
   line-height: calc(100% - 6px);
   padding-left: 0.15em;
   padding-right: 0.15em;
@@ -62,15 +58,16 @@
   color: #222;
 }
 
-.hamburger-nav-list {
-  display: none;
-}
-
+.hamburger-nav-list,
 .hamburger-checkbox,
 .hamburger-label {
   display: none;
 }
 
+.debug-mode .menu-bar a,
+.debug-mode .menu-bar > nav > span {
+  border: red 1px dashed;
+}
 .debug-mode .hamburger-checkbox {
   opacity: 50%;
 }
