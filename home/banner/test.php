@@ -1,6 +1,6 @@
 <?php
 
-include_once("common/test-util.php");
+include_once("common/test/util.php");
 include_once("home/banner/mod.php");
 
 echo wrap_for_test("banner", "get_banner_test_subject");

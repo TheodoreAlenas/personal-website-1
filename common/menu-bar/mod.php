@@ -1,6 +1,6 @@
 <?php
 
-include_once("common/links.php");
+include_once("common/data/links.php");
 include_once("common/menu-bar/custom.php");
 
 function get_menu_bar_and_css(string $title, string $language) {

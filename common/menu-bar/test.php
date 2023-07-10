@@ -1,6 +1,6 @@
 <?php
 
-include_once("common/test-util.php");
+include_once("common/test/util.php");
 include_once("common/menu-bar/mod.php");
 
 function get_draft_gr_menu() {

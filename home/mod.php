@@ -1,13 +1,15 @@
 <?php
 
-include_once("common/ends-of-main-html.php");
+include_once("common/wraps/ends-of-main-html.php");
 include_once("common/menu-bar/mod.php");
 include_once("home/banner/mod.php");
 include_once("home/story/mod.php");
 
 function get_home_html(string $language) {
 
-  $basic_css = ["common/html-body.css", "common/centering.css"];
+  $basic_css = [
+    "common/wraps/html-body.css",
+    "common/wraps/centering.css"];
 
   [$menu_bar, $menu_bar_css] = get_menu_bar_and_css(
     "Theodore", $language);
