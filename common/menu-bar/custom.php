@@ -1,14 +1,20 @@
 <?php
 
-function get_custom_menu_bar_and_css(string $left_element, string $title, array $right_elements) {
-  return [get_menu_bar($left_element, $title, $right_elements), get_menu_bar_css()];
+function get_custom_menu_bar_and_css(
+  string $left_element, string $title, array $right_elements) {
+  return [
+    get_custom_menu_bar($left_element, $title, $right_elements),
+    get_menu_bar_css()
+  ];
 }
 
 function get_menu_bar_css() {
   return ["target/menu-bar.css"];
 }
 
-function get_custom_menu_bar(string $left_element, string $title, array $right_elements) {
+function get_custom_menu_bar(
+  string $left_element, string $title, array $right_elements) {
+
   $li = wrap_in_li($right_elements);
   return
     "<header class='menu-bar'><nav>" .

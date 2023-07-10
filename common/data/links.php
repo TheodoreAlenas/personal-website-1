@@ -5,6 +5,11 @@ function get_a_tag(String $which, String $language) {
   return "<a href='$url'>$name</a>";
 }
 
+function get_im_here_link(String $which, String $language) {
+  $name = get_link_name_and_url($which, $language)[0];
+  return "<span class='im-here'>$name</span>";
+}
+
 function get_link_url(String $which) {
   return get_link_name_and_url($which, "en")[1];
 }

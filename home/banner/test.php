@@ -13,7 +13,7 @@ function get_banner_test_subject() {
   return [
     wrap_in_asymmetric_grid($en_wrapped) .
     wrap_in_asymmetric_grid($gr_wrapped),
-    array_merge($banner_css, ["common/centering.css"])
+    array_merge($banner_css, ["common/wraps/centering.css"])
   ];
 }
 

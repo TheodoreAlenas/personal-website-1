@@ -4,10 +4,10 @@ include_once("common/test/util.php");
 include_once("common/menu-bar/mod.php");
 
 function get_draft_gr_menu() {
-  return get_menu_bar("Titularos", "gr");
+  return get_menu_bar("Titularos", "biography", "gr");
 }
 function get_draft_en_menu() {
-  return get_menu_bar("Title", "en");
+  return get_menu_bar("Title", "biography", "en");
 }
 
 function get_menu_bar_test_subject() {

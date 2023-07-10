@@ -12,7 +12,7 @@ function get_home_html(string $language) {
     "common/wraps/centering.css"];
 
   [$menu_bar, $menu_bar_css] = get_menu_bar_and_css(
-    "Theodore", $language);
+    "Theodore", "home", $language);
   [$banner, $banner_css] = get_banner_and_css($language);
   [$story, $story_css] = get_story_and_css($language);
 

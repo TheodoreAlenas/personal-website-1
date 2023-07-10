@@ -1,3 +1,25 @@
+.debug-mode .menu-bar a,
+.debug-mode .menu-bar span {
+  border: red 1px dashed;
+}
+.debug-mode .hamburger-checkbox {
+  opacity: 50%;
+}
+.debug-mode .menu-bar span,
+.debug-mode .menu-bar a,
+.menu-bar span,
+.menu-bar a {
+  padding: 2rem 2rem;
+  line-height: 1em;
+  border-top: transparent 0.5rem solid;
+  border-bottom: transparent 0.5rem solid;
+}
+.debug-mode .menu-bar .im-here,
+.menu-bar .im-here {
+  border-top-color: #444;
+  border-bottom-color: #444;
+}
+
 .menu-bar {
   position: sticky;
   top: 0;
@@ -30,10 +52,6 @@
   display: inline-block;
 }
 
-.menu-bar a {
-  padding: 3rem 2rem;
-  line-height: 1em;
-}
 .menu-bar .desktop-nav-list > li {
   margin-top: 3rem;
 }
@@ -41,7 +59,7 @@
   padding-left: 4rem;
   padding-right: 4rem;
 }
-.menu-bar > nav > .desktop-nav-list > li:last-child > a {
+.menu-bar > nav > .desktop-nav-list > li:last-child > * {
   padding-right: 4rem;
 }
 
@@ -65,13 +83,5 @@
 .hamburger-checkbox,
 .hamburger-label {
   display: none;
-}
-
-.debug-mode .menu-bar a,
-.debug-mode .menu-bar > nav > span {
-  border: red 1px dashed;
-}
-.debug-mode .hamburger-checkbox {
-  opacity: 50%;
 }
 
