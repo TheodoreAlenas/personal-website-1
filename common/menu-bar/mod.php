@@ -30,7 +30,9 @@ function get_menu_bar_main_links(string $where_am_i, string $language) {
   $main_links = [];
 
   foreach (["portfolio", "biography", "contact"] as $link) {
-    array_push($main_links, get_maybe_im_here_link($link, $where_am_i, $language));
+    array_push(
+      $main_links,
+      get_maybe_im_here_link($link, $where_am_i, $language));
   }
   return $main_links;
 }
