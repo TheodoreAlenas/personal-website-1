@@ -1,8 +1,9 @@
 .newspaper {
-  width: min(100%, 30cm);
-  margin: 0 auto;
-  overflow-x: hidden;
+  width: min(100% - 2rem - 2px, 30cm);
+  padding: 1rem;
   border-right: #eee 1px solid;
   border-left: #eee 1px solid;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 

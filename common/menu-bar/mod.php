@@ -3,10 +3,9 @@
 include_once("common/data/links.php");
 include_once("common/menu-bar/custom.php");
 
-function get_menu_bar_and_css(
-  string $title, string $where_am_i, string $language) {
+function get_menu_bar_and_css(string $where_am_i, string $language) {
   return [
-    get_menu_bar($title, $where_am_i, $language),
+    get_menu_bar($where_am_i, $language),
     get_menu_bar_css()
   ];
 }
@@ -14,12 +13,11 @@ function get_menu_bar_for_test_navigation_and_css(string $title) {
   return [get_menu_bar_for_test_navigation($title), get_menu_bar_css()];
 }
 
-function get_menu_bar(
-  string $title, string $where_am_i, string $language) {
+function get_menu_bar(string $where_am_i, string $language) {
 
   return get_custom_menu_bar(
     get_maybe_im_here_link("home", $where_am_i, $language),
-    $title,
+    get_link_name_and_url("home", $language)[0],
     array_merge([
       "<a href='../gr/index.html'>GR</a>",
       "<a href='../en/index.html'>EN</a>"

@@ -11,8 +11,7 @@ function get_home_html(string $language) {
     "common/wraps/html-body.css",
     "common/wraps/centering.css"];
 
-  [$menu_bar, $menu_bar_css] = get_menu_bar_and_css(
-    "Theodore", "home", $language);
+  [$menu_bar, $menu_bar_css] = get_menu_bar_and_css("home", $language);
   [$banner, $banner_css] = get_banner_and_css($language);
   [$story, $story_css] = get_story_and_css($language);
 
@@ -27,6 +26,8 @@ function get_home_html(string $language) {
     $menu_bar .
     "<div class='banner-wrapper'>" .
     $banner .
+    "</div>" .
+    "<div class='newspaper'>" .
     $story .
     "</div>" .
     get_bottom_of_file();
