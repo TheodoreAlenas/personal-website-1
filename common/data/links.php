@@ -10,6 +10,15 @@ function get_im_here_link(String $which, String $language) {
   return "<span class='im-here'>$name</span>";
 }
 
+function get_maybe_im_here_link(
+  string $which, string $where_am_i, string $language) {
+
+  if ($which == $where_am_i) {
+    return get_im_here_link($which, $language);
+  }
+  return get_a_tag($which, $language);
+}
+
 function get_link_url(String $which) {
   return get_link_name_and_url($which, "en")[1];
 }

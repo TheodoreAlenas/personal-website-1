@@ -53,7 +53,7 @@
 }
 
 .menu-bar .desktop-nav-list > li {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 .menu-bar > nav > *:first-child {
   padding-left: 4rem;
@@ -63,7 +63,7 @@
   padding-right: 4rem;
 }
 
-.menu-bar > nav > span {
+.menu-bar .menu-bar-title {
   margin-right: auto;
   margin-left: 3rem;
   font-size: 2rem;

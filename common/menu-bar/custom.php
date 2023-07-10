@@ -19,7 +19,7 @@ function get_custom_menu_bar(
   return
     "<header class='menu-bar'><nav>" .
     $left_element .
-    "<span>$title</span>" .
+    "<span class='menu-bar-title'>$title</span>" .
     "<ul class='desktop-nav-list'>$li</ul>" .
     get_hamburger_checkbox_pair() .
     "<ul class='hamburger-nav-list'>$li</ul>" .

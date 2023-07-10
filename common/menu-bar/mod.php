@@ -18,7 +18,7 @@ function get_menu_bar(
   string $title, string $where_am_i, string $language) {
 
   return get_custom_menu_bar(
-    get_a_tag("home", $language),
+    get_maybe_im_here_link("home", $where_am_i, $language),
     $title,
     array_merge([
       "<a href='../gr/index.html'>GR</a>",
@@ -30,12 +30,7 @@ function get_menu_bar_main_links(string $where_am_i, string $language) {
   $main_links = [];
 
   foreach (["portfolio", "biography", "contact"] as $link) {
-    if ($link == $where_am_i) {
-      array_push($main_links, get_im_here_link($link, $language));
-    }
-    else {
-      array_push($main_links, get_a_tag($link, $language));
-    }
+    array_push($main_links, get_maybe_im_here_link($link, $where_am_i, $language));
   }
   return $main_links;
 }
@@ -45,8 +40,8 @@ function get_menu_bar_for_test_navigation(string $title) {
     "<a href='" . get_link_url("home") . "'>Normal</a>",
     $title,
     [
-      "<a href='test-banner.html'>Banner</a>",
-      "<a href='test-menu-bar.html'>Menu Bar</a>",
+      "<a href='banner.html'>Banner</a>",
+      "<a href='menu-bar.html'>Menu Bar</a>",
     ]);
 }
 
