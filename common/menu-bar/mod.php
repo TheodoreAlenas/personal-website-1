@@ -19,9 +19,20 @@ function get_menu_bar(string $where_am_i, string $language) {
     get_link_name_and_url("home", $language)[0],
     array_merge([
       get_maybe_im_here_link("home", $where_am_i, $language),
-      "<button class='theme-switch dont-be-like-button buttony toast line-h-1em'>Theme</button>",
+      "<button class='" .
+      "theme-switch dont-be-like-button buttony toast line-h-1em" .
+      "'>" .
+      get_menu_bar_localized_theme_label($language) .
+      "</button>",
       get_menu_bar_lang_link($where_am_i, $language),
     ], get_menu_bar_main_links($where_am_i, $language)));
+}
+
+function get_menu_bar_localized_theme_label(string $language) {
+  if ($language == "gr") {
+    return "Χρώμα";
+  }
+  return "Theme";
 }
 
 function get_menu_bar_lang_link(

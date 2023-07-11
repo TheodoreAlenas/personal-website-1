@@ -1,5 +1,16 @@
+.newspaper {
+  width: min(100% - 2rem - 2px, 30cm);
+  margin: 0 auto;
+}
+
+.lrline {
+  border-right: var(--line, #eee) 1px solid;
+  border-left: var(--line, #eee) 1px solid;
+}
+
 .m0a { margin: 0 auto; }
 
+.p2 { padding: 1rem; }
 .pl2 { padding-left: 1rem; }
 .ml2 { margin-left: 1rem; }
 

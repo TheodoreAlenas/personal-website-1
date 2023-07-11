@@ -3,21 +3,29 @@
 }
 
 .light-themed {
-  --panel-normal: #eee;
-  --panel-edge: #ddd;
+  --panel-normal: #ccc8c8;
+  --panel-edge: #bbb;
 }
 .dark-themed {
-  --panel-normal: #334;
+  --panel-normal: #303038;
   --panel-edge: #223;
 }
 
 .light-themed {
-  --selection-line: #444;
+  --selection-line: #542;
   --fat-lines: #222;
 }
 .dark-themed {
-  --selection-line: #444;
+  --selection-line: #777;
   --fat-lines: #999;
 }
 
+.light-themed {
+  --shadow: #ccc;
+  --line: #ccc;
+}
+.dark-themed {
+  --shadow: #222;
+  --line: #555;
+}
 
