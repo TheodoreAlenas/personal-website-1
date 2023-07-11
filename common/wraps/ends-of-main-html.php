@@ -14,7 +14,9 @@ function get_top_of_file(String $title, array $css_files) {
     <meta charset="UTF-8">
 
     <style>
+
 EOHTML . get_all_file_contents($css_files) . <<<EOHTML
+
     </style>
 
   </head>
@@ -24,6 +26,12 @@ EOHTML . get_all_file_contents($css_files) . <<<EOHTML
       type="checkbox"
       class="dark-theme-switch disp-none"
     />
+    <script>
+
+EOHTML . get_all_file_contents(["common/wraps/theme.js"]) . <<<EOHTML
+
+    </script>
+
     <div class="theme-wrapper">
 
 EOHTML;
