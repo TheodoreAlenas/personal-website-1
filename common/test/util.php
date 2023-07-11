@@ -2,6 +2,7 @@
 
 include_once("common/wraps/ends-of-main-html.php");
 include_once("common/menu-bar/mod.php");
+include_once("common/css/mod.php");
 
 function wrap_in_asymmetric_grid(string $component) {
 
@@ -60,9 +61,8 @@ function wrap_for_test(string $name, callable $get_test_component_and_css) {
       ],
       $subject_css,
       $menu_css,
-      [
-        "common/css/fade.css",
-      ]));
+      get_css_snippet_files()
+    ));
   echo "<header class='free-media-query'>";
   echo $menu;
   echo "</header>";

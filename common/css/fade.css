@@ -9,34 +9,6 @@
 .sticky { position: sticky; top: 0; }
 .relative { position: relative; }
 
-.m0a { margin: 0 auto; }
-
-.pl2 { padding-left: 1rem; }
-.ml2 { margin-left: 1rem; }
-
-.pl3 { padding-left: 2rem; }
-.ml3 { margin-left: 2rem; }
-
-.ptb1 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
-.mtb1 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
-
-.ptb2 { padding-top: 1rem; padding-bottom: 1rem; }
-.mtb2 { margin-top: 1rem; margin-bottom: 1rem; }
-
-.p3, .inside-p3 > * { padding: 2rem 2rem; }
-.m3, .inside-m3 > * { margin: 2rem 2rem; }
-
-.inside-last-child-fat > *:last-child > * { padding-right: 4rem; }
-.inside-last-child-ffat > *:last-child > * {
-  padding-right: 4rem;
-  padding-left: 4rem;
-}
-.inside-first-child-fat > *:first-child > * { padding-left: 4rem; }
-.inside-first-child-ffat > *:first-child > * {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .phone-screen .desktop { display: none; }
 @media screen and (max-width: 1000px) {
   .free-media-query .desktop { display: none; }
