@@ -14,7 +14,7 @@ function get_story_maturity_en() {
 I've written programs that I use
 and therefore I develop a sense of care
 towards the bugs I cause.
-It feels different than being called out by QA.
+It feels different.
 </p>
 <p>
 I appreciate

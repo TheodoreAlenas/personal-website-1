@@ -25,19 +25,25 @@ function get_story_en() {
     get_story_opening_en() .
     get_story_opening_more_en() .
     "<h2>" . get_story_maturity_title_en() . "</h2>" .
+    "<div style='display:grid; grid-template-columns: auto auto; gap:1rem;'>" .
     "<pre class='a-shit'>" . get_file_contents(__DIR__ . "/c-tdd-long-thin.html") . "</pre>" .
     "<style>" . <<<EOCSS
 .a-shit {
-  font-size: 80%;
   background-color: #223;
   display: inline-block;
+  color: #aaa;
+height: max-content;
+border-radius: 5px;
 }
 .a-shit * {
   line-height: 1em;
   padding-top: 5px;
 }
 EOCSS . "</style>" .
+  "<div>" .
     get_story_maturity_en() .
+    "</div>" .
+    "</div>" .
     "<h2>" . get_story_learning_title_en() . "</h2>" .
     "<pre class='a-shit'>" . get_file_contents(__DIR__ . "/prompt-showoff.html") . "</pre>" .
     "<img src='../images/prompt-screenshot.png'>" .

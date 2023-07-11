@@ -1,10 +1,3 @@
-     75   <span style="font-style:italic;"></span><span style="font-style:italic;color:#ff5d62;">return</span> <span style="color:#b8b4d0;">self</span><span style="color:#c0a36e;">-&gt;</span><span style="color:#e6c384;">block_pos</span><span style="color:#9cabca;">;</span>
-     76 <span style="color:#9cabca;">}</span>
-     77 <span style="background-color:#363646;">
-</span>     78 <span style="color:#7aa89f;">void</span> <span style="color:#7e9cd8;">bake_and_bring_next</span><span style="color:#9cabca;">(</span><span style="color:#7aa89f;">Logic</span> <span style="color:#c0a36e;">*</span><span style="color:#b8b4d0;">self</span><span style="color:#9cabca;">)</span> <span style="color:#9cabca;">{</span>
-     79   <span style="color:#7e9cd8;">bake_block</span><span style="color:#9cabca;">(</span><span style="color:#b8b4d0;">self</span><span style="color:#c0a36e;">-&gt;</span><span style="color:#e6c384;">pile</span><span style="color:#9cabca;">,</span> <span style="color:#b8b4d0;">self</span><span style="color:#c0a36e;">-&gt;</span><span style="color:#e6c384;">cur_block</span><span style="color:#9cabca;">,</span> <span style="color:#b8b4d0;">self
-</span>     80   <span style="color:#7e9cd8;">bring_next_block</span><span style="color:#9cabca;">(</span><span style="color:#b8b4d0;">self</span><span style="color:#9cabca;">);</span>
-     81 <span style="color:#9cabca;">}</span>
      82
      83 <span style="color:#7aa89f;">void</span> <span style="color:#7e9cd8;">drop_block</span><span style="color:#9cabca;">(</span><span style="color:#7aa89f;">Logic</span> <span style="color:#c0a36e;">*</span><span style="color:#b8b4d0;">self</span><span style="color:#9cabca;">)</span> <span style="color:#9cabca;">{</span>
      84   <span style="color:#7e9cd8;">bake_block</span><span style="color:#9cabca;">(</span><span style="color:#b8b4d0;">self</span><span style="color:#c0a36e;">-&gt;</span><span style="color:#e6c384;">pile</span><span style="color:#9cabca;">,</span> <span style="color:#b8b4d0;">self</span><span style="color:#c0a36e;">-&gt;</span><span style="color:#e6c384;">cur_block</span><span style="color:#9cabca;">,</span> <span style="color:#7e9cd8;">lowe
@@ -21,18 +14,5 @@
      95   <span style="color:#7e9cd8;">move_block_by</span><span style="color:#9cabca;">(</span><span style="color:#b8b4d0;">self</span><span style="color:#9cabca;">,</span> <span style="color:#7e9cd8;">new_pos</span><span style="color:#9cabca;">(</span><span style="color:#d27e99;">-1</span><span style="color:#9cabca;">,</span> <span style="color:#d27e99;">0</span><span style="color:#9cabca;">));</span>
      96 <span style="color:#9cabca;">}</span>
      97
-     98 <span style="color:#7aa89f;">void</span> <span style="color:#7e9cd8;">move_block_right</span><span style="color:#9cabca;">(</span><span style="color:#7aa89f;">Logic</span> <span style="color:#c0a36e;">*</span><span style="color:#b8b4d0;">self</span><span style="color:#9cabca;">)</span> <span style="color:#9cabca;">{</span>
-     99   <span style="color:#7e9cd8;">move_block_by</span><span style="color:#9cabca;">(</span><span style="color:#b8b4d0;">self</span><span style="color:#9cabca;">,</span> <span style="color:#7e9cd8;">new_pos</span><span style="color:#9cabca;">(</span><span style="color:#d27e99;">1</span><span style="color:#9cabca;">,</span> <span style="color:#d27e99;">0</span><span style="color:#9cabca;">));</span>
-    100 <span style="color:#9cabca;">}</span>
-    101
-    102 <span style="color:#7aa89f;">void</span> <span style="color:#7e9cd8;">drop_block_one_cell</span><span style="color:#9cabca;">(</span><span style="color:#7aa89f;">Logic</span> <span style="color:#c0a36e;">*</span><span style="color:#b8b4d0;">self</span><span style="color:#9cabca;">)</span> <span style="color:#9cabca;">{</span>
-    103   <span style="color:#7e9cd8;">move_block_by</span><span style="color:#9cabca;">(</span><span style="color:#b8b4d0;">self</span><span style="color:#9cabca;">,</span> <span style="color:#7e9cd8;">new_pos</span><span style="color:#9cabca;">(</span><span style="color:#d27e99;">0</span><span style="color:#9cabca;">,</span> <span style="color:#d27e99;">1</span><span style="color:#9cabca;">));</span>
-    104 <span style="color:#9cabca;">}</span>
-    105
-    106 <span style="color:#7aa89f;">void</span> <span style="color:#7e9cd8;">rotate_block_clockwise</span><span style="color:#9cabca;">(</span><span style="color:#7aa89f;">Logic</span> <span style="color:#c0a36e;">*</span><span style="color:#b8b4d0;">self</span><span style="color:#9cabca;">)</span> <span style="color:#9cabca;">{</span>
-    107   <span style="color:#7e9cd8;">clockwise_rotate_block</span><span style="color:#9cabca;">(</span><span style="color:#b8b4d0;">self</span><span style="color:#c0a36e;">-&gt;</span><span style="color:#e6c384;">cur_block</span><span style="color:#9cabca;">);</span>
-    108 <span style="color:#9cabca;">}</span>
-    109
-    110 <span style="color:#7aa89f;">void</span> <span style="color:#7e9cd8;">rotate_block_anticlockwise</span><span style="color:#9cabca;">(</span><span style="color:#7aa89f;">Logic</span> <span style="color:#c0a36e;">*</span><span style="color:#b8b4d0;">self</span><span style="color:#9cabca;">)</span> <span style="color:#9cabca;">{
-</span><span style="color:#c8c093;"></span><span style="color:#c8c093;background-color:#16161d;">src/logic.c                              77,0-1         97%
+</span><span style="color:#c8c093;"></span><span style="color:#c8c093;background-color:#16161d;">src/logic.c                         77,0-1         97%
 </span><span style="color:#c8c093;">:lua SetTransparentBackground()</span>
