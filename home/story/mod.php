@@ -25,8 +25,22 @@ function get_story_en() {
     get_story_opening_en() .
     get_story_opening_more_en() .
     "<h2>" . get_story_maturity_title_en() . "</h2>" .
+    "<pre class='a-shit'>" . get_file_contents(__DIR__ . "/c-tdd-long-thin.html") . "</pre>" .
+    "<style>" . <<<EOCSS
+.a-shit {
+  font-size: 80%;
+  background-color: #223;
+  display: inline-block;
+}
+.a-shit * {
+  line-height: 1em;
+  padding-top: 5px;
+}
+EOCSS . "</style>" .
     get_story_maturity_en() .
     "<h2>" . get_story_learning_title_en() . "</h2>" .
+    "<pre class='a-shit'>" . get_file_contents(__DIR__ . "/prompt-showoff.html") . "</pre>" .
+    "<img src='../images/prompt-screenshot.png'>" .
     get_story_learning_en() .
     "<h2>" . get_story_people_title_en() . "</h2>" .
     get_story_people_1_en() .
@@ -38,12 +52,27 @@ function get_story_gr() {
     get_story_opening_gr() .
     get_story_opening_more_gr() .
     "<h2>" . get_story_maturity_title_gr() . "</h2>" .
+    "<pre>" . get_file_contents(__DIR__ . "/c-tdd-long-thin.html") . "</pre>" .
     get_story_maturity_gr() .
     "<h2>" . get_story_learning_title_gr() . "</h2>" .
+    "<pre>" . get_file_contents(__DIR__ . "/prompt-showoff.html") . "</pre>" .
+    "<img src='../images/prompt-screenshot.png'>" .
     get_story_learning_gr() .
     "<h2>" . get_story_people_title_gr() . "</h2>" .
     get_story_people_1_gr() .
     get_story_people_2_gr();
 }
 
+function get_file_contents(string $file_name) {
+  $to_return = "";
+
+  $file = fopen($file_name, "r");
+  if ($file == false) {
+    return "(file $file_name missing, bug)";
+  }
+  $to_return .= fread($file, 1048576);
+  fclose($file);
+
+  return $to_return;
+}
 ?>
