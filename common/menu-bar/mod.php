@@ -16,9 +16,9 @@ function get_menu_bar_for_test_navigation_and_css(string $title) {
 function get_menu_bar(string $where_am_i, string $language) {
 
   return get_custom_menu_bar(
-    get_maybe_im_here_link("home", $where_am_i, $language),
     get_link_name_and_url("home", $language)[0],
     array_merge([
+      get_maybe_im_here_link("home", $where_am_i, $language),
       "<a href='../gr/index.html'>GR</a>",
       "<a href='../en/index.html'>EN</a>"
     ], get_menu_bar_main_links($where_am_i, $language)));
@@ -37,9 +37,9 @@ function get_menu_bar_main_links(string $where_am_i, string $language) {
 
 function get_menu_bar_for_test_navigation(string $title) {
   return get_custom_menu_bar(
-    "<a href='" . get_link_url("home") . "'>Normal</a>",
     $title,
     [
+      "<a href='../en/index.html'>Normal</a>",
       "<a href='banner.html'>Banner</a>",
       "<a href='menu-bar.html'>Menu Bar</a>",
     ]);

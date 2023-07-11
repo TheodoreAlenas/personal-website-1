@@ -2,9 +2,6 @@
 .debug-mode .menu-bar span {
   border: red 1px dashed;
 }
-.debug-mode .hamburger-checkbox {
-  opacity: 50%;
-}
 .debug-mode .menu-bar span,
 .debug-mode .menu-bar a,
 .menu-bar span,
@@ -16,13 +13,20 @@
 }
 .debug-mode .menu-bar .menu-bar-title,
 .menu-bar .menu-bar-title {
+
+  display: none;
+
   padding: initial;
   line-height: initial;
   border-top: initial;
   border-bottom: initial;
+
+  margin: 0 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
-.debug-mode .menu-bar .im-here,
-.menu-bar .im-here {
+.debug-mode .menu-bar .desktop-nav-list .im-here,
+.menu-bar .desktop-nav-list .im-here {
   border-top-color: #444;
   border-bottom-color: #444;
 }
@@ -30,15 +34,18 @@
 .menu-bar {
   position: sticky;
   top: 0;
-  background-color: #eee;
-  box-shadow: #ccc 0 0 1rem 0;
-  border-bottom: #ddd 1px solid;
   line-height: initial;
   width: min(150rem, 100%);
   margin: 0 auto;
 }
 
-.menu-bar > nav {
+.menu-bar, .hamburger-nav-list {
+  background-color: #eee;
+  box-shadow: #ccc 0 0 1rem 0;
+  border-bottom: #ddd 1px solid;
+}
+
+.menu-bar .desktop-nav-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -60,9 +67,9 @@
 }
 
 .menu-bar .desktop-nav-list > li {
-  margin-top: calc(2.5rem - 2px);
+  margin: calc(2.5rem - 2px) 0;
 }
-.menu-bar > nav > *:first-child {
+.menu-bar > nav > .desktop-nav-list > li:first-child > * {
   padding-left: 4rem;
   padding-right: 4rem;
 }
@@ -70,14 +77,6 @@
   padding-right: 4rem;
 }
 
-.menu-bar .menu-bar-title {
-  margin-right: auto;
-  margin-left: 3rem;
-  font-size: 2rem;
-  line-height: 2rem;
-  margin-top: auto;
-  margin-bottom: auto;
-}
 .menu-bar .hamburger-label {
   line-height: calc(100% - 10px);
   padding-left: 0.15em;
@@ -86,6 +85,8 @@
   color: #222;
 }
 
+.debug-mode .menu-bar .menu-bar-title,
+.menu-bar .menu-bar-title,
 .hamburger-nav-list,
 .hamburger-checkbox,
 .hamburger-label {

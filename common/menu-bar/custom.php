@@ -1,9 +1,8 @@
 <?php
 
-function get_custom_menu_bar_and_css(
-  string $left_element, string $title, array $right_elements) {
+function get_custom_menu_bar_and_css(string $title, array $elements) {
   return [
-    get_custom_menu_bar($left_element, $title, $right_elements),
+    get_custom_menu_bar($title, $elements),
     get_menu_bar_css()
   ];
 }
@@ -12,13 +11,11 @@ function get_menu_bar_css() {
   return ["target/menu-bar.css"];
 }
 
-function get_custom_menu_bar(
-  string $left_element, string $title, array $right_elements) {
+function get_custom_menu_bar(string $title, array $elements) {
 
-  $li = wrap_in_li($right_elements);
+  $li = wrap_in_li($elements);
   return
     "<header class='menu-bar'><nav>" .
-    $left_element .
     "<span class='menu-bar-title'>$title</span>" .
     "<ul class='desktop-nav-list'>$li</ul>" .
     get_hamburger_checkbox_pair() .
