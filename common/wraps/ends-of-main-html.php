@@ -20,7 +20,7 @@ EOHTML . get_all_file_contents($css_files) . <<<EOHTML
   </head>
   <body>
     <input
-      id="theme-checkbox"
+      id="dark-theme-switch"
       type="checkbox"
       class="dark-theme-switch disp-none"
     />

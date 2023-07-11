@@ -9,20 +9,3 @@ body {
   margin: 0 0;
 }
 
-a {
-  text-underline-offset: 0.2rem;
-  color: #226;
-  transition: all linear 0.05s;
-}
-a:visited {
-  color: #604;
-}
-a:hover {
-  text-underline-offset: 0.15rem;
-  color: #22a;
-  background-color: rgba(0, 0, 128, 4%);
-}
-a:visited:hover {
-  color: #806;
-}
-

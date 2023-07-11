@@ -2,9 +2,11 @@
 
 function get_css_snippet_files() {
   return [
-    __DIR__ . "/fade.css",
-    __DIR__ . "/margin-padding.css",
-    __DIR__ . "/theme.css",
+    "common/css/fade.css",
+    "common/css/margin-padding.css",
+    "common/css/display-position.css",
+    "common/css/interactivity.css",
+    "common/css/theme.css",
   ];
 }
 
