@@ -15,8 +15,8 @@ function get_custom_menu_bar(string $title, array $elements) {
 
   $li = wrap_in_li($elements);
   return
-    "<nav class='menu-bar'>" .
-    "<span class='menu-bar-title phone block ptb1 pl3'>$title</span>" .
+    "<nav class='menu-bar m0a relative'>" .
+    "<span class='menu-bar-title phone inl-bl ptb1 pl3'>$title</span>" .
     "<ul class='" .
     "desktop-nav-list desktop " .
     "flex-row-spbet inside-last-child-fat inside-first-child-ffat" .

@@ -26,11 +26,8 @@
 }
 
 .menu-bar {
-  position: sticky;
-  top: 0;
   line-height: initial;
   width: min(150rem, 100%);
-  margin: 0 auto;
 }
 
 .menu-bar, .hamburger-nav-list {

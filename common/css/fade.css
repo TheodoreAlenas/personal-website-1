@@ -6,6 +6,11 @@
 .inl-bl { display: inline-block; }
 .block  { display: block; }
 
+.sticky { position: sticky; top: 0; }
+.relative { position: relative; }
+
+.m0a { margin: 0 auto; }
+
 .pl2 { padding-left: 1rem; }
 .ml2 { margin-left: 1rem; }
 
