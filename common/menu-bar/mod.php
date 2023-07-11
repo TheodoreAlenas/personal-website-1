@@ -19,9 +19,23 @@ function get_menu_bar(string $where_am_i, string $language) {
     get_link_name_and_url("home", $language)[0],
     array_merge([
       get_maybe_im_here_link("home", $where_am_i, $language),
-      "<a href='../gr/index.html'>GR</a>",
-      "<a href='../en/index.html'>EN</a>"
+      get_menu_bar_lang_link($where_am_i, $language),
     ], get_menu_bar_main_links($where_am_i, $language)));
+}
+
+function get_menu_bar_lang_link(
+  string $where_am_i, string $current_language) {
+
+  if ($current_language == "gr") {
+    return
+      "<a href='" .
+      get_link_url($where_am_i, "en") .
+      "'>English</a>";
+  }
+  return
+    "<a href='" .
+    get_link_url($where_am_i, "gr") .
+    "'>Greek</a>";
 }
 
 function get_menu_bar_main_links(string $where_am_i, string $language) {

@@ -19,26 +19,26 @@ function get_maybe_im_here_link(
   return get_a_tag($which, $language);
 }
 
-function get_link_url(String $which) {
-  return get_link_name_and_url($which, "en")[1];
+function get_link_url(string $which, string $language) {
+  return get_link_name_and_url($which, $language)[1];
 }
 
 function get_link_name_and_url(String $which, String $language) {
 
   $all = [
-    ["home", "Home", "Αρχική", "../en/index.html"],
-    ["portfolio", "Portfolio", "Χαρτοφυλάκιο", "../en/portfolio.html"],
-    ["biography", "Biography", "Βιογραφικό", "../en/biography.html"],
-    ["contact", "Contact", "Επικοινωνία", "../en/contact.html"]
+    ["home", "Home", "Αρχική", "index.html"],
+    ["portfolio", "Portfolio", "Χαρτοφυλάκιο", "portfolio.html"],
+    ["biography", "Biography", "Βιογραφικό", "biography.html"],
+    ["contact", "Contact", "Επικοινωνία", "contact.html"]
   ];
 
   foreach ($all as $link) {
     if ($link[0] == $which) {
       if ($language == "gr") {
-        return [$link[2], $link[3]];
+        return [$link[2], "../gr/" . $link[3]];
       }
       else {
-        return [$link[1], $link[3]];
+        return [$link[1], "../en/" . $link[3]];
       }
     }
   }
