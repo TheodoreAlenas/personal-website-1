@@ -8,7 +8,10 @@ function get_custom_menu_bar_and_css(string $title, array $elements) {
 }
 
 function get_menu_bar_css() {
-  return ["target/menu-bar.css"];
+  return [
+    __DIR__ . "/css/default.css",
+    __DIR__ . "/css/phone.css",
+  ];
 }
 
 function get_custom_menu_bar(string $title, array $elements) {
