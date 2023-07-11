@@ -25,13 +25,13 @@ function get_story_en() {
     get_story_opening_en() .
     get_story_opening_more_en() .
     "<h2>" . get_story_maturity_title_en() . "</h2>" .
-    "<div style='display:grid; grid-template-columns: auto auto; gap:1rem;'>" .
+    "<div style='display:grid; grid-template-columns: auto auto; gap:3rem;'>" .
     "<pre class='a-shit'>" . get_file_contents(__DIR__ . "/c-tdd-long-thin.html") . "</pre>" .
     "<style>" . <<<EOCSS
 .a-shit {
-  background-color: #223;
+  background-color: var(--code-background, #223);
   display: inline-block;
-  color: #aaa;
+  color: var(--code-font, #aaa);
 height: max-content;
 border-radius: 5px;
 }
@@ -45,8 +45,7 @@ EOCSS . "</style>" .
     "</div>" .
     "</div>" .
     "<h2>" . get_story_learning_title_en() . "</h2>" .
-    "<pre class='a-shit'>" . get_file_contents(__DIR__ . "/prompt-showoff.html") . "</pre>" .
-    "<img src='../images/prompt-screenshot.png'>" .
+    "<img src='../images/prompt-display.png'>" .
     get_story_learning_en() .
     "<h2>" . get_story_people_title_en() . "</h2>" .
     get_story_people_1_en() .

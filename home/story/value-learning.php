@@ -3,7 +3,7 @@
 function get_story_learning_title_en() {
   return
     "I value personal growth, " .
-    "and I believe these are hard times to learn";
+    "and I believe these are hard times";
 }
 function get_story_learning_title_gr() {
   return

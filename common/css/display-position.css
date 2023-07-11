@@ -8,8 +8,8 @@
 
 .toast,
 .inside-toast > * {
-  border-top: transparent 0.5rem solid;
-  border-bottom: transparent 0.5rem solid;
+  border-top: transparent 1rem solid;
+  border-bottom: transparent 1rem solid;
 }
 
 .flex-row-spbet {

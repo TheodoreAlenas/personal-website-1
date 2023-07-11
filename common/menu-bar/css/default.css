@@ -32,7 +32,6 @@
   background-color: var(--panel-normal, #eee);
   background-color: var(--panel-normal, #eee);
   box-shadow: var(--shadow, #ccc) 0 0 1rem 0;
-  border-bottom: var(--panel-edge, #ddd) 1px solid;
 }
 
 .menu-bar .desktop-nav-list,

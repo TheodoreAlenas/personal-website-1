@@ -3,29 +3,30 @@
 }
 
 .light-themed {
-  --panel-normal: #ccc8c8;
-  --panel-edge: #bbb;
+  --panel-normal: #fff;
+  --shadow: rgba(0, 0, 0, 7%);
+
+  --code-background: #ccc;
+  --code-font: #222;
+  --code-background: #101928;
+  --code-font: #aaa;
 }
 .dark-themed {
-  --panel-normal: #303038;
-  --panel-edge: #223;
+  --panel-normal: #404045;
+  --shadow: rgba(0, 0, 0, 10%);
+
+  --code-background: #223;
+  --code-font: #aaa;
 }
 
 .light-themed {
-  --selection-line: #542;
+  --selection-line: #444;
   --fat-lines: #222;
+  --line: #ccc;
 }
 .dark-themed {
   --selection-line: #777;
   --fat-lines: #999;
-}
-
-.light-themed {
-  --shadow: #ccc;
-  --line: #ccc;
-}
-.dark-themed {
-  --shadow: #222;
   --line: #555;
 }
 
