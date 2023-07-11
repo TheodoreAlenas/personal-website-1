@@ -61,7 +61,7 @@ function wrap_for_test(string $name, callable $get_test_component_and_css) {
       ],
       $subject_css,
       $menu_css,
-      get_css_snippet_files()
+      get_css_files()
     ));
   echo "<header class='free-media-query'>";
   echo $menu;

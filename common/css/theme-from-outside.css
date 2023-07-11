@@ -1,0 +1,15 @@
+.dark-theme-switch + .theme-wrapper {
+  --background-normal: #fff;
+  --foreground-normal: #000;
+}
+.dark-theme-switch:checked + .theme-wrapper {
+  --background-normal: #445;
+  --foreground-normal: #eee;
+}
+
+
+.theme-wrapper {
+  background-color: var(--background-normal);
+  color: var(--foreground-normal);
+}
+

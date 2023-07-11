@@ -20,7 +20,7 @@ function get_biography_html(string $language) {
     $basic_css,
     $menu_bar_css,
     $content_css,
-    get_css_snippet_files()
+    get_css_files()
   );
 
   return

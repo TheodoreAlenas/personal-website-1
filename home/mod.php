@@ -22,7 +22,7 @@ function get_home_html(string $language) {
     $menu_bar_css,
     $banner_css,
     $story_css,
-    get_css_snippet_files()
+    get_css_files()
   );
 
   return

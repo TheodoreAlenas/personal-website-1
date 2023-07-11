@@ -1,0 +1,31 @@
+.dark-theme-switch + .theme-wrapper {
+  --link-normal: #226;
+  --link-visited: #604;
+  --link-hover: #22a;
+  --link-visited-hover: #806;
+}
+.dark-theme-switch:checked + .theme-wrapper {
+  --link-normal: #aad;
+  --link-visited: #c9b;
+  --link-hover: #99f;
+  --link-visited-hover: #f8b;
+}
+
+
+a {
+  text-underline-offset: 0.2rem;
+  color: var(--link-normal);
+  transition: all linear 0.05s;
+}
+a:visited {
+  color: var(--link-visited);
+}
+a:hover {
+  text-underline-offset: 0.15rem;
+  color: var(--link-hover);
+  background-color: rgba(0, 0, 128, 4%);
+}
+a:visited:hover {
+  color: var(--link-visited-hover);
+}
+
