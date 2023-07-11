@@ -15,12 +15,15 @@ function get_custom_menu_bar(string $title, array $elements) {
 
   $li = wrap_in_li($elements);
   return
-    "<header class='menu-bar'><nav>" .
-    "<span class='menu-bar-title'>$title</span>" .
-    "<ul class='desktop-nav-list'>$li</ul>" .
+    "<nav class='menu-bar'>" .
+    "<span class='menu-bar-title phone block ptb1 pl3'>$title</span>" .
+    "<ul class='" .
+    "desktop-nav-list desktop " .
+    "flex-row-spbet inside-last-child-fat inside-first-child-ffat" .
+    "'>$li</ul>" .
     get_hamburger_checkbox_pair() .
-    "<ul class='hamburger-nav-list'>$li</ul>" .
-    "</nav></header>";
+    "<ul class='hamburger-nav-list phone'>$li</ul>" .
+    "</nav>";
 }
 
 function get_hamburger_checkbox_pair() {
@@ -29,18 +32,18 @@ function get_hamburger_checkbox_pair() {
     "<input" .
     " id='hamburger-checkbox-$hamburger_hash'" .
     " type='checkbox'" .
-    " class='hamburger-checkbox'" .
+    " class='hamburger-checkbox phone'" .
     "/>" .
     "<label" .
     " for='hamburger-checkbox-$hamburger_hash'" .
-    " class='hamburger-label'" .
+    " class='hamburger-label phone in-bl'" .
     "> ☰</label>";
 }
 
 function wrap_in_li(array $components) {
   $e = '';
   foreach ($components as $component) {
-    $e .= "<li>$component</li>";
+    $e .= "<li class='inside-p3'>$component</li>";
   }
   return $e;
 }

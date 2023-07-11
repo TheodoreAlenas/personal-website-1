@@ -10,7 +10,7 @@ function wrap_in_asymmetric_grid(string $component) {
   $component .
   '</div>' .
 
-  '<div class="debug-mode test-layout-almost">' .
+  '<div class="debug-mode test-layout-almost desktop-screen">' .
   $component .
   '</div>' .
 
@@ -18,7 +18,7 @@ function wrap_in_asymmetric_grid(string $component) {
   $component .
   '</div>' .
 
-  '<div class="debug-mode test-layout-above-half">' .
+  '<div class="debug-mode test-layout-above-half desktop-screen">' .
   $component .
   '</div>' .
 
@@ -32,7 +32,7 @@ function wrap_callable_in_asymmetric_grid(callable $component) {
   $component() .
   '</div>' .
 
-  '<div class="debug-mode test-layout-almost">' .
+  '<div class="debug-mode test-layout-almost desktop-screen">' .
   $component() .
   '</div>' .
 
@@ -40,7 +40,7 @@ function wrap_callable_in_asymmetric_grid(callable $component) {
   $component() .
   '</div>' .
 
-  '<div class="debug-mode test-layout-above-half">' .
+  '<div class="debug-mode test-layout-above-half desktop-screen">' .
   $component() .
   '</div>' .
 
@@ -56,11 +56,16 @@ function wrap_for_test(string $name, callable $get_test_component_and_css) {
     array_merge(
       [
         "common/wraps/html-body.css",
-        "common/test/layout.css"
+        "common/test/layout.css",
       ],
       $subject_css,
-      $menu_css));
+      $menu_css,
+      [
+        "common/css/fade.css",
+      ]));
+  echo "<header class='free-media-query'>";
   echo $menu;
+  echo "</header>";
   echo $test_subject;
   echo get_bottom_of_file();
 }
