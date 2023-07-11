@@ -1,13 +1,29 @@
+.dont-be-like-button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+}
+
+.toast,
+.inside-toast > * {
+  border-top: transparent 0.5rem solid;
+  border-bottom: transparent 0.5rem solid;
+}
+
 .flex-row-spbet {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .inl-bl { display: inline-block; }
-.block  { display: block; }
+.block , .inside-block > * { display: block; }
 .disp-none { display: none; }
 
 .sticky { position: sticky; top: 0; }
 .relative { position: relative; }
 .absolute { position: absolute; }
+
+.line-h-1em { line-height: 1em; }
 

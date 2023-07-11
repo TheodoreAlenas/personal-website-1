@@ -43,7 +43,9 @@ function get_hamburger_checkbox_pair() {
 function wrap_in_li(array $components) {
   $e = '';
   foreach ($components as $component) {
-    $e .= "<li class='inside-p3'>$component</li>";
+    $e .= "<li class='inside-block inside-p3 inside-toast'>";
+    $e .= $component;
+    $e .= "</li>";
   }
   return $e;
 }

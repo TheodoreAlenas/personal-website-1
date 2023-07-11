@@ -1,8 +1,8 @@
-.dark-theme-switch + .theme-wrapper {
+.light-themed {
   --background-normal: #fff;
   --foreground-normal: #000;
 }
-.dark-theme-switch:checked + .theme-wrapper {
+.dark-themed {
   --background-normal: #445;
   --foreground-normal: #eee;
 }

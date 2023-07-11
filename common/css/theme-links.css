@@ -1,10 +1,10 @@
-.dark-theme-switch + .theme-wrapper {
+.light-themed {
   --link-normal: #226;
   --link-visited: #604;
   --link-hover: #22a;
   --link-visited-hover: #806;
 }
-.dark-theme-switch:checked + .theme-wrapper {
+.dark-themed {
   --link-normal: #aad;
   --link-visited: #c9b;
   --link-hover: #99f;

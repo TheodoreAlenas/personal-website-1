@@ -7,8 +7,6 @@
 .menu-bar span,
 .menu-bar a {
   line-height: 1em;
-  border-top: transparent 0.5rem solid;
-  border-bottom: transparent 0.5rem solid;
 }
 .debug-mode .menu-bar .menu-bar-title,
 .menu-bar .menu-bar-title {
@@ -52,9 +50,6 @@
   display: inline-block;
 }
 
-.menu-bar .desktop-nav-list > li {
-  margin: calc(2.5rem - 2px) 0;
-}
 .menu-bar > nav > .desktop-nav-list > li:first-child > * {
   padding-left: 4rem;
   padding-right: 4rem;
