@@ -1,3 +1,7 @@
+.debug-red {
+  background-color: red;
+}
+
 .dark-theme-switch + .theme-wrapper {
   --panel-normal: #eee;
   --panel-edge: #ddd;

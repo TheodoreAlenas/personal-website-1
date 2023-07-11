@@ -1,11 +1,25 @@
-
-applyStoredTheme();
-applyThemeSwitchPersistence();
-
+function setUpThemeSwitches() {
+  forEachThemeSwitch(makeItToggleTheTheme);
+}
 
 function applyStoredTheme() {
-  if ("dark" === localStorage.getItem('preferredTheme'))
-    flipDarknessSwitch();
+  if (getThemeIsDark())
+    showDarkness();
+  else
+    showBrightness();
+}
+
+function forEachThemeSwitch(callback) {
+  const themeSwitches = document.getElementsByClassName("theme-switch");
+  for (let i = 0; i < themeSwitches.length; i++)
+    callback(themeSwitches[i]);
+}
+function makeItToggleTheTheme(themeSwitch) {
+  themeSwitch.addEventListener("click", toggleTheme);
+}
+
+function getThemeIsDark() {
+  return "dark" === localStorage.getItem('preferredTheme');
 }
 function storeDarkTheme() {
   localStorage.setItem('preferredTheme', 'dark');
@@ -13,30 +27,29 @@ function storeDarkTheme() {
 function storeLightTheme() {
   localStorage.setItem('preferredTheme', 'light');
 }
+function showDarkness() {
+  const classList = document.getElementById('theme-wrapper').classList;
+  classList.remove("light-themed");
+  classList.add("dark-themed");
+}
+function showBrightness() {
+  const classList = document.getElementById('theme-wrapper').classList;
+  classList.remove("dark-themed");
+  classList.add("light-themed");
+}
 
-function judgeThisTheme(darkThemeSwitch) {
-  const isChecked = darkThemeSwitch.checked;
-  if (isChecked)
-    storeDarkTheme();
+function makeItDark() {
+  showDarkness();
+  storeDarkTheme();
+}
+function makeItBright() {
+  showBrightness();
+  storeLightTheme();
+}
+
+function toggleTheme() {
+  if (getThemeIsDark())
+    makeItBright();
   else
-    storeLightTheme();
+    makeItDark();
 }
-
-
-function flipDarknessSwitch() {
-  document.getElementById('dark-theme-switch').checked = true;
-}
-
-function applyThemeSwitchPersistence() {
-  const darkThemeSwitch = document.getElementById('dark-theme-switch');
-  if (!darkThemeSwitch)
-    console.warn('dark-theme-switch' + "is" + darkThemeSwitch);
-  else
-    darkThemeSwitch.addEventListener("change", judgeTheme);
-}
-
-function judgeTheme(_event) {
-  judgeThisTheme(this);
-}
-
-// localStorage.setItem('preferredTheme', 'dark');

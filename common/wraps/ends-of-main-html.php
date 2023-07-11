@@ -18,6 +18,11 @@ function get_top_of_file(String $title, array $css_files) {
 EOHTML . get_all_file_contents($css_files) . <<<EOHTML
 
     </style>
+    <script>
+
+EOHTML . get_all_file_contents(["common/wraps/theme.js"]) . <<<EOHTML
+
+    </script>
 
   </head>
   <body>
@@ -26,13 +31,9 @@ EOHTML . get_all_file_contents($css_files) . <<<EOHTML
       type="checkbox"
       class="dark-theme-switch disp-none"
     />
-    <script>
 
-EOHTML . get_all_file_contents(["common/wraps/theme.js"]) . <<<EOHTML
-
-    </script>
-
-    <div class="theme-wrapper">
+    <div id="theme-wrapper" class="theme-wrapper">
+      <script> applyStoredTheme(); </script>
 
 EOHTML;
 }
@@ -40,6 +41,7 @@ EOHTML;
 function get_bottom_of_file() {
   return <<<EOHTML
 
+      <script> setUpThemeSwitches(); </script>
     </div>
   </body>
 </html>
