@@ -1,11 +1,11 @@
 
 .phone-screen .desktop { display: none; }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .free-media-query .desktop { display: none; }
 }
 
 .desktop-screen .phone { display: none; }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .free-media-query .phone { display: none; }
 }
 

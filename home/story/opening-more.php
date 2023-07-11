@@ -10,9 +10,9 @@ Then it fell apart spectacularly.
 </p>
 <p>
 By finding friends, diving into drawing,
-and being shown what programming looks like
-on the highest skill level,
-I've started to seek freedom and respect.
+and listening to programmers I aspire to,
+I've started to seek a path to
+freedom and respect.
 </p>
 EOHTML;
 }
@@ -27,7 +27,7 @@ function get_story_opening_more_gr() {
 Έπειτα κατέρρευσε.
 </p>
 <p>
-Μέσα από την κοινωνικοποίηση,
+Έτσι, σήμερα μέσα από την κοινωνικοποίηση,
 τη ζωγραφική και
 την παρακολούθηση προγραμματιστών που εκτιμάω,
 αποκτάω πείσμα για ελευθερία και εμπιστοσύνη.

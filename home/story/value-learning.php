@@ -24,7 +24,7 @@ and my <a href="#">pictures</a>
 are stored in a binary tree of directories
 that contain some empty files defining tags.
 I make sure I gain about twice the abilities
-required for any task I have.
+required for any given task.
 </p>
 <p>
 These are hard times to learn because
@@ -59,7 +59,7 @@ function get_story_learning_gr() {
 επειδή οι έμπειροι είναι λίγοι.
 Οι περισσότεροι προγραμματιστές είναι αρχάριοι,
 ή προόδευσαν μεταξύ αρχαρίων,
-συγκρίνοντας τον προγραμματισμό με τη ζωγραφική.
+αν συγκρίνει κανείς τον προγραμματισμό με τη ζωγραφική.
 </p>
 
 

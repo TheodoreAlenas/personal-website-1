@@ -4,7 +4,7 @@ function get_story_maturity_title_en() {
   return "I value environments that inspire maturity";
 }
 function get_story_maturity_title_gr() {
-  return "Εκτιμώ περιβάλλοντα που εμπνέουν ωριμότητα";
+  return "Δείχνω εκτίμηση σε περιβάλλοντα ωριμότητας";
 }
 
 function get_story_maturity_en() {
@@ -27,7 +27,7 @@ reminds what a programmer does.
 I like to code without a sensation of speed,
 and clean up along the way every few minutes.
 I prototype and then I give each piece of the software
-a way to show itself off.
+a way to show itself off before I develop it.
 I've played around with TDD and TCR as well.
 </p>
 
@@ -46,13 +46,15 @@ function get_story_maturity_gr() {
 Εκτιμώ τα
 <a href="distro-tube-emacs">παλιά εργαλεία</a>,
 όχι λόγω παραγωγικότητας αλλά λόγω νοοτροπίας.
-Μας θυμίζουν το κοινωνικό μας ρόλο.
+Προσωπικά μου θυμίζουν το κοινωνικό μου ρόλο.
 </p>
 <p>
 Προτιμώ να προγραμματίζω με ήπιο ρυθμό,
-καθαρίζοντας ανά μερικά λεπτά.
-Προτοτυποποιώ και έπειτα ξεκινάω ένα κομμάτι
-αφότου του δώσω τρόπο να επιδειχθεί.
+συντηρώντας ανά μερικά λεπτά.
+Προτοτυποποιώ, και έπειτα ξαναρχίζω απ' την αρχή.
+Δίνω στον εαυτό μου πρώτα ένα τρόπο
+να δοκιμάσω κάθε κομμάτι της δουλειάς
+πρωτού το αναπτύξω.
 Έχω πειραματιστεί ελαφρώς και με TDD και TCR.
 </p>
 
