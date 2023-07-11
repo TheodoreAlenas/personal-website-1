@@ -27,7 +27,7 @@ function get_home_html(string $language) {
 
   return
     get_top_of_file("Theodore - Home", $css_to_include) .
-    "<header class='free-media-query'>" .
+    "<header class='free-media-query sticky'>" .
     $menu_bar .
     "</header>" .
     "<div class='banner-wrapper'>" .

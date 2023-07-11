@@ -19,6 +19,12 @@ EOHTML . get_all_file_contents($css_files) . <<<EOHTML
 
   </head>
   <body>
+    <input
+      id="theme-checkbox"
+      type="checkbox"
+      class="dark-theme-switch disp-none"
+    />
+    <div class="theme-wrapper">
 
 EOHTML;
 }
@@ -26,6 +32,7 @@ EOHTML;
 function get_bottom_of_file() {
   return <<<EOHTML
 
+    </div>
   </body>
 </html>
 
