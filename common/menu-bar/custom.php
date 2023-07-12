@@ -49,7 +49,7 @@ function get_hamburger_checkbox_pair() {
 />
 <label
   for='hamburger-checkbox-$hamburger_hash'
-  class='hamburger-label phone in-bl'
+  class='abs-t-r hamburger-prettify phone in-bl'
   role='img'
   aria-label='show menu'
 > ☰</label>

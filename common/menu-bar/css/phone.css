@@ -16,13 +16,6 @@
   bottom: 0;
 }
 
-.hamburger-label {
-  position: absolute;
-  top: 8px;
-  right: 1rem;
-  border-radius: 5px;
-}
-
 .hamburger-checkbox + label + .hamburger-nav-list {
   display: none;
 }
