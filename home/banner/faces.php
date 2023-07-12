@@ -3,37 +3,39 @@
 function get_banner_faces() {
   return
     '<div class="banner-faces">' .
-    get_littles_unwrapped() .
+    wrap_all([
+      "aye",
+      "hmm",
+      "what",
+      "nice",
+      "why",
+      "long",
+      "oof",
+      "ooh",
+      "pat",
+      "bee",
+      "pyramid",
+      "italiano",
+      "diploma",
+      "you",
+    ]) .
     '</div>';
 }
 
-function get_littles_unwrapped() {
+function wrap_all(array $image_names) {
   $e = '';
-  $littles_dir = opendir("images/littles");
-  if ($littles_dir != false) {
-    $e .= get_littles_from_open_dir($littles_dir);
-    closedir($littles_dir);
+  foreach ($image_names as $image_name) {
+    $e .= <<<EOHTML
+<img
+  src="../images/littles/$image_name.png"
+  style="background-image: url(
+    '../images/littles-8-times-shorter/$image_name.png'
+    );"
+  alt="expression $image_name"
+>
+
+EOHTML;
   }
   return $e;
 }
-
-function get_littles_from_open_dir($littles_dir) {
-  $e = '';
-  while (($image_name = readdir($littles_dir)) != false) {
-    if ($image_name == '.' || $image_name == '..') {
-      continue;
-    }
-    $e .= get_img_from_image_name($image_name);
-  }
-  return $e;
-}
-
-function get_img_from_image_name($image_name) {
-  return "<img src=\"../images/littles/$image_name\"" .
-    " style=\"background-image: url('" .
-    "../images/littles-8-times-shorter/$image_name" .
-    "');\">";
-}
-
-?>
 

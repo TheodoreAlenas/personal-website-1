@@ -5,6 +5,7 @@
 }
 .banner-faces {
   width: max-content;
+  font-size: 0;
 }
 .banner-faces img {
   height: 2cm;
