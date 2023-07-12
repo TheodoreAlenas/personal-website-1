@@ -1,16 +1,17 @@
 .light-themed {
   --link-normal: #226;
-  --link-visited: #604;
+  --link-visited: #404;
   --link-hover: #22a;
   --link-visited-hover: #806;
+  --hover: rgba(0, 0, 128, 4%);
 }
 .dark-themed {
   --link-normal: #aad;
   --link-visited: #c9b;
   --link-hover: #99f;
   --link-visited-hover: #f8b;
+  --hover: rgba(128, 128, 255, 6%);
 }
-
 
 a {
   text-underline-offset: 0.2rem;
@@ -23,9 +24,13 @@ a:visited {
 a:hover {
   text-underline-offset: 0.15rem;
   color: var(--link-hover);
-  background-color: rgba(0, 0, 128, 4%);
+  background-color: var(--hover);
 }
 a:visited:hover {
   color: var(--link-visited-hover);
 }
 
+.buttony:hover {
+  cursor: pointer;
+  background-color: var(--hover);
+}

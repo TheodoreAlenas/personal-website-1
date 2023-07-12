@@ -26,10 +26,11 @@ function get_custom_menu_bar(string $title, array $elements) {
   <ul class='
     desktop-nav-list desktop flex-row-spbet
     inside-last-child-fat inside-first-child-ffat
+    iinside-p3
   '>$li</ul>
   $hamburgers
   <ul class='
-    hamburger-nav-list phone iinside-p2
+    hamburger-nav-list phone iinside-p2 absolute
   '>$li</ul>
 </nav>
 EOHTML;
@@ -52,7 +53,7 @@ function get_hamburger_checkbox_pair() {
 function wrap_in_li(array $components) {
   $e = '';
   foreach ($components as $component) {
-    $e .= "<li class='inside-block inside-p3 inside-toast'>";
+    $e .= "<li class='inside-block'>";
     $e .= $component;
     $e .= "</li>";
   }

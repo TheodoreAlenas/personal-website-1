@@ -19,8 +19,7 @@
 }
 .debug-mode .menu-bar .desktop-nav-list .im-here,
 .menu-bar .desktop-nav-list .im-here {
-  border-top-color: var(--selection-line, #444);
-  border-bottom-color: var(--selection-line, #444);
+  background-color: var(--selection, #444);
 }
 
 .menu-bar {

@@ -1,10 +1,10 @@
 .fat-ghost-on-check:checked + label::before {
   content: "";
-  width: 200vw;
-  height: 200vh;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  top: -100vh;
-  left: -100vw;
+  top: 0;
+  right: 0;
 }
 .debug-mode .fat-ghost-on-check:checked + label::before {
   width: 0;

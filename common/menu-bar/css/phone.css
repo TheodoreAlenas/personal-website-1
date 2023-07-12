@@ -4,11 +4,6 @@
   top: 3.5rem;
   right: 1rem;
 }
-.hamburger-nav-list > li > * {
-  display: block;
-  padding: 1rem 1rem;
-  position: relative;
-}
 
 .menu-bar > a {
   padding: 0.2rem 1rem;

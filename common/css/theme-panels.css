@@ -33,12 +33,12 @@
 }
 
 .light-themed {
-  --selection-line: #444;
+  --selection: #e0e0e8;
   --fat-lines: #222;
   --line: #ccc;
 }
 .dark-themed {
-  --selection-line: #777;
+  --selection: #505058;
   --fat-lines: #999;
   --line: #555;
 }
