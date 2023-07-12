@@ -19,7 +19,7 @@ get_welcome($language) .
 <img
   src="../images/face.jpg"
   style="background-image: url(
-    '../images/face-16-times-shorter.png'
+    '../images/face-64-times-shorter.png'
     );"
   alt="a relaxed expression of Theodore"
 >

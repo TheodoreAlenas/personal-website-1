@@ -26,6 +26,7 @@ target/test/menu-bar.html: common/menu-bar/test.php target/menu-bar.css $(wildca
 
 target/images: images
 	find images -type d -exec mkdir -pv target/{} \; -o -type f -exec ln -vf {} target/{} \;
+	ln -vf images/favicon.ico target/favicon.ico
 
 target/menu-bar.css: common/menu-bar/css/include-to-get-media-queries.php $(wildcard common/menu-bar/css/*)
 	php $< > $@
