@@ -38,16 +38,19 @@ EOHTML;
 
 function get_hamburger_checkbox_pair() {
   $hamburger_hash = random_int(1, 1000);
-  return
-    "<input" .
-    " id='hamburger-checkbox-$hamburger_hash'" .
-    " type='checkbox'" .
-    " class='hamburger-checkbox phone fat-ghost-on-check'" .
-    "/>" .
-    "<label" .
-    " for='hamburger-checkbox-$hamburger_hash'" .
-    " class='hamburger-label phone in-bl'" .
-    "> ☰</label>";
+  return <<<EOHTML
+<input
+  id='hamburger-checkbox-$hamburger_hash'
+  type='checkbox'
+  class='hamburger-checkbox phone fat-ghost-on-check'
+/>
+<label
+  for='hamburger-checkbox-$hamburger_hash'
+  class='hamburger-label phone in-bl'
+  role='img'
+  aria-label='show menu'
+> ☰</label>
+EOHTML;
 }
 
 function wrap_in_li(array $components) {

@@ -40,10 +40,11 @@ function get_story_gr() {
     get_story_opening_gr() .
     get_story_opening_more_gr() .
     "<h2>" . get_story_maturity_title_gr() . "</h2>" .
-    "<pre>" . get_file_contents(__DIR__ . "/c-tdd-long-thin.html") . "</pre>" .
-    get_story_maturity_gr() .
+    get_story_card_maturity(get_story_maturity_gr()) .
     "<h2>" . get_story_learning_title_gr() . "</h2>" .
-    get_story_learning_1_gr() .
+    get_story_card_learning(
+      get_story_learning_1_gr(),
+      get_story_learning_2_gr()) .
     "<h2>" . get_story_people_title_gr() . "</h2>" .
     get_story_people_1_gr() .
     get_story_people_2_gr();
