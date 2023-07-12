@@ -11,7 +11,7 @@ function get_story_learning_title_gr() {
     "επειδή είναι δύσκολοι οι καιροί για μάθηση";
 }
 
-function get_story_learning_en() {
+function get_story_learning_1_en() {
   return <<<EOHTML
 
 <p>
@@ -26,19 +26,11 @@ that contain some empty files defining tags.
 I make sure I gain about twice the abilities
 required for any given task.
 </p>
-<p>
-These are hard times to learn because
-nobody knows how to code.
-People either haven't grown yet,
-or they grew surrounded by juniors.
-I compare it to the experience
-of learning how to draw.
-</p>
 
 EOHTML;
 }
 
-function get_story_learning_gr() {
+function get_story_learning_1_gr() {
   return <<<EOHTML
 
 <p>
@@ -54,6 +46,27 @@ function get_story_learning_gr() {
 Έχω την τάση να μαθαίνω περίπου τα διπλάσια
 από τα απαραίτητα ανά έργο.
 </p>
+
+EOHTML;
+}
+function get_story_learning_2_en() {
+  return <<<EOHTML
+
+<p>
+These are hard times to learn because
+nobody knows how to code.
+People either haven't grown yet,
+or they grew surrounded by juniors.
+I compare it to the experience
+of learning how to draw.
+</p>
+
+EOHTML;
+}
+
+function get_story_learning_2_gr() {
+  return <<<EOHTML
+
 <p>
 Είναι δύσκολοι καιροί για μάθηση
 επειδή οι έμπειροι είναι λίγοι.

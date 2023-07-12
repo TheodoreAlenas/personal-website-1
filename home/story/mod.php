@@ -27,7 +27,9 @@ function get_story_en() {
     "<h2>" . get_story_maturity_title_en() . "</h2>" .
     get_story_card_maturity(get_story_maturity_en()) .
     "<h2>" . get_story_learning_title_en() . "</h2>" .
-    get_story_card_learning(get_story_learning_en()) .
+    get_story_card_learning(
+      get_story_learning_1_en(),
+      get_story_learning_2_en()) .
     "<h2>" . get_story_people_title_en() . "</h2>" .
     get_story_people_1_en() .
     get_story_people_2_en();
@@ -41,7 +43,7 @@ function get_story_gr() {
     "<pre>" . get_file_contents(__DIR__ . "/c-tdd-long-thin.html") . "</pre>" .
     get_story_maturity_gr() .
     "<h2>" . get_story_learning_title_gr() . "</h2>" .
-    get_story_learning_gr() .
+    get_story_learning_1_gr() .
     "<h2>" . get_story_people_title_gr() . "</h2>" .
     get_story_people_1_gr() .
     get_story_people_2_gr();
@@ -63,12 +65,22 @@ function get_story_card_maturity(string $story_itself) {
 EOHTML;
 }
 
-function get_story_card_learning(string $story_itself) {
+function get_story_card_learning(
+  string $story_left, string $story_right) {
+
   return <<<EOHTML
 <div class='grid grid-col-to-row gap-2'>
-  <img class='round mtb-like-p' src='../images/prompt-display.png'>
   <div>
-    $story_itself
+    $story_left
+  </div>
+  <div class='phone-scroll-x'>
+    <img
+      class='round mtb-like-p phone-m0a'
+      src='../images/prompt-display.png'
+    >
+  </div>
+  <div>
+    $story_right
   </div>
 </div>
 EOHTML;
