@@ -29,7 +29,7 @@ function get_menu_bar_theme_button($language) {
   return <<<EOHTML
 
 <button
-  class='theme-switch dont-be-like-button buttony line-h-1em'
+  class='theme-switch dont-be-like-button buttony line-h-1em smol'
   style='width: 100%; text-align: left;'
 >
 $text_inside
@@ -50,12 +50,12 @@ function get_menu_bar_lang_link(
 
   if ($current_language == "gr") {
     return
-      "<a href='" .
+      "<a class='smol' href='" .
       get_link_url($where_am_i, "en") .
       "'>English</a>";
   }
   return
-    "<a href='" .
+    "<a class='smol' href='" .
     get_link_url($where_am_i, "gr") .
     "'>Greek</a>";
 }

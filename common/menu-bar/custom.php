@@ -25,7 +25,7 @@ function get_custom_menu_bar(string $title, array $elements) {
   '>$title</span>
   <ul class='
     desktop-nav-list desktop flex-row-spbet
-    inside-last-child-fat inside-first-child-ffat
+    iinside-last-child-fat iinside-first-child-ffat
     iinside-p3
   '>$li</ul>
   $hamburgers

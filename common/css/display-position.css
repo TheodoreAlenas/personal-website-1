@@ -5,6 +5,13 @@
   background-color: inherit;
   border: none;
 }
+.smol, .dont-be-like-button.smol {
+  font-size: 75%;
+  line-height: 1.5em;
+}
+.ln-h-1em {
+  line-height: 1em;
+}
 
 .toast,
 .inside-toast > * {

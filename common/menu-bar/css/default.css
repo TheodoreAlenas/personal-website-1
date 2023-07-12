@@ -2,12 +2,6 @@
 .debug-mode .menu-bar span {
   border: red 1px dashed;
 }
-.debug-mode .menu-bar span,
-.debug-mode .menu-bar a,
-.menu-bar span,
-.menu-bar a {
-  line-height: 1em;
-}
 .debug-mode .menu-bar .menu-bar-title,
 .menu-bar .menu-bar-title {
   line-height: initial;
