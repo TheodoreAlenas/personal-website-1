@@ -33,7 +33,7 @@ function get_custom_menu_bar(string $title, array $elements) {
   $hamburgers
   <ul class='
     hamburger-nav-list
-    phone dont-be-like-list iinside-p2 absolute
+    phone dont-be-like-list iinside-p2 absolute round ovf-hid
   '>$li</ul>
 </nav>
 EOHTML;
