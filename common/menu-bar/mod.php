@@ -19,13 +19,23 @@ function get_menu_bar(string $where_am_i, string $language) {
     get_link_name_and_url("home", $language)[0],
     array_merge([
       get_maybe_im_here_link("home", $where_am_i, $language),
-      "<button class='" .
-      "theme-switch dont-be-like-button buttony toast line-h-1em" .
-      "'>" .
-      get_menu_bar_localized_theme_label($language) .
-      "</button>",
+      get_menu_bar_theme_button($language),
       get_menu_bar_lang_link($where_am_i, $language),
     ], get_menu_bar_main_links($where_am_i, $language)));
+}
+
+function get_menu_bar_theme_button($language) {
+  $text_inside = get_menu_bar_localized_theme_label($language);
+  return <<<EOHTML
+
+<button
+  class='theme-switch dont-be-like-button buttony line-h-1em'
+  style='width: 100%; text-align: left;'
+>
+$text_inside
+</button>
+
+EOHTML;
 }
 
 function get_menu_bar_localized_theme_label(string $language) {

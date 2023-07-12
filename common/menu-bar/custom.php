@@ -17,16 +17,22 @@ function get_menu_bar_css() {
 function get_custom_menu_bar(string $title, array $elements) {
 
   $li = wrap_in_li($elements);
-  return
-    "<nav class='menu-bar m0a relative'>" .
-    "<span class='menu-bar-title phone inl-bl ptb1 pl3'>$title</span>" .
-    "<ul class='" .
-    "desktop-nav-list desktop " .
-    "flex-row-spbet inside-last-child-fat inside-first-child-ffat" .
-    "'>$li</ul>" .
-    get_hamburger_checkbox_pair() .
-    "<ul class='hamburger-nav-list phone'>$li</ul>" .
-    "</nav>";
+  $hamburgers = get_hamburger_checkbox_pair();
+  return <<<EOHTML
+<nav class='menu-bar m0a relative'>
+  <span class='
+    menu-bar-title phone inl-bl ptb1 pl3
+  '>$title</span>
+  <ul class='
+    desktop-nav-list desktop flex-row-spbet
+    inside-last-child-fat inside-first-child-ffat
+  '>$li</ul>
+  $hamburgers
+  <ul class='
+    hamburger-nav-list phone iinside-p2
+  '>$li</ul>
+</nav>
+EOHTML;
 }
 
 function get_hamburger_checkbox_pair() {

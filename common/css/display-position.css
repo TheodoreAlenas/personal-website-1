@@ -1,16 +1,3 @@
-.fat-ghost-on-check:checked + label::before {
-  content: "";
-  width: 200vw;
-  height: 200vh;
-  position: absolute;
-  top: -100vh;
-  left: -100vw;
-}
-.debug-mode .fat-ghost-on-check:checked + label::before {
-  width: 0;
-  height: 0;
-}
-
 .dont-be-like-button {
   font-family: inherit;
   font-size: inherit;

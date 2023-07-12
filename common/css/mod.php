@@ -9,6 +9,7 @@ function get_css_files() {
 
 function get_css_snippet_files() {
   return [
+    "common/css/popup.css",
     "common/css/fade.css",
     "common/css/margin-padding.css",
     "common/css/width-border.css",
