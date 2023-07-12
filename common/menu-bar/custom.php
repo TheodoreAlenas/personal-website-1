@@ -19,18 +19,21 @@ function get_custom_menu_bar(string $title, array $elements) {
   $li = wrap_in_li($elements);
   $hamburgers = get_hamburger_checkbox_pair();
   return <<<EOHTML
-<nav class='menu-bar m0a relative'>
+<nav class='menu-bar bar-center relative'>
   <span class='
     menu-bar-title phone inl-bl ptb1 pl3
   '>$title</span>
   <ul class='
-    desktop-nav-list desktop flex-row-spbet
+    desktop-nav-list
+    desktop dont-be-like-list flex-row-spbet
     iinside-last-child-fat iinside-first-child-ffat
+    inside-first-child-mra
     iinside-p3
   '>$li</ul>
   $hamburgers
   <ul class='
-    hamburger-nav-list phone iinside-p2 absolute
+    hamburger-nav-list
+    phone dont-be-like-list iinside-p2 absolute
   '>$li</ul>
 </nav>
 EOHTML;

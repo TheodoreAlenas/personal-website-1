@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+.bar-center {
+  width: min(150rem, 100%);
+  margin: 0 auto;
+}
+
 .ovf-hid { overflow: hidden; }
 
 .lrline {

@@ -2,45 +2,10 @@
 .debug-mode .menu-bar span {
   border: red 1px dashed;
 }
-.debug-mode .menu-bar .menu-bar-title,
-.menu-bar .menu-bar-title {
-  line-height: initial;
-  border-top: initial;
-  border-bottom: initial;
-
-  font-size: 2rem;
-  line-height: 2rem;
-}
-
-.menu-bar {
-  line-height: initial;
-  width: min(150rem, 100%);
-}
-
 .menu-bar, .hamburger-nav-list {
   background-color: var(--panel-normal, #eee);
   background-color: var(--panel-normal, #eee);
   box-shadow: var(--shadow, #ccc) 0 0 1rem 0;
-}
-
-.menu-bar .desktop-nav-list,
-.menu-bar .hamburger-nav-list {
-  padding-left: 0;
-  list-style: none;
-  margin: 0 0;
-}
-
-.menu-bar .desktop-nav-list > li:first-child {
-  margin-right: auto;
-}
-
-.menu-bar .desktop-nav-list > li {
-  display: inline-block;
-}
-
-.menu-bar > nav > .desktop-nav-list > li:first-child > * {
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
 .menu-bar .hamburger-label {
