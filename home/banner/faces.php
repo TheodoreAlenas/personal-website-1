@@ -3,22 +3,17 @@
 function get_banner_faces() {
   return
     '<div class="banner-faces">' .
-    wrap_all([
-      "aye",
-      "hmm",
-      "what",
-      "nice",
-      "why",
-      "long",
-      "oof",
-      "ooh",
-      "pat",
-      "bee",
-      "pyramid",
-      "italiano",
-      "diploma",
-      "you",
-    ]) .
+    <<<EOHTML
+
+<img
+  src="../images/littles/stripe-with-all.png"
+  style="background-image: url(
+    '../images/littles/stripe-with-all-8-times-shorter.png'
+    );"
+  alt="varied facial expressions"
+>
+
+EOHTML .
     '</div>';
 }
 
