@@ -8,7 +8,22 @@
   border-left: var(--line, #eee) 1px solid;
 }
 
+.pad-no-ln-h > * {
+  line-height: 1em;
+  padding-top: 5px;
+}
+
 .m0a { margin: 0 auto; }
+@media screen and (max-width: 1200px) {
+  .free-media-query .phone-m0a { margin: 0 auto; }
+}
+.phone-screen .phone-m0a { margin: 0 auto; }
+.w-h-max-cont {
+  width: max-content;
+  height: max-content;
+}
+
+.m0 { margin: 0; }
 
 .p2 { padding: 1rem; }
 .pl2 { padding-left: 1rem; }
@@ -20,11 +35,15 @@
 .ptb1 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
 .mtb1 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
 
+.mtb-like-p { margin-top: 1em; margin-bottom: 1em; }
+
 .ptb2 { padding-top: 1rem; padding-bottom: 1rem; }
 .mtb2 { margin-top: 1rem; margin-bottom: 1rem; }
 
 .p3, .inside-p3 > * { padding: 2rem 2rem; }
 .m3, .inside-m3 > * { margin: 2rem 2rem; }
+
+.ovf-hid { overflow: hidden; }
 
 .inside-last-child-fat > *:last-child > * { padding-right: 4rem; }
 .inside-last-child-ffat > *:last-child > * {

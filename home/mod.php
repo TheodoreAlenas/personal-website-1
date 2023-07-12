@@ -30,10 +30,10 @@ function get_home_html(string $language) {
     "<header class='free-media-query sticky'>" .
     $menu_bar .
     "</header>" .
-    "<div class='banner-wrapper'>" .
+    "<div class='banner-wrapper free-media-query'>" .
     $banner .
     "</div>" .
-    "<div class='newspaper lrline p2'>" .
+    "<div class='newspaper lrline p2 free-media-query'>" .
     $story .
     "</div>" .
     get_bottom_of_file();

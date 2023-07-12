@@ -27,8 +27,7 @@ function get_story_en() {
     "<h2>" . get_story_maturity_title_en() . "</h2>" .
     get_story_card_maturity(get_story_maturity_en()) .
     "<h2>" . get_story_learning_title_en() . "</h2>" .
-    "<img src='../images/prompt-display.png'>" .
-    get_story_learning_en() .
+    get_story_card_learning(get_story_learning_en()) .
     "<h2>" . get_story_people_title_en() . "</h2>" .
     get_story_people_1_en() .
     get_story_people_2_en();
@@ -51,11 +50,23 @@ function get_story_gr() {
 function get_story_card_maturity(string $story_itself) {
   $html_styled_tmux = get_file_contents(__DIR__ . "/c-tdd-long-thin.html");
   return <<<EOHTML
-<div class='grid-cols-aa gap-2'>
+<div class='grid grid-col-to-row gap-2'>
+  <div class='phone-scroll-x'>
   <pre
-    class='brown round pad-no-ln-h'
-    style='height: max-content'
+    class='brown round mtb-like-p pad-no-ln-h w-h-max-cont phone-m0a'
   >$html_styled_tmux</pre>
+  </div>
+  <div>
+    $story_itself
+  </div>
+</div>
+EOHTML;
+}
+
+function get_story_card_learning(string $story_itself) {
+  return <<<EOHTML
+<div class='grid grid-col-to-row gap-2'>
+  <img class='round mtb-like-p' src='../images/prompt-display.png'>
   <div>
     $story_itself
   </div>
