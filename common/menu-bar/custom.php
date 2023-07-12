@@ -35,7 +35,7 @@ function get_hamburger_checkbox_pair() {
     "<input" .
     " id='hamburger-checkbox-$hamburger_hash'" .
     " type='checkbox'" .
-    " class='hamburger-checkbox phone'" .
+    " class='hamburger-checkbox phone fat-ghost-on-check'" .
     "/>" .
     "<label" .
     " for='hamburger-checkbox-$hamburger_hash'" .
