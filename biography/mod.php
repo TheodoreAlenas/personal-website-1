@@ -13,12 +13,11 @@ function get_biography_html(string $language) {
 
   [$menu_bar, $menu_bar_css] = get_menu_bar_and_css(
     "biography", $language);
-  [$content, $content_css] = get_content_and_css($language);
+  $content = get_bio_content($language);
 
   $css_to_include = array_merge(
     $basic_css,
     $menu_bar_css,
-    $content_css,
     get_common_css_files()
   );
 
