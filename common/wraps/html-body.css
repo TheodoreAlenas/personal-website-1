@@ -10,7 +10,24 @@ body {
 
 h2 {
   margin-bottom: 4rem;
-  margin-top: 12rem;
   text-align: center;
+}
+
+.phone-screen { font-size: 1.2rem; }
+.phone-screen h2 { padding-top: 4rem; }
+@media screen and (max-width: 1200px) {
+  .free-media-query { font-size: 1.2rem; }
+  .free-media-query h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+.desktop-screen { font-size: 1.5rem; }
+@media screen and (min-width: 1200px) {
+  .free-media-query { font-size: 1.5rem; }
+  .free-media-query h2 {
+    margin-top: 12rem;
+    margin-bottom: 4rem;
+  }
 }
 

@@ -75,7 +75,7 @@ function get_story_card_learning(
   </div>
   <div class='phone-scroll-x'>
     <img
-      class='round mtb-like-p phone-m0a'
+      class='round mtb-like-p phone-m0a block'
       src='../images/prompt-display.png'
     >
   </div>
