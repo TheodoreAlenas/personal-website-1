@@ -9,6 +9,7 @@ function get_common_css_files() {
 
 function get_css_snippet_files() {
   return [
+    "common/css-snippets/morph.css",
     "common/css-snippets/popup.css",
     "common/css-snippets/fade.css",
     "common/css-snippets/margin-padding.css",
