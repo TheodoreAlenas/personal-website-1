@@ -1,13 +1,3 @@
-.newspaper {
-  width: min(100% - 2rem - 2px, 35cm);
-  margin: 0 auto;
-}
-
-.lrline {
-  border-right: var(--line, #eee) 1px solid;
-  border-left: var(--line, #eee) 1px solid;
-}
-
 .pad-no-ln-h > * {
   line-height: 1em;
   padding-top: 5px;
@@ -18,10 +8,6 @@
   .free-media-query .phone-m0a { margin: 0 auto; }
 }
 .phone-screen .phone-m0a { margin: 0 auto; }
-.w-h-max-cont {
-  width: max-content;
-  height: max-content;
-}
 
 .m0 { margin: 0; }
 
@@ -43,13 +29,7 @@
 .p3, .inside-p3 > * { padding: 2rem 2rem; }
 .m3, .inside-m3 > * { margin: 2rem 2rem; }
 
-.ovf-hid { overflow: hidden; }
-
 .inside-last-child-fat > *:last-child > * { padding-right: 4rem; }
-.inside-last-child-ffat > *:last-child > * {
-  padding-right: 4rem;
-  padding-left: 4rem;
-}
 .inside-first-child-fat > *:first-child > * { padding-left: 4rem; }
 .inside-first-child-ffat > *:first-child > * {
   padding-left: 4rem;

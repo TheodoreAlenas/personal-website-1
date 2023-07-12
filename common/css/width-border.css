@@ -1,0 +1,17 @@
+.newspaper {
+  width: min(100% - 2rem - 2px, 35cm);
+  margin: 0 auto;
+}
+
+.ovf-hid { overflow: hidden; }
+
+.lrline {
+  border-right: var(--line, #eee) 1px solid;
+  border-left: var(--line, #eee) 1px solid;
+}
+
+.w-h-max-cont {
+  width: max-content;
+  height: max-content;
+}
+

@@ -33,7 +33,7 @@ function get_home_html(string $language) {
     "<div class='banner-wrapper free-media-query'>" .
     $banner .
     "</div>" .
-    "<div class='newspaper lrline p2 free-media-query'>" .
+    "<div class='newspaper lrline p2 ovf-hid free-media-query'>" .
     $story .
     "</div>" .
     get_bottom_of_file();
