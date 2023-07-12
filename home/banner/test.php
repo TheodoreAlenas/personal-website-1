@@ -1,6 +1,6 @@
 <?php
 
-include_once("common/test/util.php");
+include_once("common/testing/util.php");
 include_once("home/banner/mod.php");
 
 echo wrap_for_test("banner", "get_banner_test_subject");
@@ -13,7 +13,7 @@ function get_banner_test_subject() {
   return [
     wrap_in_asymmetric_grid($en_wrapped) .
     wrap_in_asymmetric_grid($gr_wrapped),
-    array_merge($banner_css, ["common/wraps/centering.css"])
+    array_merge($banner_css, [])
   ];
 }
 

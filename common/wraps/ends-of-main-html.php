@@ -20,7 +20,7 @@ EOHTML . get_all_file_contents($css_files) . <<<EOHTML
     </style>
     <script>
 
-EOHTML . get_all_file_contents(["common/wraps/theme.js"]) . <<<EOHTML
+EOHTML . get_all_file_contents(["common/light-dark-theme/functions.js"]) . <<<EOHTML
 
     </script>
 

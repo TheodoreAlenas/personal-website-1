@@ -1,15 +1,14 @@
 <?php
 
 include_once("common/wraps/ends-of-main-html.php");
+include_once("common/wraps/gather-css.php");
 include_once("common/menu-bar/mod.php");
-include_once("common/css/mod.php");
 include_once("biography/content.php");
 
 function get_biography_html(string $language) {
 
   $basic_css = [
     "common/wraps/html-body.css",
-    "common/wraps/centering.css",
   ];
 
   [$menu_bar, $menu_bar_css] = get_menu_bar_and_css(
@@ -20,7 +19,7 @@ function get_biography_html(string $language) {
     $basic_css,
     $menu_bar_css,
     $content_css,
-    get_css_files()
+    get_common_css_files()
   );
 
   return
