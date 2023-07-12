@@ -9,3 +9,12 @@
   .free-media-query .phone { display: none; }
 }
 
+.phone-screen { font-size: 1.2rem; }
+@media screen and (min-width: 1200px) {
+  .free-media-query { font-size: 1.2rem; }
+}
+.desktop-screen { font-size: 1.5rem; }
+@media screen and (min-width: 1200px) {
+  .free-media-query { font-size: 1.5rem; }
+}
+

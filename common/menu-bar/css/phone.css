@@ -23,9 +23,8 @@
 
 .hamburger-label {
   position: absolute;
-  top: 6px;
+  top: 8px;
   right: 1rem;
-  border: #777 2px solid;
   border-radius: 5px;
 }
 
