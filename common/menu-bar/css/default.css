@@ -11,10 +11,6 @@
   font-size: 2rem;
   line-height: 2rem;
 }
-.debug-mode .menu-bar .desktop-nav-list .im-here,
-.menu-bar .desktop-nav-list .im-here {
-  background-color: var(--selection, #444);
-}
 
 .menu-bar {
   line-height: initial;

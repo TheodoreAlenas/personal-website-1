@@ -1,3 +1,7 @@
+.bg-select, .debug-mode .bg-select {
+  background-color: var(--selection, #444);
+}
+
 .fat-ghost-on-check:checked + label::before {
   content: "";
   width: 100vw;
