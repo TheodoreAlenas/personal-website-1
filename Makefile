@@ -25,7 +25,7 @@ target/test/menu-bar.html: common/menu-bar/test.php target/menu-bar.css $(wildca
 	php $< > $@
 
 target/images: images
-	find images -type d -exec mkdir -v target/{} \; -o -type f -exec ln -v {} target/{} \;
+	find images -type d -exec mkdir -pv target/{} \; -o -type f -exec ln -vf {} target/{} \;
 
 target/menu-bar.css: common/menu-bar/css/include-to-get-media-queries.php $(wildcard common/menu-bar/css/*)
 	php $< > $@

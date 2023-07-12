@@ -11,11 +11,19 @@
   border-top: transparent 1rem solid;
   border-bottom: transparent 1rem solid;
 }
+.round { border-radius: 5px; }
 
 .flex-row-spbet {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.grid-cols-aa {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.gap-2 {
+  gap: 3rem;
 }
 .inl-bl { display: inline-block; }
 .block , .inside-block > * { display: block; }
@@ -25,5 +33,8 @@
 .relative { position: relative; }
 .absolute { position: absolute; }
 
-.line-h-1em { line-height: 1em; }
+.pad-no-ln-h > * {
+  line-height: 1em;
+  padding-top: 5px;
+}
 

@@ -10,6 +10,8 @@
   --code-font: #222;
   --code-background: #101928;
   --code-font: #aaa;
+
+  --code-background-gray: #181410;
 }
 .dark-themed {
   --panel-normal: #404045;
@@ -17,6 +19,17 @@
 
   --code-background: #223;
   --code-font: #aaa;
+
+  --code-background-gray: #262630;
+}
+
+.brown {
+  background-color: var(--code-background-gray, #181410);
+  color: var(--code-font, #aaa);
+}
+.blue {
+  background-color: var(--code-background, #101928);
+  color: var(--code-font, #aaa);
 }
 
 .light-themed {
