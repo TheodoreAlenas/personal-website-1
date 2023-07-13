@@ -14,7 +14,6 @@ function get_story_maturity_en() {
 I've written programs that I use
 and therefore I develop a sense of care
 towards the bugs I cause.
-It feels different.
 </p>
 <p>
 I appreciate
@@ -39,8 +38,8 @@ function get_story_maturity_gr() {
 
 <p>
 Παράγω προγράμματα που χρησιμοποιώ,
-και έτσι ασκούμαι στην άμεση έγνοια για τα
-σφάλματά μου. Έμμεση έγνοια θα ήταν η κατάκριση.
+και έτσι έχω αναπτύξει μια άμεση έγνοια
+για τα σφάλματα στον κώδικα.
 </p>
 <p>
 Εκτιμώ τα

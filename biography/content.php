@@ -7,14 +7,18 @@ function get_bio_content(string $language) {
       get_bio_uni_gr() .
       get_bio_team_projects_gr() .
       get_bio_internship_gr() .
-      the_rest();
+      get_bio_piano_gr() .
+      get_bio_drawing_gr() .
+      '';
   }
   return
     get_bio_school_en() .
     get_bio_uni_en() .
     get_bio_team_projects_en() .
     get_bio_internship_en() .
-    the_rest();
+    get_bio_piano_en() .
+    get_bio_drawing_en() .
+    '';
 }
 
 
@@ -148,17 +152,12 @@ function get_bio_internship_en() {
 The only <b>internship</b> I've had so far,
 as of summer of 2023,
 was a little guidance to learn web development.
+I didn't learn much because I didn't have the foundations
+plus they didn't have a lot of time.
 The company is called <a href=https://helvia.io>Helvia</a> and
 it focuses on chatbots.
 It was informal, and it happened because
 my family had connections with them.
-I was told to find ways to make a minimal web server,
-and I was given a task to make a little
-chatbot that my uncle needed,
-including paper prototyping.
-I never finished the chatbot unfortunately,
-and they couldn't afford more time after that
-so we kept some distance.
 </p>
 
 EOHTML;
@@ -172,42 +171,51 @@ function get_bio_internship_gr() {
 μέχρι στιγμής, το καλοκαίρι του 2023,
 είναι λίγη καθοδήγηση από μία εταιρεία
 ώστε να μάθω βασικές έννοιες του web development.
+Δεν έμαθα πολλά γιατί δεν είχα εμπειρία
+και δεν είχαν χρόνο οι ίδιοι.
 Η εταιρεία ονομάζεται <a href=https://helvia.io>Helvia</a> και
 εστιάζει στα chatbots.
 Η άσκηση ήταν ανεπίσημη, συνεργαστήκαμε
 επειδή υπήρχαν οικογενειακές συνδέσεις.
-Βρήκα πηγές που να μου δείξουν
-πώς να φτιάξω ένα μικρό web server,
-και ήταν να φτιάξω ένα μικρό chatbot
-για το θείο μου ξενικώντας από paper prototypes.
-Δεν ολοκληρώθηκε το chatbot δυστυχώς,
-και η εταιρεία ήταν πολύ απασχολημένη
-οπότε σε γενικές γραμμές αποστασιοποιηθήκαμε.
 </p>
 
 EOHTML;
 }
 
-function the_rest() {
+function get_bio_piano_en() {
   return <<<EOHTML
 
 <p>
-----------------------------------------------<br>
-I would also like to mention,
 I played the <b>piano</b> for about 6 years in total,
-split with an about 3 year gap in between.
-The last year I started to play so well that
-it could sound pleasant,
-and on the Greek scale I got to
-the 7th out of the 9 levels.
-Then I quit, because I asked myself why am I doing this
-and I couldn't answer.
-This is expected to happen again.
+split with an about 3 year gap in between not counting the 6.
+In Greece there are 9 levels,
+divided into 3 groups of 3,
+and I reached the 7th out of the 9.
+Then I quit, when I realized that I wasn't playing
+with a solid purpose.
 </p>
+
+EOHTML;
+}
+function get_bio_piano_gr() {
+  return <<<EOHTML
+<p>
+Ασχολήθηκα με το πιάνο για 6 χρόνια περίπου,
+με ένα κενό στο ενδιάμεσο που διήρκεσε 3 χρόνια επιπλέον.
+Έφτασα στο επίπεδο πρώτης ανωτέρας και το διέκοψα
+γιατί αποφάσισα ότι δεν έπαιζα με αρκετό νόημα.
+</p>
+EOHTML;
+}
+
+function get_bio_drawing_en() {
+  return <<<EOHTML
+
 <p>
 I did papercrafts from a very young age
 and in my 20s I took drawing seriously.
-I got to the 5th lesson of <b>Draw A Box</b>,
+I got to the 5th lesson of
+<a href=https://drawabox.com>Draw A Box</a>,
 a series of written lessons
 commonly viewed as notorious,
 associated with an online group of practitioners
@@ -221,6 +229,32 @@ I sketched places I've been to and
 there was always purpose that drove the drawing.
 I quit drawing after the Inking October because
 I overdid it and missed multiple school projects.
+</p>
+
+EOHTML;
+}
+
+function get_bio_drawing_gr() {
+  return <<<EOHTML
+
+<p>
+Ασχολούμουν με χαρτοκατασκευές από μικρή ηλικία
+και στην ηλικία των 20 απέκτησα πάθος με τη ζωγραφική.
+Έφτασα μέχρι το 5ο μάθημα της σειράς
+<a href=https://drawabox.com>Draw A Box</a>,
+μια επίπονη σειρά μαθημάτων
+που συνοδεύεται από μία σειρά βίντεο και
+μία διαδικτυακή κοινότητα από ακόλουθους.
+Η ζωγραφική με δίδαξε να σέβομαι
+επαγγελματίες ηλικίας, καθώς και την οργανωμένη,
+υπομονετική δουλειά.
+Με εξοικείωσε με την έννοια του ζεστάματος
+και των ασκήσεων, του πειραματισμού και της
+προτοτυποποίησης.
+Σε διάστημα 2 χρόνων σχεδίασα ένα σύνολο
+από μικρές ιστορίες και τοπία,
+και σταμάτησα επειδή από κακή οργάνωση
+απορροφήθηκα και έχασα σχολικές εργασίες.
 </p>
 
 EOHTML;

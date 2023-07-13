@@ -3,7 +3,7 @@
 function get_welcome(String $language) {
   if ($language == "gr")
     return "Θοδωρής<br>Δημακόπουλος";
-  return "Good evening!<br>My name is Theodore.";
+  return "Nice to see you!<br>My name is Theodore.";
 }
 
 function get_banner_welcome_face(String $language) {

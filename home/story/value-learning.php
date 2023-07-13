@@ -25,7 +25,9 @@ are stored in a binary tree of directories
 that contain some empty files defining tags.
 I make sure I gain about twice the abilities
 required for any given task.
-</p>
+Some of this is on my
+<a href=https://www.youtube.com/channel/UCk-LNNSuhxvzXTdbiogd0Kg>
+YouTube channel</a>.
 
 EOHTML;
 }
@@ -45,6 +47,9 @@ function get_story_learning_1_gr() {
 αντιστοιχηθούν σε tags.
 Έχω την τάση να μαθαίνω περίπου τα διπλάσια
 από τα απαραίτητα ανά έργο.
+Ορισμένα από τα παραπάνω φαίνονται και στο
+<a href=https://www.youtube.com/channel/UCk-LNNSuhxvzXTdbiogd0Kg>
+YouTube κανάλι μου</a>.
 </p>
 
 EOHTML;
@@ -54,11 +59,11 @@ function get_story_learning_2_en() {
 
 <p>
 These are hard times to learn because
-nobody knows how to code.
-People either haven't grown yet,
+people either haven't improved a lot yet,
 or they grew surrounded by juniors.
-I compare it to the experience
-of learning how to draw.
+It's a sad phenomenon,
+especially when one compares it to
+people learning to draw.
 </p>
 
 EOHTML;
@@ -71,7 +76,8 @@ function get_story_learning_2_gr() {
 Είναι δύσκολοι καιροί για μάθηση
 επειδή οι έμπειροι είναι λίγοι.
 Οι περισσότεροι προγραμματιστές είναι αρχάριοι,
-ή προόδευσαν μεταξύ αρχαρίων,
+ή προόδευσαν μεταξύ αρχαρίων.
+Είναι ένα λυπηρό φαινόμενο,
 αν συγκρίνει κανείς τον προγραμματισμό με τη ζωγραφική.
 </p>
 
