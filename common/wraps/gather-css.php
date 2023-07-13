@@ -1,10 +1,14 @@
 <?php
 
-function get_common_css_files() {
+function get_high_priority_common_css_files() {
   return array_merge(
     get_css_snippet_files(),
     get_css_theme_files(),
   );
+}
+
+function get_low_priority_common_css_files() {
+  return ["common/wraps/html-body.css"];
 }
 
 function get_css_snippet_files() {

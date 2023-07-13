@@ -59,10 +59,10 @@ function get_menu_bar_and_typical_css($page_id, $language, $extra_css) {
     $page_id, $language);
 
   $css_to_include = array_merge(
-    ["common/wraps/html-body.css"],
+    get_low_priority_common_css_files(),
     $menu_bar_css,
     $extra_css,
-    get_common_css_files(),
+    get_high_priority_common_css_files(),
   );
 
   return [$menu_bar, $css_to_include];

@@ -47,13 +47,11 @@ function wrap_for_test(string $name, callable $get_test_component_and_css) {
   echo get_top_of_file(
     "Theodore - Test $name",
     array_merge(
-      [
-        "common/wraps/html-body.css",
-        "common/testing/layout.css",
-      ],
+      get_low_priority_common_css_files(),
+      ["common/testing/layout.css"],
       $subject_css,
       $menu_css,
-      get_common_css_files()
+      get_high_priority_common_css_files()
     ));
   echo "<header class='free-media-query'>";
   echo $menu;
