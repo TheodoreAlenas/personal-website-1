@@ -186,11 +186,9 @@ function get_bio_piano_en() {
   return <<<EOHTML
 
 <p>
-I played the <b>piano</b> for about 6 years in total,
-split with an about 3 year gap in between not counting the 6.
-In Greece there are 9 levels,
-divided into 3 groups of 3,
-and I reached the 7th out of the 9.
+I played the <b>piano</b>
+to the 7th out of the 9 levels,
+the way it's measured in Greece.
 Then I quit, when I realized that I wasn't playing
 with a solid purpose.
 </p>
@@ -199,12 +197,13 @@ EOHTML;
 }
 function get_bio_piano_gr() {
   return <<<EOHTML
+
 <p>
-Ασχολήθηκα με το πιάνο για 6 χρόνια περίπου,
-με ένα κενό στο ενδιάμεσο που διήρκεσε 3 χρόνια επιπλέον.
-Έφτασα στο επίπεδο πρώτης ανωτέρας και το διέκοψα
-γιατί αποφάσισα ότι δεν έπαιζα με αρκετό νόημα.
+Έφτασα στο επίπεδο πρώτης ανωτέρας στο πιάνο
+και το διέκοψα γιατί ανακάλυψα ότι δεν έπαιζα με
+καθαρό σκοπό.
 </p>
+
 EOHTML;
 }
 
@@ -220,14 +219,12 @@ a series of written lessons
 commonly viewed as notorious,
 associated with an online group of practitioners
 and a series of videos.
-Drawing taught me to respect elderly professionals.
-I also learned to value
-experimentation, warming up, exercising with purpose
-and thinking slowly.
+Drawing taught me to respect elderly professionals
+and discipline.
 Over 2 years I drew a series of short comics and
 I sketched places I've been to and
 there was always purpose that drove the drawing.
-I quit drawing after the Inking October because
+I quit after the Inking October because
 I overdid it and missed multiple school projects.
 </p>
 
@@ -239,18 +236,15 @@ function get_bio_drawing_gr() {
 
 <p>
 Ασχολούμουν με χαρτοκατασκευές από μικρή ηλικία
-και στην ηλικία των 20 απέκτησα πάθος με τη ζωγραφική.
+και στα 20 απέκτησα πάθος με τη ζωγραφική.
 Έφτασα μέχρι το 5ο μάθημα της σειράς
 <a href=https://drawabox.com>Draw A Box</a>,
 μια επίπονη σειρά μαθημάτων
 που συνοδεύεται από μία σειρά βίντεο και
 μία διαδικτυακή κοινότητα από ακόλουθους.
 Η ζωγραφική με δίδαξε να σέβομαι
-επαγγελματίες ηλικίας, καθώς και την οργανωμένη,
-υπομονετική δουλειά.
-Με εξοικείωσε με την έννοια του ζεστάματος
-και των ασκήσεων, του πειραματισμού και της
-προτοτυποποίησης.
+επαγγελματίες προχωρημένης ηλικίας,
+καθώς και την οργανωμένη, υπομονετική δουλειά.
 Σε διάστημα 2 χρόνων σχεδίασα ένα σύνολο
 από μικρές ιστορίες και τοπία,
 και σταμάτησα επειδή από κακή οργάνωση
