@@ -19,6 +19,10 @@ function get_maybe_im_here_link(
   return get_a_tag($which, $language);
 }
 
+function get_link_name(string $which, string $language) {
+  return get_link_name_and_url($which, $language)[0];
+}
+
 function get_link_url(string $which, string $language) {
   return get_link_name_and_url($which, $language)[1];
 }

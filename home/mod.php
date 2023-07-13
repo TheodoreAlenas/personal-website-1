@@ -11,7 +11,7 @@ function get_home_html(string $language) {
 
   return get_typical_layout(
     $language,
-    "Theodore - Home",
+    "home",
     array_merge($banner_css, $story_css),
 
     "<div class='banner-wrapper free-media-query'>" .

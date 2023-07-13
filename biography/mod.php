@@ -7,7 +7,7 @@ function get_biography_html(string $language) {
 
   return get_typical_layout(
     $language,
-    "Theodore - Biography",
+    "biography",
     [],
     "",
     get_bio_content($language)
