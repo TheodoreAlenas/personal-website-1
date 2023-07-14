@@ -16,7 +16,7 @@ function get_menu_bar_for_test_navigation_and_css(string $title) {
 function get_menu_bar(string $where_am_i, string $language) {
 
   return get_custom_menu_bar(
-    get_link_name_and_url("home", $language)[0],
+    get_link_name($where_am_i, $language),
     array_merge([
       get_maybe_im_here_link("home", $where_am_i, $language),
       get_menu_bar_theme_button($language),
