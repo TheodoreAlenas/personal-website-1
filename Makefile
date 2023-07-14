@@ -29,12 +29,13 @@ target/test/menu-bar.html: common/menu-bar/test.php target/menu-bar.css $(wildca
 	php $< > $@
 
 target/images: images
-	find images -type d -exec mkdir -pv target/{} \; -o -type f -exec ln -vf {} target/{} \;
+	mkdir -p $@
+	find images -maxdepth 1 -type f -exec ln -vf {} target/{} \;
 	ln -vf images/favicon.ico target/favicon.ico
 
 target/menu-bar.css: $(wildcard common/menu-bar/css/*)
 	php $< > $@
 
-target/banner.css: $(wildcard home/banner/css/*)
+target/banner.css: home/banner/css/include-to-get-media-queries.php $(wildcard home/banner/css/*)
 	php $< > $@
 
