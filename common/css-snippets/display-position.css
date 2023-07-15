@@ -1,16 +1,3 @@
-.ln-h-1em {
-  line-height: 1em;
-}
-
-@media screen and (max-width: 1200px) {
-  .free-media-query .phone-txt-cent {
-    text-align: center;
-  }
-}
-.phone-screen .phone-txt-cent {
-  text-align: center;
-}
-
 .round { border-radius: 5px; }
 
 .flex-row-spbet {

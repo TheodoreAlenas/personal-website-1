@@ -9,7 +9,7 @@
 }
 .phone-screen .phone-m0a { margin: 0 auto; }
 
-.m3a { margin: 3rem auto; }
+.mlra { margin-left: auto; margin-right: auto; }
 
 .m0 { margin: 0; }
 
@@ -32,12 +32,32 @@
 .m3, .inside-m3 > *, .iinside-m3 > * > * { margin: 3rem 2rem; }
 
 @media screen and (max-width: 1200px) {
-  .free-media-query .phone-iinside-m3 > * > * {
-    margin: 3rem 2rem;
+  .free-media-query .phone-iinside-mtb3 > * > * {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }
-.phone-screen .phone-iinside-m3 > * > * {
-  margin: 3rem 2rem;
+.phone-screen .phone-iinside-mtb3 > * > * {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .free-media-query .desktop-iinside-p2 > * > * { padding: 1rem 1rem; }
+  .free-media-query .desktop-iinside-p3 > * > * { padding: 3rem 2rem; }
+}
+.desktop-screen .desktop-iinside-p2 > * > * { padding: 1rem 1rem; }
+.desktop-screen .desktop-iinside-p3 > * > * { padding: 3rem 2rem; }
+
+@media screen and (min-width: 1200px) {
+  .free-media-query .desktop-mtb4 {
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+  }
+}
+.desktop-screen .desktop-mtb4 {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 
 .iinside-last-child-fat > *:last-child > * { padding-right: 4rem; }

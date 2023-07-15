@@ -5,10 +5,6 @@
   background-color: inherit;
   border: none;
 }
-.smol, .dont-be-like-button.smol {
-  font-size: 75%;
-  line-height: 2em;
-}
 
 .dont-be-like-list {
   padding-left: 0;

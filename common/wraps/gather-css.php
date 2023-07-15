@@ -19,6 +19,7 @@ function get_css_snippet_files() {
     "common/css-snippets/margin-padding.css",
     "common/css-snippets/width-border.css",
     "common/css-snippets/display-position.css",
+    "common/css-snippets/text.css",
   ];
 }
 

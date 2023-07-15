@@ -18,18 +18,33 @@ function get_contact(string $language) {
 function get_contact_en() {
   return <<<EOHTML
 
-<table class='phone-dont-be-like-table phone-iinside-m3 phone-txt-cent'>
-<tbody>
-<tr> <td>e-mail</td> <td>dimakopt732@gmail.com</td> </tr>
-<tr> <td>phone</td> <td>+30 693 975 1642</td> </tr>
-<tr> <td>school's ID</td> <td>1115 2019 00048<br>UoA/ΕΚΠΑ</td> </tr>
+<table class='
+mlra desktop-mtb4
+phone-dont-be-like-table phone-iinside-mtb3 phone-txt-cent
+'>
+<tbody class='desktop-iinside-p2'>
+<tr> <td>e-mail</td> <td class=ffat>dimakop<b>t</b>732@gmail.com</td> </tr>
+<tr> <td>phone</td> <td class=ffat>+30 693 975 1642</td> </tr>
+<tr> <td>school's ID</td> <td class=ffat>1115 2019 00048<br>UoA/ΕΚΠΑ</td> </tr>
 </tbody>
 </table>
 
-<table class='phone-dont-be-like-table'>
-<th>More about me</th>
-<tr> <td>GitHub</td> <td>TheodoreAlenas</td> </tr>
-<tr> <td>YouTube</td> <td>Theodore Alenas</td> </tr>
+<h2>More about me</h2>
+
+<table class='mlra'>
+<tbody class='iinside-p2'>
+<tr><td>YouTube</td><td>
+  <a href=https://www.youtube.com/channel/UCk-LNNSuhxvzXTdbiogd0Kg>
+    Theodore Alenas
+  </a>
+</td></tr>
+
+<tr><td>GitHub</td><td>
+  <a href=https://github.com/TheodoreAlenas>
+    TheodoreAlenas
+  </a>
+</td></tr>
+</tbody>
 </table>
 
 EOHTML;
