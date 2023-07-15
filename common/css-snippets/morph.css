@@ -12,6 +12,12 @@
   margin: 0 0;
 }
 
+.dont-be-like-table,
+.dont-be-like-table > tbody,
+.dont-be-like-table > tbody > tr,
+.dont-be-like-table > tbody > tr > td {
+  display: block;
+}
 @media screen and (max-width: 1200px) {
   .free-media-query .phone-dont-be-like-table,
   .free-media-query .phone-dont-be-like-table > tbody,

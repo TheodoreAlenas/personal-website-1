@@ -13,6 +13,8 @@
 
 .m0 { margin: 0; }
 
+.p1, .inside-p1 > *, .iinside-p1 > * > * { padding: 0.5rem 0.5rem; }
+
 .p2, .inside-p2 > *, .iinside-p2 > * > * { padding: 1rem 1rem; }
 .pl2 { padding-left: 1rem; }
 .ml2 { margin-left: 1rem; }
@@ -31,12 +33,17 @@
 .p3, .inside-p3 > *, .iinside-p3 > * > * { padding: 3rem 2rem; }
 .m3, .inside-m3 > *, .iinside-m3 > * > * { margin: 3rem 2rem; }
 
+.iinside-mtb3 > * > * { margin-top: 3rem; margin-bottom: 3rem; }
 @media screen and (max-width: 1200px) {
+  .free-media-query .phone-mtb3,
+  .free-media-query .phone-inside-mtb3 > *,
   .free-media-query .phone-iinside-mtb3 > * > * {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
 }
+.phone-screen .phone-mtb3,
+.phone-screen .phone-inside-mtb3 > *,
 .phone-screen .phone-iinside-mtb3 > * > * {
   margin-top: 3rem;
   margin-bottom: 3rem;

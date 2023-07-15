@@ -2,14 +2,11 @@
   line-height: 1em;
 }
 
+.txt-cent { text-align: center; }
 @media screen and (max-width: 1200px) {
-  .free-media-query .phone-txt-cent {
-    text-align: center;
-  }
+  .free-media-query .phone-txt-cent { text-align: center; }
 }
-.phone-screen .phone-txt-cent {
-  text-align: center;
-}
+.phone-screen .phone-txt-cent { text-align: center; }
 
 .smol, .dont-be-like-button.smol {
   font-size: 75%;

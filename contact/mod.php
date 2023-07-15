@@ -16,23 +16,31 @@ function get_contact(string $language) {
 }
 
 function get_contact_en() {
+  return get_contact_with_text(get_contact_text_en());
+}
+function get_contact_gr() {
+  return get_contact_with_text(get_contact_text_gr());
+}
+
+function get_contact_with_text($fields) {
+  
   return <<<EOHTML
 
 <table class='
 mlra desktop-mtb4
-phone-dont-be-like-table phone-iinside-mtb3 phone-txt-cent
+dont-be-like-table iinside-mtb3 txt-cent
 '>
-<tbody class='desktop-iinside-p2'>
-<tr> <td>e-mail</td> <td class=ffat>dimakop<b>t</b>732@gmail.com</td> </tr>
-<tr> <td>phone</td> <td class=ffat>+30 693 975 1642</td> </tr>
-<tr> <td>school's ID</td> <td class=ffat>1115 2019 00048<br>UoA/ΕΚΠΑ</td> </tr>
+<tbody>
+<tr> <td>$fields[0]</td> <td class=ffat>dimakop<b>t</b>732@gmail.com</td> </tr>
+<tr> <td>$fields[1]</td> <td class=ffat>$fields[2]</td> </tr>
+<tr> <td>$fields[3]</td> <td class=ffat>$fields[4]<br>$fields[5]</td> </tr>
 </tbody>
 </table>
 
-<h2>More about me</h2>
+<h2 style='margin: initial;'>$fields[6]</h2>
 
 <table class='mlra'>
-<tbody class='iinside-p2'>
+<tbody class='iinside-p1'>
 <tr><td>YouTube</td><td>
   <a href=https://www.youtube.com/channel/UCk-LNNSuhxvzXTdbiogd0Kg>
     Theodore Alenas
@@ -50,8 +58,22 @@ phone-dont-be-like-table phone-iinside-mtb3 phone-txt-cent
 EOHTML;
 }
 
-function get_contact_gr() {
-  return get_contact_en();
+function get_contact_text_en() {
+  return [
+    'e-mail',
+    'phone (Greece)', '+30 693 975 1642',
+    "school's ID", '1115 2019 00048', 'UoA/ΕΚΠΑ',
+    'Links',
+  ];
+}
+
+function get_contact_text_gr() {
+  return [
+    'E-mail',
+    'Τηλέφωνο', '(+30) 693 975 1642',
+    "Φοιτητικός Α.Μ.", '1115 2019 00048', 'UoA/ΕΚΠΑ',
+    'Σύνδεσμοι',
+  ];
 }
 
 ?>
