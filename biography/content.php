@@ -3,6 +3,7 @@
 function get_bio_content(string $language) {
   if ($language == "gr") {
     return
+      "<h2>Σιχαίνομαι τα βιογραφικά</h2>" .
       get_bio_school_gr() .
       get_bio_uni_gr() .
       get_bio_team_projects_gr() .
@@ -12,6 +13,7 @@ function get_bio_content(string $language) {
       '';
   }
   return
+    "<h2>I hate biographies</h2>" .
     get_bio_school_en() .
     get_bio_uni_en() .
     get_bio_team_projects_en() .

@@ -31,3 +31,6 @@ h2 {
   }
 }
 
+h2.saner-h2 {
+  margin: initial;
+}

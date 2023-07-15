@@ -27,6 +27,8 @@ function get_contact_with_text($fields) {
   
   return <<<EOHTML
 
+<h2 class='txt-cent saner-h2'>$fields[6]</h2>
+
 <table class='
 mlra desktop-mtb4
 dont-be-like-table iinside-mtb3 txt-cent
@@ -38,7 +40,7 @@ dont-be-like-table iinside-mtb3 txt-cent
 </tbody>
 </table>
 
-<h2 style='margin: initial;'>$fields[6]</h2>
+<h2 class='saner-h2'>$fields[7]</h2>
 
 <table class='mlra'>
 <tbody class='iinside-p1'>
@@ -64,6 +66,7 @@ function get_contact_text_en() {
     'e-mail',
     'phone (Greece)', '+30 693 975 1642',
     "school's ID", '1115 2019 00048', 'UoA/ΕΚΠΑ',
+    "I'll be happy to meet you!",
     'Links',
   ];
 }
@@ -73,6 +76,7 @@ function get_contact_text_gr() {
     'E-mail',
     'Τηλέφωνο', '(+30) 693 975 1642',
     "Φοιτητικός Α.Μ.", '1115 2019 00048', 'UoA/ΕΚΠΑ',
+    "Σας περιμένω. Καλή συνέχεια!",
     'Σύνδεσμοι',
   ];
 }
