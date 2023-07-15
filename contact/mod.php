@@ -23,6 +23,7 @@ function get_contact_gr() {
 }
 
 function get_contact_with_text($fields) {
+  $dimakopt = "dimakop<b>t</b>732@gmail.com";
   
   return <<<EOHTML
 
@@ -31,9 +32,9 @@ mlra desktop-mtb4
 dont-be-like-table iinside-mtb3 txt-cent
 '>
 <tbody>
-<tr> <td>$fields[0]</td> <td class=ffat>dimakop<b>t</b>732@gmail.com</td> </tr>
-<tr> <td>$fields[1]</td> <td class=ffat>$fields[2]</td> </tr>
-<tr> <td>$fields[3]</td> <td class=ffat>$fields[4]<br>$fields[5]</td> </tr>
+<tr><td>$fields[0]</td><td class=ffat>$dimakopt</td></tr>
+<tr><td>$fields[1]</td><td class=ffat>$fields[2]</td></tr>
+<tr><td>$fields[3]</td><td class=ffat>$fields[4]<br>$fields[5]</td></tr>
 </tbody>
 </table>
 
