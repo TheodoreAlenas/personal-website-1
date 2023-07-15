@@ -78,6 +78,7 @@ function get_menu_bar_for_test_navigation(string $title) {
       "<a href='../en/index.html'>Normal</a>",
       "<a href='banner.html'>Banner</a>",
       "<a href='menu-bar.html'>Menu Bar</a>",
+      "<a href='contact.html'>Contact</a>",
     ]);
 }
 

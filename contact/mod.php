@@ -18,37 +18,25 @@ function get_contact(string $language) {
 function get_contact_en() {
   return <<<EOHTML
 
-<p style='font-size: 150%; font-family: monospace; text-align: center; letter-spacing: 0.1rem;'>dimakop<span style="color: red;">t</span>732@gmail.com</p>
+<table class='phone-dont-be-like-table phone-iinside-m3 phone-txt-cent'>
+<tbody>
+<tr> <td>e-mail</td> <td>dimakopt732@gmail.com</td> </tr>
+<tr> <td>phone</td> <td>+30 693 975 1642</td> </tr>
+<tr> <td>school's ID</td> <td>1115 2019 00048<br>UoA/ΕΚΠΑ</td> </tr>
+</tbody>
+</table>
 
-<p style='font-size: 150%; font-family: monospace; text-align: center; letter-spacing: 0.1rem;'>+30 693 975 1642</p>
-
-<h2>Student ID</h2>
-<pre style='text-align: center;'>1115 2019 00048</pre>
-<p style='text-align: center;'>
-National and Kappodistrian University of Athens (UoA) /<br>
-Εθνικό και Καπποδιστριακό Πανεπιστήμιο Αθηνών (ΕΚΠΑ)
-</p>
+<table class='phone-dont-be-like-table'>
+<th>More about me</th>
+<tr> <td>GitHub</td> <td>TheodoreAlenas</td> </tr>
+<tr> <td>YouTube</td> <td>Theodore Alenas</td> </tr>
+</table>
 
 EOHTML;
 }
 
 function get_contact_gr() {
-  return <<<EOHTML
-
-<h2>E-mail</h2>
-<pre style='text-align: center;'>dimakopt732@gmail.com</pre>
-
-<h2>Τηλέφωνο</h2>
-<pre style='text-align: center;'>(+30) 693 975 1642</pre>
-
-<h2>Φοιτητικός ΑΜ</h2>
-<pre style='text-align: center;'>1115 2019 00048</pre>
-<p style='text-align: center;'>
-Εθνικό και Καπποδιστριακό Πανεπιστήμιο Αθηνών (ΕΚΠΑ) /<br>
-National and Kappodistrian University of Athens (UoA)
-</p>
-
-EOHTML;
+  return get_contact_en();
 }
 
 ?>

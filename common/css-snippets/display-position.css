@@ -2,11 +2,15 @@
   line-height: 1em;
 }
 
-.toast,
-.inside-toast > * {
-  border-top: transparent 1rem solid;
-  border-bottom: transparent 1rem solid;
+@media screen and (max-width: 1200px) {
+  .free-media-query .phone-txt-cent {
+    text-align: center;
+  }
 }
+.phone-screen .phone-txt-cent {
+  text-align: center;
+}
+
 .round { border-radius: 5px; }
 
 .flex-row-spbet {

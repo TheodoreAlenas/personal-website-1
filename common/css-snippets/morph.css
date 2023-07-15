@@ -15,6 +15,22 @@
   list-style: none;
   margin: 0 0;
 }
+
+@media screen and (max-width: 1200px) {
+  .free-media-query .phone-dont-be-like-table,
+  .free-media-query .phone-dont-be-like-table > tbody,
+  .free-media-query .phone-dont-be-like-table > tbody > tr,
+  .free-media-query .phone-dont-be-like-table > tbody > tr > td {
+    display: block;
+  }
+}
+.phone-screen .phone-dont-be-like-table,
+.phone-screen .phone-dont-be-like-table > tbody,
+.phone-screen .phone-dont-be-like-table > tbody > tr,
+.phone-screen .phone-dont-be-like-table > tbody > tr > td {
+  display: block;
+}
+
 .abs-t-r {
   position: absolute;
   top: 0;

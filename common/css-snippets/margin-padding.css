@@ -9,6 +9,8 @@
 }
 .phone-screen .phone-m0a { margin: 0 auto; }
 
+.m3a { margin: 3rem auto; }
+
 .m0 { margin: 0; }
 
 .p2, .inside-p2 > *, .iinside-p2 > * > * { padding: 1rem 1rem; }
@@ -27,6 +29,16 @@
 .mtb2 { margin-top: 1rem; margin-bottom: 1rem; }
 
 .p3, .inside-p3 > *, .iinside-p3 > * > * { padding: 3rem 2rem; }
+.m3, .inside-m3 > *, .iinside-m3 > * > * { margin: 3rem 2rem; }
+
+@media screen and (max-width: 1200px) {
+  .free-media-query .phone-iinside-m3 > * > * {
+    margin: 3rem 2rem;
+  }
+}
+.phone-screen .phone-iinside-m3 > * > * {
+  margin: 3rem 2rem;
+}
 
 .iinside-last-child-fat > *:last-child > * { padding-right: 4rem; }
 .iinside-first-child-fat > *:first-child > * { padding-left: 4rem; }
