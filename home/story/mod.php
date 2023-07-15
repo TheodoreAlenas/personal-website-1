@@ -105,4 +105,5 @@ function get_file_contents(string $file_name) {
 
   return $to_return;
 }
+
 ?>

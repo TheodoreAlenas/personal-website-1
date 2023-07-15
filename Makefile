@@ -1,6 +1,14 @@
+MAINS_NAKED = index biography contact
+TESTS_NAKED = banner menu-bar contact face-and-name
+
+MAINS_EN = $(addprefix target/en/,$(addsuffix .html,${MAINS_NAKED}))
+MAINS_GR = $(addprefix target/gr/,$(addsuffix .html,${MAINS_NAKED}))
+MAINS = ${MAINS_EN} ${MAINS_GR}
+TESTS = $(addprefix target/test/,$(addsuffix .html,${TESTS_NAKED}))
+
 .PHONY: links all clean
 
-all: target/en/contact.html target/gr/contact.html target/en/biography.html target/gr/biography.html target/en/index.html target/gr/index.html target/test/banner.html target/test/menu-bar.html target/test/contact.html target/images
+all: ${MAINS} ${TESTS} target/images
 
 clean:
 	echo removing:; find target -maxdepth 1
@@ -29,6 +37,9 @@ target/test/menu-bar.html: common/menu-bar/test.php target/menu-bar.css $(wildca
 	php $< > $@
 
 target/test/contact.html: contact/test.php $(wildcard contact/*) $(wildcard common/*)
+	php $< > $@
+
+target/test/face-and-name.html: contact/face-and-name-test.php $(wildcard contact/face-and-name*) $(wildcard common/*)
 	php $< > $@
 
 target/images: images

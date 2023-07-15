@@ -1,70 +1,42 @@
 <?php
 
 include_once("common/wraps/typical-layouts.php");
+include_once("contact/face-and-name.php");
 
 function get_contact_html(string $language) {
+  [$contact, $css] = get_contact_and_css($language);
   return get_typical_layout(
-    $language, "contact", [], "", get_contact($language)
+    $language, "contact", $css, "", $contact
   );
 }
 
-function get_contact(string $language) {
+function get_contact_and_css(string $language) {
   if ($language == "gr") {
-    return get_contact_gr();
+    return get_contact_and_css_gr();
   }
-  return get_contact_en();
+  return get_contact_and_css_en();
 }
 
-function get_contact_en() {
-  return get_contact_with_text(get_contact_text_en());
+function get_contact_and_css_en() {
+  return get_contact_and_css_with_text(get_contact_text_en());
 }
-function get_contact_gr() {
-  return get_contact_with_text(get_contact_text_gr());
+function get_contact_and_css_gr() {
+  return get_contact_and_css_with_text(get_contact_text_gr());
 }
 
-function get_contact_with_text($fields) {
-  $dimakopt = "dimakop<b>t</b>732@gmail.com";
+function get_contact_and_css_with_text(array $fields) {
+
+  [$face_and_name, $face_and_name_css] = get_face_and_name_aaand_css(
+    "../../images/expression-faces/pat.png",
+    "mock of a social media pfp",
+    "dimakop<b>t</b>732@gmail.com",
+    "(+30) 693 975 1642");
   
-  return <<<EOHTML
-
-<h2 class='txt-cent saner-h2'>$fields[6]</h2>
-
-<table class='
-mlra desktop-mtb4
-dont-be-like-table iinside-mtb3 txt-cent
-'>
-<tbody>
-<tr><td>$fields[0]</td><td class=ffat>$dimakopt</td></tr>
-<tr><td>$fields[1]</td><td class=ffat>$fields[2]</td></tr>
-<tr><td>$fields[3]</td><td class=ffat>$fields[4]<br>$fields[5]</td></tr>
-</tbody>
-</table>
-
-<h2 class='saner-h2'>$fields[7]</h2>
-
-<table class='mlra'>
-<tbody class='iinside-p1'>
-<tr><td>YouTube</td><td>
-  <a href=https://www.youtube.com/channel/UCk-LNNSuhxvzXTdbiogd0Kg>
-    Theodore Alenas
-  </a>
-</td></tr>
-
-<tr><td>GitHub</td><td>
-  <a href=https://github.com/TheodoreAlenas>
-    TheodoreAlenas
-  </a>
-</td></tr>
-</tbody>
-</table>
-
-EOHTML;
+  return [$face_and_name . $fields[0], $face_and_name_css];
 }
 
 function get_contact_text_en() {
   return [
-    'e-mail',
-    'phone (Greece)', '+30 693 975 1642',
     "school's ID", '1115 2019 00048', 'UoA/ΕΚΠΑ',
     "I'll be happy to meet you!",
     'Links',
@@ -73,8 +45,6 @@ function get_contact_text_en() {
 
 function get_contact_text_gr() {
   return [
-    'E-mail',
-    'Τηλέφωνο', '(+30) 693 975 1642',
     "Φοιτητικός Α.Μ.", '1115 2019 00048', 'UoA/ΕΚΠΑ',
     "Σας περιμένω. Καλή συνέχεια!",
     'Σύνδεσμοι',

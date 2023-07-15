@@ -1,0 +1,29 @@
+.face-and-name {
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "face name" "face descr";
+
+  letter-spacing: 0.1em;
+  font-size: 1cm;
+  line-height: initial;
+}
+
+.face-and-name > *:first-child {
+  grid-area: face;
+  height: 4cm;
+  border-radius: 50%;
+  margin-right: 0.6cm;
+}
+
+.face-and-name > *:nth-child(2) {
+  grid-area: name;
+  margin-top: auto;
+  margin-bottom: 0.2cm;
+}
+
+.face-and-name > *:nth-child(3) {
+  grid-area: descr;
+  font-size: 80%;
+  opacity: 60%;
+}
