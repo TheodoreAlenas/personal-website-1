@@ -32,7 +32,11 @@ EOHTML . get_all_file_contents(["common/light-dark-theme/functions.js"]) . <<<EO
       class="dark-theme-switch disp-none"
     />
 
-    <div id="theme-wrapper" class="theme-wrapper">
+    <div
+      id="theme-wrapper"
+      class="theme-wrapper"
+      style="padding-bottom: 12rem"
+    >
       <script> applyStoredTheme(); </script>
 
 EOHTML;

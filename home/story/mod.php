@@ -54,7 +54,7 @@ function get_story_card_maturity(string $story_itself) {
   $html_styled_tmux = get_file_contents(__DIR__ . "/c-tdd-long-thin.html");
   return <<<EOHTML
 <div class='grid grid-col-to-row gap-2'>
-  <div class='phone-scroll-x'>
+  <div class='phone-scroll-x phone-smol'>
   <pre
     class='brown round mtb-like-p pad-no-ln-h w-h-max-cont phone-m0a'
   >$html_styled_tmux</pre>

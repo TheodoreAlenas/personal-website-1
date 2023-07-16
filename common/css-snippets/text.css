@@ -12,6 +12,11 @@
   font-size: 75%;
   line-height: 2em;
 }
+.phone-screen .phone-smol { font-size: 75%; }
+@media screen and (max-width: 1200px) {
+  .free-media-query .phone-smol { font-size: 75%; }
+}
+
 .fat {
   font-size: 130%;
 }
