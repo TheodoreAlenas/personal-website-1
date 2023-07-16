@@ -56,7 +56,7 @@ EOHTML;
 
 function get_contact_face_and_css() {
   return get_face_and_name_aaand_css(
-    "p3 m3 mlra round inverse-theme",
+    "p3 phone-p2 m3 mlra round inverse-theme",
     "../images/pat.png",
     "mock of a social media pfp",
     "dimakop<b>t</b>732@gmail.com",

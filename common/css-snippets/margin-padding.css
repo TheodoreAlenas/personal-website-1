@@ -78,3 +78,10 @@
 
 .m0 { margin: 0; }
 
+.phone-screen .phone-p1 { padding: 0.5rem; }
+.phone-screen .phone-p2 { padding: 1rem; }
+@media screen and (max-width: 1200px) {
+  .free-media-query .phone-p1 { padding: 0.5rem; }
+  .free-media-query .phone-p2 { padding: 1rem; }
+}
+

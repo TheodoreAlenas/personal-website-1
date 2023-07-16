@@ -24,7 +24,6 @@ function get_custom_menu_bar(string $title, array $elements) {
     menu-bar-title phone inl-bl ptb1 pl3
   '>$title</span>
   <ul class='
-    desktop-nav-list
     desktop dont-be-like-list flex-row-spbet
     iinside-last-child-fat iinside-first-child-ffat
     inside-first-child-mra

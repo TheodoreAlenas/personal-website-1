@@ -1,28 +1,13 @@
 
-.hintham-wide {
-  width: 20vw;
-}
-.hintham-contrast {
-  background-color: var(--contrast, #000);
-}
-.hintham-same-bg {
-  background-color: var(--background-normal, #fff);
-}
-.hintham-shadow {
-  box-shadow: var(--contrast, #000) 0 5px 5px;
-}
-.hintham-tall {
-  height: 30vw;
-}
-.hintham-padded {
-  padding: 4vw 2vw;
-}
-.hintham-round {
-  border-radius: 2vw;
-}
-.hintham-short {
-  height: 4vw;
-}
+.hintham-wide { width: 20vw; }
+.hintham-contrast { background-color: var(--contrast, #000); }
+.hintham-same-bg { background-color: var(--background-normal, #fff); }
+.hintham-shadow { box-shadow: var(--contrast, #000) 0 5px 5px; }
+.hintham-tall { height: 30vw; }
+.hintham-padded { padding: 4vw 2vw; }
+.hintham-round { border-radius: 2vw; }
+.hintham-short { height: 4vw; }
+
 .hintham-scale-text {
   font-size: 4vw;
   line-height: 1em;
