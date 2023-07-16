@@ -1,6 +1,7 @@
 <?php
 
 function get_face_and_name_aaand_css(
+  string $extra_css_classes,
   string $face_file_name,
   string $alt_title,
   string $name,
@@ -8,6 +9,7 @@ function get_face_and_name_aaand_css(
 
   return [
     get_face_and_name(
+      $extra_css_classes,
       $face_file_name,
       $alt_title,
       $name,
@@ -17,6 +19,7 @@ function get_face_and_name_aaand_css(
 }
 
 function get_face_and_name(
+  string $extra_css_classes,
   string $face_file_name,
   string $alt_title,
   string $name,
@@ -24,7 +27,7 @@ function get_face_and_name(
 
   return <<<EOHTML
 
-<div class='face-and-name m0a'>
+<div class='face-and-name m0a $extra_css_classes'>
 <img src="$face_file_name" alt="$alt_title">
 <span>$name</span>
 <span>$description</span>

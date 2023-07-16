@@ -14,17 +14,28 @@ h2 {
 }
 
 .phone-screen { font-size: 1.2rem; }
-.phone-screen h2 { padding-top: 4rem; }
+.phone-screen .m-like-h2,
+.phone-screen h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
 @media screen and (max-width: 1200px) {
   .free-media-query { font-size: 1.2rem; }
+  .free-media-query .m-like-h2,
   .free-media-query h2 {
     margin-top: 4rem;
     margin-bottom: 2rem;
   }
 }
 .desktop-screen { font-size: 1.5rem; }
+.desktop-screen .m-like-h2,
+.desktop-screen h2 {
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+}
 @media screen and (min-width: 1200px) {
   .free-media-query { font-size: 1.5rem; }
+  .free-media-query .m-like-h2,
   .free-media-query h2 {
     margin-top: 12rem;
     margin-bottom: 4rem;

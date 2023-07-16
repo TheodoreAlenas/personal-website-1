@@ -8,6 +8,7 @@ echo wrap_for_test("Facebook", "get_face_and_name_test_subject");
 function get_face_and_name_test_subject() {
 
   [$f, $css] = get_face_and_name_aaand_css(
+    "",
     "../images/pat.png",
     "mock of a social media pfp",
     "dimakop<b>t</b>732@gmail.com",
