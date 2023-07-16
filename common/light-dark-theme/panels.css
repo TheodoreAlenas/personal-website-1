@@ -36,10 +36,12 @@
   --selection: #e0e0e8;
   --fat-lines: #222;
   --line: #ccc;
+  --contrast: #444;
 }
 .dark-themed {
   --selection: #505058;
   --fat-lines: #999;
   --line: #555;
+  --contrast: #aaa;
 }
 
