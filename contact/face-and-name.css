@@ -9,6 +9,11 @@
   line-height: initial;
 }
 
+.phone-screen .face-and-name { font-size: 0.4cm; }
+@media screen and (max-width: 1200px) {
+  .free-media-query .face-and-name { font-size: 0.4cm; }
+}
+
 .face-and-name > *:first-child {
   grid-area: face;
   height: 4cm;
@@ -16,10 +21,30 @@
   margin-right: 0.6cm;
 }
 
+.phone-screen .face-and-name > *:first-child {
+  height: 1.5cm;
+  margin-right: 0.2cm;
+}
+@media screen and (max-width: 1200px) {
+  .free-media-query .face-and-name > *:first-child {
+    height: 1.5cm;
+    margin-right: 0.2cm;
+  }
+}
+
 .face-and-name > *:nth-child(2) {
   grid-area: name;
   margin-top: auto;
   margin-bottom: 0.2cm;
+}
+
+.phone-screen .face-and-name > *:nth-child(2) {
+  margin-bottom: 0.07cm;
+}
+@media screen and (max-width: 1200px) {
+  .free-media-query .face-and-name > *:nth-child(2) {
+    margin-bottom: 0.07cm;
+  }
 }
 
 .face-and-name > *:nth-child(3) {

@@ -46,6 +46,7 @@ target/images: images
 	mkdir -p $@
 	find images -maxdepth 1 -type f -exec ln -vf {} target/{} \;
 	ln -vf images/favicon.ico target/favicon.ico
+	ln -vf images/expression-faces/pat.png target/images/
 
 target/menu-bar.css: $(wildcard common/menu-bar/css/*)
 	php $< > $@
