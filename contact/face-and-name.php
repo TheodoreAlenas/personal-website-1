@@ -24,7 +24,7 @@ function get_face_and_name(
 
   return <<<EOHTML
 
-<div class=face-and-name>
+<div class='face-and-name m0a'>
 <img src="$face_file_name" alt="$alt_title">
 <span>$name</span>
 <span>$description</span>

@@ -26,13 +26,30 @@ function get_contact_and_css_gr() {
 
 function get_contact_and_css_with_text(array $fields) {
 
-  [$face_and_name, $face_and_name_css] = get_face_and_name_aaand_css(
+  [$face_and_name, $face_and_name_css] = get_contact_face_and_css();
+  
+  $before = <<<EOHTML
+
+<h2>Halluuu</h2>
+
+EOHTML;
+
+  $more_shit = <<<EOHTML
+
+<p>
+I'll be happy to see you there! Bitch!
+</p>
+
+EOHTML;
+  return [$before . $face_and_name . $more_shit, $face_and_name_css];
+}
+
+function get_contact_face_and_css() {
+  return get_face_and_name_aaand_css(
     "../images/pat.png",
     "mock of a social media pfp",
     "dimakop<b>t</b>732@gmail.com",
     "(+30) 693 975 1642");
-  
-  return [$face_and_name . $fields[0], $face_and_name_css];
 }
 
 function get_contact_text_en() {

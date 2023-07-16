@@ -1,6 +1,7 @@
 .face-and-name {
   display: grid;
-  grid-template-columns: max-content auto;
+  width: max-content;
+  grid-template-columns: max-content max-content;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "face name" "face descr";
 
@@ -52,3 +53,5 @@
   font-size: 80%;
   opacity: 60%;
 }
+
+.m0a { margin: 0 auto; }
