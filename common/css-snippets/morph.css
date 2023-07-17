@@ -12,6 +12,11 @@
   margin: 0 0;
 }
 
+.dont-be-like-link {
+  text-decoration: none;
+  color: var(--foreground-normal, black);
+}
+
 .dont-be-like-table,
 .dont-be-like-table > tbody,
 .dont-be-like-table > tbody > tr,

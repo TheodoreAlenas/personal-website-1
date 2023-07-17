@@ -13,20 +13,21 @@
   --hover: rgba(128, 128, 255, 6%);
 }
 
-a {
+a .be-like-link, a:not(.dont-be-like-link) {
+  text-decoration: underline;
   text-underline-offset: 0.2rem;
   color: var(--link-normal);
   transition: all linear 0.05s;
 }
-a:visited {
+a:visited .be-like-link, a:not(.dont-be-like-link):visited {
   color: var(--link-visited);
 }
-a:hover {
+a:hover .be-like-link, a:not(.dont-be-like-link):hover {
   text-underline-offset: 0.15rem;
   color: var(--link-hover);
   background-color: var(--hover);
 }
-a:visited:hover {
+a:visited:hover .be-like-link, a:not(.dont-be-like-link):visited:hover {
   color: var(--link-visited-hover);
 }
 
