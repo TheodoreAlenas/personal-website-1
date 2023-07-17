@@ -78,7 +78,7 @@ function get_story_card_learning(
     <img
       class='round mtb-like-p phone-m0a block'
       src='../images/prompt-display.png'
-      alt="a dash compliant POSIX prompt and the PWD command shows there are symbolic links"
+      alt="a dash friendly prompt and symlink display"
       style="background-image: url(
         '../images/prompt-display-32-times-shorter.png'
         );

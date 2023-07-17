@@ -66,8 +66,8 @@ unexpectedly specialize as a manager,
 they can be labeled a manager, although it doesn't matter.
 </p>
 <p>
-I'm aware all of this <i>is done</i>, and it's documented and
-<a href="youtube-alen-on-transparent-board-saying-real-world">talked about</a>.
+I'm aware all of this <i>is done</i>,
+and it's documented and talked about.
 One day I'll work in such a place.
 </p>
 
@@ -87,8 +87,7 @@ function get_story_people_2_gr() {
 οπότε η λύση είναι να συνεργαστούν τόσο ώστε να γίνουν ένα σώμα.
 </p>
 <p>
-Γνωρίζω ότι αυτά <i>γίνονται</i>, και υπάρχουν σχετικές
-<a href="youtube-alen-on-transparent-board-saying-real-world">πηγές</a>.
+Γνωρίζω ότι αυτά <i>γίνονται</i>.
 Μια μέρα και εγώ θα εργάζομαι σε τέτοιο περιβάλλον.
 </p>
 

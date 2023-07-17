@@ -10,9 +10,7 @@ and programs come out.&quot;
 </i>
 </p>
 <p>
-That's from a
-<a href="#">talk</a> by
-<a href="#">Robert C. Martin</a>.
+That's from a talk by Robert C. Martin.
 EOHTML;
 }
 
@@ -20,7 +18,7 @@ function get_story_opening_gr() {
   return <<<EOHTML
 <p>
 Μια από τις φράσεις του κ.
-<a href="#">Robert C. Martin</a>
+Robert C. Martin
 που με συγκίνησαν περισσότερο είναι
 </p>
 <p>
@@ -32,8 +30,7 @@ function get_story_opening_gr() {
 </i>
 </p>
 <p>
-που άκουσα σε μια
-<a href="#">ομιλία</a> του.
+που άκουσα σε μια ομιλία του.
 EOHTML;
 }
 
