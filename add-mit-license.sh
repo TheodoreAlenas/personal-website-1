@@ -5,6 +5,8 @@ main() {
   then shift; add_missing_licenses_to "$@"
   elif [ "$1" = '--try-stdio-with-comments' ]
   then shift; if_no_license_add_stdio "$@"
+  elif [ "$1" = '--print-files' ]
+  then find_files_print0 | tr '\0' '\n'
   elif [ $# = 0 ]
   then add_missing_licenses
   else usage; return 1
@@ -12,16 +14,21 @@ main() {
 }
 
 add_missing_licenses() {
+  find_files_print0 | xargs -0 sh "$0" --custom
+}
+
+find_files_print0() {
   find . \
     -name '.git' -prune -o \
     -name target -prune -o \
     -name images -prune -o \
-    -type f -print0 | xargs -0 sh "$0" --custom
+    -type f -print0
 }
 
 usage() {
   echo "To specify files, the first argument must be --custom" >&2
   echo "You may also, --try-stdio-with-comments '/*' '*/' ''" >&2
+  echo "or --print-files without arguments to see the default files." >&2
 }
 
 add_missing_licenses_to() {
@@ -33,7 +40,8 @@ add_missing_licenses_to() {
 choose_comment_type_and_if_no_license_add() {
   case "$1" in
     (*.php | *.css | *.js) if_no_license_add "$1" '/*' '*/' '' ;;
-    (*.sh | Makefile) if_no_license_add "$1" '' '' '# ' ;;
+    (*.sh | Makefile | .gitignore) if_no_license_add "$1" '' '' '# ' ;;
+    (*.md) if_no_license_add "$1" '<!--' '-->' '' ;;
     (*) echo "$0: Unknown file type: $1" >& 2 ;;
   esac
 }
