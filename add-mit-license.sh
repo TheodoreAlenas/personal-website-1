@@ -49,7 +49,7 @@ choose_comment_type_and_if_no_license_add() {
 if_no_license_add() {
   buffer_with_license="$(mktemp /tmp/adding-license-XXXXXX)"
   if if_no_license_add_stdio "$2" "$3" "$4" < "$1" > "$buffer_with_license"
-  then mv -v "$buffer_with_license" "$1"
+  then cp -v "$buffer_with_license" "$1"
   fi
   rm "$buffer_with_license"
 }
