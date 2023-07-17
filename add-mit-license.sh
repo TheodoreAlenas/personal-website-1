@@ -6,12 +6,22 @@ main() {
   elif [ "$1" = '--try-stdio-with-comments' ]
   then shift; if_no_license_add_stdio "$@"
   elif [ $# = 0 ]
-  then find . -type f -print0 | xargs -0 sh "$0" --custom
-  else
-    echo "To specify files, the first argument must be --custom" >&2
-    echo "You may also, --try-stdio-with-comments '/*' '*/' ''" >&2
-    return 1
+  then add_missing_licenses
+  else usage; return 1
   fi
+}
+
+add_missing_licenses() {
+  find . \
+    -name '.git' -prune -o \
+    -name target -prune -o \
+    -name images -prune -o \
+    -type f -print0 | xargs -0 sh "$0" --custom
+}
+
+usage() {
+  echo "To specify files, the first argument must be --custom" >&2
+  echo "You may also, --try-stdio-with-comments '/*' '*/' ''" >&2
 }
 
 add_missing_licenses_to() {
