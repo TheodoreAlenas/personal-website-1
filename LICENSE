@@ -1,14 +1,5 @@
-.phone-screen .desktop { display: none; }
-@media screen and (max-width: 1200px) {
-  .free-media-query .desktop { display: none; }
-}
+MIT  License
 
-.desktop-screen .phone { display: none; }
-@media screen and (min-width: 1200px) {
-  .free-media-query .phone { display: none; }
-}
-
-/*
 Copyright (c) 2023 Dimakopoulos Theodoros
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -28,4 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-*/
