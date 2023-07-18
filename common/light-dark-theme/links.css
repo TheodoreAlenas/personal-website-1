@@ -19,7 +19,7 @@ a .be-like-link, a:not(.dont-be-like-link) {
   text-decoration: underline;
   text-underline-offset: 0.2rem;
   color: var(--link-normal);
-  transition: all linear 0.05s;
+  transition: color linear 0.05s;
 }
 a:visited .be-like-link, a:not(.dont-be-like-link):visited {
   color: var(--link-visited);

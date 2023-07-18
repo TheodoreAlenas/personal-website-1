@@ -8,6 +8,8 @@ MAINS_GR = $(addprefix target/gr/,$(addsuffix .html,${MAINS_NAKED}))
 MAINS = ${MAINS_EN} ${MAINS_GR}
 TESTS = $(addprefix target/test/,$(addsuffix .html,${TESTS_NAKED}))
 
+COMMON = Makefile $(wildcard common/* common/*/*)
+
 .PHONY: links all clean
 
 all: ${MAINS} ${TESTS} target/images
@@ -19,37 +21,37 @@ clean:
 links:
 	ln -s images img
 
-target/%/index.html: home/index-%.php target/banner.css home/mod.php $(wildcard home/*/*) $(wildcard common/*)
+target/%/index.html: home/index-%.php target/banner.css home/mod.php $(wildcard home/*/*) ${COMMON}
 	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
-target/%/portfolio.html: portfolio/index-%.php $(wildcard portfolio/*) $(wildcard common/*)
+target/%/portfolio.html: portfolio/index-%.php $(wildcard portfolio/*) ${COMMON}
 	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
-target/%/portfolio/tdd.html: portfolio/tdd/index-%.php $(wildcard portfolio/*) $(wildcard common/*)
+target/%/portfolio/tdd.html: portfolio/tdd/index-%.php $(wildcard portfolio/*) ${COMMON}
 	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
-target/%/biography.html: biography/index-%.php $(wildcard biography/*) $(wildcard common/*)
+target/%/biography.html: biography/index-%.php $(wildcard biography/*) ${COMMON}
 	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
-target/%/contact.html: contact/index-%.php $(wildcard contact/*) $(wildcard common/*)
+target/%/contact.html: contact/index-%.php $(wildcard contact/*) ${COMMON}
 	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
-target/test/banner.html: home/banner/test.php target/banner.css $(wildcard home/banner/*) $(wildcard common/*)
+target/test/banner.html: home/banner/test.php target/banner.css $(wildcard home/banner/*) ${COMMON}
 	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
-target/test/menu-bar.html: common/menu-bar/test.php $(wildcard common/menu-bar/*) $(wildcard common/*)
+target/test/menu-bar.html: common/menu-bar/test.php $(wildcard common/menu-bar/*) ${COMMON}
 	php $< > $@
 
-target/test/contact.html: contact/test.php $(wildcard contact/*) $(wildcard common/*)
+target/test/contact.html: contact/test.php $(wildcard contact/*) ${COMMON}
 	php $< > $@
 
-target/test/face-and-name.html: contact/face-and-name-test.php $(wildcard contact/face-and-name*) $(wildcard common/*)
+target/test/face-and-name.html: contact/face-and-name-test.php $(wildcard contact/face-and-name*) ${COMMON}
 	php $< > $@
 
 target/images: images
