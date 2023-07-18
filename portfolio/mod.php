@@ -16,36 +16,77 @@ function get_portfolio_html(string $language) {
 }
 
 function get_portfolio_contents(string $language) {
-  if ($language == "gr")
-    return get_portfolio_contents_gr();
-  return get_portfolio_contents_en();
+
+  $title_text = '';
+  $card_text = '';
+  if ($language == "gr") {
+    $title_text = get_portfolio_this_site_title_gr();
+    $card_text = get_portfolio_card_text_gr();
+  }
+  else {
+    $title_text = get_portfolio_this_site_title_en();
+    $card_text = get_portfolio_card_text_en();
+  }
+
+
+  $title = <<<EOHTML
+
+<h2><a href=https://github.com/TheodoreAlenas/personal-web-page>
+$title_text</a></h2>
+
+EOHTML;
+
+  $card = get_portfolio_card(
+  get_portfolio_snippet_this_site(),
+  $card_text);
+
+  return $title . $card;
 }
 
-function get_portfolio_contents_en() {
-  $snippet_this_site = get_portfolio_snippet_this_site();
+function get_portfolio_this_site_title_en() {
+  return "This website";
+}
+
+function get_portfolio_this_site_title_gr() {
+  return "Ο παρών ιστοχώρος";
+}
+
+function get_portfolio_card_text_en() {
   return <<<EOHTML
-
-<h2><a href=www.github.com/TheodoreAlenas/personal-web-page>
-This website</a></h2>
-
-<pre class="blue w-h-max-cont">
-$snippet_this_site
-</pre>
-
+<p>
+Parts of this site are testable, in a way.
+You may try them out by visiting
+<a href=../test/menu-bar.html>
+the test pages</a>.
+</p>
 EOHTML;
 }
 
-function get_portfolio_contents_gr() {
-  $snippet_this_site = get_portfolio_snippet_this_site();
+function get_portfolio_card_text_gr() {
   return <<<EOHTML
+<p>
+Μέρη αυτού του ιστοχώρου μπορούν να
+δοκιμαστούν αυτούσια.
+Για να τα δοκιμάσετε, μπορείτε να επισκευθείτε
+<a href=../test/menu-bar.html>
+τις δοκιμαστικές σελίδες</a>.
+</p>
+EOHTML;
+}
 
-<h2><a href=www.github.com/TheodoreAlenas/personal-web-page>
-This website</a></h2>
 
-<pre class="blue w-h-max-cont">
-$snippet_this_site
-</pre>
-
+function get_portfolio_card(string $code, string $text) {
+  return <<<EOHTML
+<div class='grid grid-col-to-row gap-2'>
+  <div class='phone-scroll-x phone-smol'>
+  <pre
+    class='blue round mtb-like-p pad-no-ln-h w-h-max-cont phone-m0a'
+  >$code</pre>
+  </div>
+  <div>
+    $text
+  </div>
+</div>
 EOHTML;
 }
 
