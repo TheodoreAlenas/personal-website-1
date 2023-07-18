@@ -32,8 +32,12 @@ function get_contact_and_css_en() {
   
   $content = <<<EOHTML
 
-<h2>I'll be happy to meet you!</h2>
 $face_and_name
+<ul class="dont-be-like-list txt-cent">
+<li>I'm looking for internship from September 2023 for 6 months,</li>
+<li>I live in Zografou, Athens, and I'm sorry but</li>
+<li>I can't provide with ΕΣΠΑ money.</li>
+</ul>
 $extra_table
 
 EOHTML;
@@ -47,8 +51,14 @@ function get_contact_and_css_gr() {
   
   $content = <<<EOHTML
 
-<h2>Σας περιμένω. Καλή συνέχεια!</h2>
 $face_and_name
+<p>
+<ul class="dont-be-like-list txt-cent">
+<li>Ψάχνω για πρακτική άσκηση από Σεπτέμβριο 2023 για το εξάμηνο.</li>
+<li>Μένω στη Ζωγράφου, Αθήνα, και λυπάμαι αλλά</li>
+<li>δεν έχω δηλώσει για χρηματοδότηση ΕΣΠΑ.</li>
+</ul>
+</p>
 $extra_table
 
 EOHTML;
@@ -57,7 +67,7 @@ EOHTML;
 
 function get_contact_face_and_css() {
   return get_face_and_name_aaand_css(
-    "p3 phone-p2 m3 mlra round inverse-theme",
+    "p3 phone-p2 m-like-h2 mlra round inverse-theme",
     "../images/pat.png",
     "mock of a social media pfp",
     "dimakop<b>t</b>732@gmail.com",

@@ -26,7 +26,7 @@
 }
 .phone-screen .phone-scroll-x { overflow-x: scroll; }
 
-.inl-bl { display: inline-block; }
+.inl-bl, .inside-inl-bl > * { display: inline-block; }
 .block , .inside-block > * { display: block; }
 .disp-none { display: none; }
 
