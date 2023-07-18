@@ -1,6 +1,6 @@
 <?php
 
-include_once("contact/face-and-name.php");
+include_once("contact/face-and-name/mod.php");
 include_once("common/testing/util.php");
 
 echo wrap_for_test("Facebook", "get_face_and_name_test_subject");

@@ -2,7 +2,7 @@
 // License at the bottom.
 
 include_once("common/wraps/typical-layouts.php");
-include_once("contact/face-and-name.php");
+include_once("contact/face-and-name/mod.php");
 
 function get_contact_html(string $language) {
   [$contact, $css] = get_contact_and_css($language);

@@ -51,7 +51,7 @@ target/test/menu-bar.html: common/menu-bar/test.php $(wildcard common/menu-bar/*
 target/test/contact.html: contact/test.php $(wildcard contact/*) ${COMMON}
 	php $< > $@
 
-target/test/face-and-name.html: contact/face-and-name-test.php $(wildcard contact/face-and-name*) ${COMMON}
+target/test/face-and-name.html: contact/face-and-name/test.php $(wildcard contact/face-and-name/*) ${COMMON}
 	php $< > $@
 
 target/images: images

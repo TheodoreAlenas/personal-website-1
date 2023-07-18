@@ -15,7 +15,7 @@ function get_face_and_name_aaand_css(
       $alt_title,
       $name,
       $description),
-    ["contact/face-and-name.css"]
+    ["contact/face-and-name/m.css"]
   ];
 }
 
