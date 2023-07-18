@@ -2,6 +2,7 @@
 // License at the bottom.
 
 include_once("common/wraps/typical-layouts.php");
+include_once("portfolio/this-site-ls.php");
 
 function get_portfolio_html(string $language) {
 
@@ -21,11 +22,31 @@ function get_portfolio_contents(string $language) {
 }
 
 function get_portfolio_contents_en() {
-  return 'english portfolio contents';
+  $snippet_this_site = get_portfolio_snippet_this_site();
+  return <<<EOHTML
+
+<h2><a href=www.github.com/TheodoreAlenas/personal-web-page>
+This website</a></h2>
+
+<pre class="blue w-h-max-cont">
+$snippet_this_site
+</pre>
+
+EOHTML;
 }
 
 function get_portfolio_contents_gr() {
-  return 'greek portfolio contents';
+  $snippet_this_site = get_portfolio_snippet_this_site();
+  return <<<EOHTML
+
+<h2><a href=www.github.com/TheodoreAlenas/personal-web-page>
+This website</a></h2>
+
+<pre class="blue w-h-max-cont">
+$snippet_this_site
+</pre>
+
+EOHTML;
 }
 
 /*
