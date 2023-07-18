@@ -30,17 +30,7 @@ function get_contact_and_css_en() {
   [$face_and_name, $face_and_name_css] = get_contact_face_and_css();
   $extra_table = get_contact_extra_table();
   
-  $content = <<<EOHTML
-
-$face_and_name
-<ul class="dont-be-like-list txt-cent">
-<li>I'm looking for internship from September 2023 for 6 months,</li>
-<li>I live in Zografou, Athens, and I'm sorry but</li>
-<li>I can't provide with ΕΣΠΑ money.</li>
-</ul>
-$extra_table
-
-EOHTML;
+  $content = $face_and_name . get_contact_note_en() . $extra_table;
   return [$content, $face_and_name_css];
 }
 
@@ -49,9 +39,25 @@ function get_contact_and_css_gr() {
   [$face_and_name, $face_and_name_css] = get_contact_face_and_css();
   $extra_table = get_contact_extra_table();
   
-  $content = <<<EOHTML
+  $content = $face_and_name . get_contact_note_gr() . $extra_table;
+  return [$content, $face_and_name_css];
+}
 
-$face_and_name
+function get_contact_note_en() {
+  return <<<EOHTML
+
+<ul class="dont-be-like-list txt-cent">
+<li>I'm looking for internship from September 2023 for 6 months,</li>
+<li>I live in Zografou, Athens, and I'm sorry but</li>
+<li>I can't provide with ΕΣΠΑ money.</li>
+</ul>
+
+EOHTML;
+}
+
+function get_contact_note_gr() {
+  return <<<EOHTML
+
 <p>
 <ul class="dont-be-like-list txt-cent">
 <li>Ψάχνω για πρακτική άσκηση από Σεπτέμβριο 2023 για το εξάμηνο.</li>
@@ -59,10 +65,8 @@ $face_and_name
 <li>δεν έχω δηλώσει για χρηματοδότηση ΕΣΠΑ.</li>
 </ul>
 </p>
-$extra_table
 
 EOHTML;
-  return [$content, $face_and_name_css];
 }
 
 function get_contact_face_and_css() {
