@@ -19,13 +19,16 @@ function get_portfolio_contents(string $language) {
 
   $title_text = '';
   $card_text = '';
+  $excuse = '';
   if ($language == "gr") {
     $title_text = get_portfolio_this_site_title_gr();
     $card_text = get_portfolio_card_text_gr();
+    $excuse = "Λυπάμαι, το χαρτοφυλάκιο είναι υπό κατασκευή (Ιούλιος 2023)";
   }
   else {
     $title_text = get_portfolio_this_site_title_en();
     $card_text = get_portfolio_card_text_en();
+    $excuse = "I apologise, the portfolio is unfinished (July 2023)";
   }
 
 
@@ -40,7 +43,7 @@ EOHTML;
   get_portfolio_snippet_this_site(),
   $card_text);
 
-  return $title . $card;
+  return $title . $card . $excuse;
 }
 
 function get_portfolio_this_site_title_en() {
