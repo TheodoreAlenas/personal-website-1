@@ -16,7 +16,7 @@ function get_story_people_1_en() {
   return <<<EOHTML
 
 <p>
-For a <a href="#">compiler presentation</a>,
+For a compiler presentation,
 my friends and I met daily in-person
 and we worked together 4 to 8 hours at a time,
 for about 3 months.
@@ -37,7 +37,7 @@ function get_story_people_1_gr() {
 
 <p>
 Για μια
-<a href="#">παρουσίαση στο μάθημα των μεταγλωττιστών</a>,
+παρουσίαση στο μάθημα των μεταγλωττιστών,
 συνεργαστήκαμε με τους φίλους μου
 πρόσωπο με πρόσωπο 4 με 8 ώρες καθημερινά
 για περίπου 3 μήνες.

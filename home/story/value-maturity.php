@@ -17,8 +17,7 @@ and therefore I develop a sense of care
 towards the bugs I cause.
 </p>
 <p>
-I appreciate
-<a href="distro-tube-emacs">old tools</a>,
+I appreciate old tools,
 not because they make people productive
 but because they have a culture that
 reminds what a programmer does.
@@ -44,7 +43,7 @@ function get_story_maturity_gr() {
 </p>
 <p>
 Εκτιμώ τα
-<a href="distro-tube-emacs">παλιά εργαλεία</a>,
+παλιά εργαλεία,
 όχι λόγω παραγωγικότητας αλλά λόγω νοοτροπίας.
 Προσωπικά μου θυμίζουν το κοινωνικό μου ρόλο.
 </p>

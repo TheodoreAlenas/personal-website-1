@@ -17,11 +17,11 @@ function get_story_learning_1_en() {
 
 <p>
 I've spent time writing a
-<a href="portfolio.html">highlighting parser</a>,
+highlighting parser,
 I've superficially tried lots of tools and languages,
 I'm on Linux,
-I use the command line and <a href="#">scripts</a>,
-and my <a href="#">pictures</a>
+I use the command line and scripts,
+and my pictures
 are stored in a binary tree of directories
 that contain some empty files defining tags.
 I make sure I gain about twice the abilities
@@ -38,11 +38,11 @@ function get_story_learning_1_gr() {
 
 <p>
 Έχω ασχοληθεί με έναν
-<a href="portfolio.html">highlighting parser</a>,
+highlighting parser,
 έχω δοκιμάσει επιφανειακά πολλά εργαλεία και γλώσσες,
 είμαι σε Linux,
-χρησιμοποιώ τη γραμμή εντολών και <a href="#">scripts</a>,
-και οι <a href="#">εικόνες</a> μου
+χρησιμοποιώ τη γραμμή εντολών και scripts,
+και οι εικόνες μου
 είναι τακτοποιημένες σε ένα δυαδικό δέντρο φακέλων
 που περιέχουν ειδικά κενά αρχεία για να
 αντιστοιχηθούν σε tags.

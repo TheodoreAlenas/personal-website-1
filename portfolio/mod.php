@@ -34,7 +34,7 @@ function get_portfolio_contents(string $language) {
 
   $title = <<<EOHTML
 
-<h2><a href=https://github.com/TheodoreAlenas/personal-web-page>
+<h2><a href=https://github.com/TheodoreAlenas/personal-home-page>
 $title_text</a></h2>
 
 EOHTML;

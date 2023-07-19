@@ -107,8 +107,7 @@ in my first 3 or 4 I was avoiding
 collaboration as much as possible,
 as it is usual.
 In the 4th year I had
-<a href="portfolio.html"
->one of the collaborations that I hold most dear</a>.
+one of the collaborations that I hold most dear.
 After that there were
 2 other teams that were friendly,
 but they weren't much into collaboration.
@@ -116,8 +115,7 @@ That got me in trouble, because I would
 annoy them, drain all of my energy
 and get depressed.
 Then I did
-<a href=portfolio.html
->my best collaboration</a>
+my best collaboration
 with 3 new friends I made.
 </p>
 
@@ -131,8 +129,7 @@ function get_bio_team_projects_gr() {
 ήταν οι ομαδικές εργασίες.
 Στις πρώτες 3 με 4 απέφευγα την επικοινωνία.
 Στο τέταρτο έτος είχα
-<a href="portfolio.html"
->μία από τις σημαντικότερες εμπειρίες μου</a>.
+μία από τις σημαντικότερες εμπειρίες μου.
 Ύστερα από αυτό συνεργάστηκα σε δύο ομάδες
 που τα άλλα άτομα ήταν φιλικά αλλά
 δεν ενδιαφέρονταν για συνεργασία,
@@ -141,8 +138,7 @@ function get_bio_team_projects_gr() {
 ξόδευα όλη μου την ενέργεια
 και έπεφτα ψυχολογικά.
 Έπειτα έκανα
-<a href=portfolio.html
->την καλύτερη συνεργασία που έχω κάνει ποτέ</a>
+την καλύτερη συνεργασία που έχω κάνει ποτέ
 με τρεις από τους καινούριους μου φίλους.
 
 EOHTML;

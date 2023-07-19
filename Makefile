@@ -1,6 +1,6 @@
 # License at the bottom.
 
-MAINS_NAKED = index biography contact portfolio portfolio/tdd
+MAINS_NAKED = index biography contact portfolio
 TESTS_NAKED = banner menu-bar contact face-and-name
 
 MAINS_EN = $(addprefix target/en/,$(addsuffix .html,${MAINS_NAKED}))
@@ -10,7 +10,17 @@ TESTS = $(addprefix target/test/,$(addsuffix .html,${TESTS_NAKED}))
 
 COMMON = Makefile $(wildcard common/* common/*/*)
 
-.PHONY: links all clean
+URI = http://www.theodoros-d-alenas.site
+
+IMG_PROMPT = prompt-display-32-times-shorter.png prompt-display.png
+IMG_FACE = face-64-times-shorter.png face.jpg
+IMG_STRIPE = stripe-with-faces.png stripe-with-faces-8-times-shorter.png
+IMG_PAT = pat-8-times-shorter.png pat.png
+
+IMAGE_NAMES = ${IMG_PROMPT} ${IMG_FACE} ${IMG_STRIPE} ${IMG_PAT}
+IMAGE_URIS = ${URI}/favicon.ico $(addprefix ${URI}/images/,${IMAGE_NAMES})
+
+.PHONY: links all clean clean-links
 
 all: ${MAINS} ${TESTS} target/images
 
@@ -19,17 +29,19 @@ clean:
 	rm -rf target/*
 
 links:
-	ln -s images img
+	t=img; if ! [ -d $$t ] ; then ln -sf images $$t; fi
+	t=bio; if ! [ -d $$t ] ; then ln -sf biography $$t; fi
+	t=por; if ! [ -d $$t ] ; then ln -sf portfolio $$t; fi
+	t=home/hh; if ! [ -d $$t ] ; then ln -sf hinting-hamburger $$t; fi
+
+clean-links:
+	find ./* -type l -exec rm -v {} \;
 
 target/%/index.html: home/index-%.php target/banner.css home/mod.php $(wildcard home/*/*) ${COMMON}
 	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
 target/%/portfolio.html: portfolio/index-%.php $(wildcard portfolio/*) ${COMMON}
-	@dirname $@ | xargs mkdir -pv
-	php $< > $@
-
-target/%/portfolio/tdd.html: portfolio/tdd/index-%.php $(wildcard portfolio/*) ${COMMON}
 	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
@@ -59,8 +71,13 @@ target/images: images
 	find images -maxdepth 1 -type f -exec ln -vf {} target/{} \;
 	ln -vf images/favicon.ico target/favicon.ico
 
+images:
+	mkdir -p images
+	cd images && wget ${IMAGE_URIS}
+
 target/banner.css: home/banner/css/include-to-get-media-queries.php $(wildcard home/banner/css/*)
 	php $< > $@
+
 
 # Copyright (c) 2023 Dimakopoulos Theodoros
 # 
