@@ -20,7 +20,7 @@ IMG_PAT = pat-8-times-shorter.png pat.png
 IMAGE_NAMES = ${IMG_PROMPT} ${IMG_FACE} ${IMG_STRIPE} ${IMG_PAT}
 IMAGE_URIS = ${URI}/favicon.ico $(addprefix ${URI}/images/,${IMAGE_NAMES})
 
-.PHONY: links all clean clean-links
+.PHONY: ln all clean
 
 all: ${MAINS} ${TESTS} target/images
 
@@ -28,14 +28,16 @@ clean:
 	echo removing:; find target -maxdepth 1
 	rm -rf target/*
 
-links:
-	t=img; if ! [ -d $$t ] ; then ln -sf images $$t; fi
-	t=bio; if ! [ -d $$t ] ; then ln -sf biography $$t; fi
-	t=por; if ! [ -d $$t ] ; then ln -sf portfolio $$t; fi
-	t=home/hh; if ! [ -d $$t ] ; then ln -sf hinting-hamburger $$t; fi
-
-clean-links:
+ln:
 	find ./* -type l -exec rm -v {} \;
+	ln -sf images img
+	ln -sf biography bio
+	ln -sf portfolio por
+	ln -sf common com
+	ln -sf hinting-hamburger home/hh
+	ln -sf menu-bar common/menu
+	ln -sf css-snippets common/css
+	ln -sf light-dark-theme common/ld
 
 target/%/index.html: home/index-%.php target/banner.css home/mod.php $(wildcard home/*/*) ${COMMON}
 	@dirname $@ | xargs mkdir -pv
