@@ -60,12 +60,19 @@ target/test/banner.html: home/banner/test.php target/banner.css $(wildcard home/
 	php $< > $@
 
 target/test/menu-bar.html: common/menu-bar/test.php $(wildcard common/menu-bar/*) ${COMMON}
+	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
 target/test/contact.html: contact/test.php $(wildcard contact/*) ${COMMON}
+	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
 target/test/face-and-name.html: contact/face-and-name/test.php $(wildcard contact/face-and-name/*) ${COMMON}
+	@dirname $@ | xargs mkdir -pv
+	php $< > $@
+
+target/banner.css: home/banner/css/include-to-get-media-queries.php $(wildcard home/banner/css/*)
+	@dirname $@ | xargs mkdir -pv
 	php $< > $@
 
 target/images: images
@@ -76,9 +83,6 @@ target/images: images
 images:
 	mkdir -p images
 	cd images && wget ${IMAGE_URIS}
-
-target/banner.css: home/banner/css/include-to-get-media-queries.php $(wildcard home/banner/css/*)
-	php $< > $@
 
 
 # Copyright (c) 2023 Dimakopoulos Theodoros

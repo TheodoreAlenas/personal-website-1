@@ -17,15 +17,14 @@ my portfolio in the near future.
 ## Running
 
 It's a static site, so you may try it using
-```sh
+```bash
 git clone https://github.com/TheodoreAlenas/personal-home-page
-make ln  # optional, makes symbolic links to help you cd
 make
 your-browser file:///$PWD/target/en/index.html
 ```
 
 I find it valuable to throttle, and for that you may try
-```sh
+```bash
 python3 -m http.server 3000
 ```
 so that you can enable throttling to the browser.
