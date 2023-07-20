@@ -6,8 +6,8 @@ function get_contact_note_en() {
 
 <ul class="dont-be-like-list txt-cent">
 <li>I'm looking for internship from September 2023 for 6 months,</li>
-<li>I live in Zografou, Athens, and I'm sorry but</li>
 <li>I can't provide with ΕΣΠΑ money.</li>
+<li>I live in Zografou, Athens</li>
 </ul>
 
 EOHTML;
@@ -19,8 +19,8 @@ function get_contact_note_gr() {
 <p>
 <ul class="dont-be-like-list txt-cent">
 <li>Ψάχνω για πρακτική άσκηση από Σεπτέμβριο 2023 για το εξάμηνο.</li>
-<li>Μένω στη Ζωγράφου, Αθήνα, και λυπάμαι αλλά</li>
-<li>δεν έχω δηλώσει για χρηματοδότηση ΕΣΠΑ.</li>
+<li>Δεν έχω δηλώσει για χρηματοδότηση ΕΣΠΑ.</li>
+<li>Μένω στη Ζωγράφου, Αθήνα</li>
 </ul>
 </p>
 
