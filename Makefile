@@ -34,6 +34,7 @@ ln:
 	ln -sf biography bio
 	ln -sf portfolio por
 	ln -sf common com
+	ln -sf push.sh p
 	ln -sf hinting-hamburger home/hh
 	ln -sf menu-bar common/menu
 	ln -sf css-snippets common/css
