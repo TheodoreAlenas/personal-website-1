@@ -20,14 +20,14 @@ It's a static site, so you may try it using
 ```bash
 git clone https://github.com/TheodoreAlenas/personal-home-page
 make
-your-browser file:///$PWD/target/en/index.html
+your-browser file://$PWD/target/en/index.html
 ```
 
 I find it valuable to throttle, and for that you may try
 ```bash
 python3 -m http.server 3000
 ```
-so that you can enable throttling to the browser.
+so that you can enable throttling in the browser.
 
 You'll need php. Version 7 will work,
 and probably version 4 will too.
@@ -42,7 +42,7 @@ It supports light and dark theme,
 Greek and English language,
 desktop screens and mobile screens,
 it should be easy to modify by an unfamiliar programmer,
-and it's friendly for the disabled.
+and it's friendly to the disabled.
 
 ## Technical side
 
@@ -51,14 +51,13 @@ because I knew I'd easily lose track of what I'm doing,
 given I don't know how to make a website.
 I did know how to write CSS,
 and HTML with accessibility concerns,
-and I knew some of how to handle complexity
-and the feeling of being overwhelmed.
-It was my first time however that I made a site.
+and I have handled complex tasks in the past.
+However it was my first time that I made a site.
 
 I highly recommend you try to navigate the code,
 because I put plenty of effort into the directory structure.
-The goal is that navigating the code feels similar
-to navigating the site,
+The goal is to make it so navigating the code
+feels the same as navigating the site,
 and if multiple pieces of code need to change for
 the same reason then they're next to each other.
 
@@ -76,17 +75,17 @@ and themed. I didn't actually try them themed
 but the infastructure is there, a page could have
 two menu bars themed differently.
 
-# Apologies
+## Apologies
 
 It's my first web development project.
 The reason it's mostly PHP is that I thought I'd use PHP.
 I wasn't expecting it to turn out this way,
 I either expected I'd use PHP in the original intended way
 or I'd make a server side rendered site.
-It turned out however, by making the site incrementally,
+By making the site incrementally, however, it turned out
 that the best approach is to stitch together strings
-that make up HTML files. PHP isn't necessary then
-but it's too late.
+that make up HTML files.
+That makes it unnecessary to use PHP indeed.
 
 Also I'm sorry I didn't think
 of other platforms than Linux.
