@@ -3,13 +3,13 @@
 
 function get_portfolio_snippet_this_site() {
   return <<<EOHTML
-<span style="color:#8af;"> </span><span style="color:#000000;"></span><span style="color:#000000;background-color:#8af;"> code/web/php/contact </span><span style="color:#8af;background-color:#8af;"></span><span style="filter: contrast(70%) brightness(190%);color:#8af;background-color:#3333FF;"> </span><span style="filter: contrast(70%) brightness(190%);color:#3333FF;background-color:#3333FF;"></span><span style="color:#3333FF;"> 
+<span style="color:#8af;"> </span><span style="color:#000000;"></span><span style="color:#000000;background-color:#8af;"> code/web/pensonal-home-page/contact </span><span style="color:#8af;background-color:#8af;"></span><span style="filter: contrast(70%) brightness(190%);color:#8af;background-color:#3333FF;"> </span><span style="filter: contrast(70%) brightness(190%);color:#3333FF;background-color:#3333FF;"></span><span style="color:#3333FF;"> 
 </span>  \_ <span style="color:lime;">ls</span>
 extra-table.php  index-gr.php  test.php
 face-and-name    mod.php
 index-en.php     note.php
 
-<span style="color:#8af;"> </span><span style="color:#000000;"></span><span style="color:#000000;background-color:#8af;"> code/web/php/contact </span><span style="color:#8af;background-color:#8af;"></span><span style="filter: contrast(70%) brightness(190%);color:#8af;background-color:#3333FF;"> </span><span style="filter: contrast(70%) brightness(190%);color:#3333FF;background-color:#3333FF;"></span><span style="color:#3333FF;"> 
+<span style="color:#8af;"> </span><span style="color:#000000;"></span><span style="color:#000000;background-color:#8af;"> code/web/pensonal-home-page/contact </span><span style="color:#8af;background-color:#8af;"></span><span style="filter: contrast(70%) brightness(190%);color:#8af;background-color:#3333FF;"> </span><span style="filter: contrast(70%) brightness(190%);color:#3333FF;background-color:#3333FF;"></span><span style="color:#3333FF;"> 
 </span>  \_ <span style="color:lime;">head</span> <span style="text-decoration:underline;">extra-table.php
 </span>&lt;?php
 // License at the bottom.

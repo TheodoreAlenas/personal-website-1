@@ -6,8 +6,6 @@ exit
 EOF
 }
 
-push_to_github() {
-  git push -u origin main
-}
-
-push_to_github && (push_to_site)
+if make && git add -Av && git commit && git push -u origin main
+then (push_to_site)
+fi
