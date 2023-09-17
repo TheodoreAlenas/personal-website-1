@@ -2,32 +2,35 @@
 // License at the bottom.
 
 function get_story_maturity_title_en() {
-  return "I value environments that inspire maturity";
+  return "I believe in maturity";
 }
 function get_story_maturity_title_gr() {
-  return "Δείχνω εκτίμηση σε περιβάλλοντα ωριμότητας";
+  return "Πιστεύω στην ωριμότητα";
 }
 
 function get_story_maturity_en() {
   return <<<EOHTML
 
 <p>
-I've written programs that I use
-and therefore I develop a sense of care
-towards the bugs I cause.
+I'm entering an industry that has been flooding
+desparately with cheap young men since the late 70s,
+and I'll be one of them.
+People haven't seen maturity,
+they haven't heard stories of it,
+and it's become a legend.
 </p>
 <p>
-I appreciate old tools,
-not because they make people productive
-but because they have a culture that
-reminds what a programmer does.
+I do believe though.
+There are good reasons why the others don't,
+it's not random that skill has bad reputation,
+but I believe.
 </p>
 <p>
-I like to code without a sensation of speed,
-and clean up along the way every few minutes.
-I prototype and then I give each piece of the software
-a way to show itself off before I develop it.
-I've played around with TDD and TCR as well.
+I've written programs that I use,
+I appreciate old tools because they're our legacy,
+and I've played around with TDD and TCR
+using demonstrations of Robert C. Martin
+and Kent Beck.
 </p>
 
 EOHTML;
@@ -37,24 +40,25 @@ function get_story_maturity_gr() {
   return <<<EOHTML
 
 <p>
-Παράγω προγράμματα που χρησιμοποιώ,
-και έτσι έχω αναπτύξει μια άμεση έγνοια
-για τα σφάλματα στον κώδικα.
+Δυστυχώς η πληροφορική φημίζεται για
+το φθηνό εργατικό δυναμικό της, σαν εμένα.
+Ο κλάδος πλημμυρίζει με νέους από τα τέλη του 70
+και η έννοια της ώριμης δουλειάς είναι θρύλος,
+λίγοι έχουν δει προγραμματιστή που να
+θυμίζει τον Kent Beck.
 </p>
 <p>
-Εκτιμώ τα
-παλιά εργαλεία,
-όχι λόγω παραγωγικότητας αλλά λόγω νοοτροπίας.
-Προσωπικά μου θυμίζουν το κοινωνικό μου ρόλο.
+Έχω πειστεί όμως ότι μια μέρα θα μπορώ να δουλεύω
+χαλαρά, ευσυνείδητα και αξιόπιστα.
+Έχουν δίκιο αυτοί που αποφεύγουν τέτοιες σκέψεις,
+αλλά πιστεύω ότι υπάρχει φως στο τέλος.
 </p>
 <p>
-Προτιμώ να προγραμματίζω με ήπιο ρυθμό,
-συντηρώντας ανά μερικά λεπτά.
-Προτοτυποποιώ, και έπειτα ξαναρχίζω απ' την αρχή.
-Δίνω στον εαυτό μου πρώτα ένα τρόπο
-να δοκιμάσω κάθε κομμάτι της δουλειάς
-πρωτού το αναπτύξω.
-Έχω πειραματιστεί ελαφρώς και με TDD και TCR.
+Έχω φτιάξει προγράμματα που χρησιμοποιώ,
+εκτιμώ τα παραδοσιακά εργαλεία προγραμματισμού,
+και έχω πειραματιστεί με TDD και TCR
+με βάση τις επιδείξεις των Robert C. Martin
+και Kent Beck.
 </p>
 
 EOHTML;

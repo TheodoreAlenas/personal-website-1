@@ -47,7 +47,7 @@ function get_contact_and_css_gr() {
 
 function get_contact_face_and_css() {
   return get_face_and_name_aaand_css(
-    "p3 phone-p2 m-like-h1 mlra round inverse-theme",
+    "p3 phone-p2 m-like-h1 mlra round bg2 fg2",
     "../images/pat.png",
     "mock of a social media pfp",
     "dimakop<b>t</b>732@gmail.com",

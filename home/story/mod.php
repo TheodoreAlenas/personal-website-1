@@ -2,10 +2,9 @@
 // License at the bottom.
 
 include_once(__DIR__ . "/opening.php");
-include_once(__DIR__ . "/opening-more.php");
 include_once(__DIR__ . "/value-maturity.php");
-include_once(__DIR__ . "/value-learning.php");
-include_once(__DIR__ . "/value-people.php");
+include_once(__DIR__ . "/machine-communicator.php");
+include_once(__DIR__ . "/people-solution.php");
 
 function get_story_and_css(string $language) {
   return [
@@ -24,31 +23,29 @@ function get_story(string $language) {
 function get_story_en() {
   return
     get_story_opening_en() .
-    get_story_opening_more_en() .
     "<h2>" . get_story_maturity_title_en() . "</h2>" .
     get_story_card_maturity(get_story_maturity_en()) .
-    "<h2>" . get_story_learning_title_en() . "</h2>" .
-    get_story_card_learning(
-      get_story_learning_1_en(),
-      get_story_learning_2_en()) .
-    "<h2>" . get_story_people_title_en() . "</h2>" .
-    get_story_people_1_en() .
-    get_story_people_2_en();
+    "<h2>" . get_story_machine_communicator_title_en() . "</h2>" .
+    get_story_card_machine_communicator(
+      get_story_machine_communicator_1_en(),
+      get_story_machine_communicator_2_en()) .
+    "<h2>" . get_story_people_solution_title_en() . "</h2>" .
+    get_story_people_solution_1_en() .
+    get_story_people_solution_2_en();
 }
 
 function get_story_gr() {
   return
     get_story_opening_gr() .
-    get_story_opening_more_gr() .
     "<h2>" . get_story_maturity_title_gr() . "</h2>" .
     get_story_card_maturity(get_story_maturity_gr()) .
-    "<h2>" . get_story_learning_title_gr() . "</h2>" .
-    get_story_card_learning(
-      get_story_learning_1_gr(),
-      get_story_learning_2_gr()) .
-    "<h2>" . get_story_people_title_gr() . "</h2>" .
-    get_story_people_1_gr() .
-    get_story_people_2_gr();
+    "<h2>" . get_story_machine_communicator_title_gr() . "</h2>" .
+    get_story_card_machine_communicator(
+      get_story_machine_communicator_1_gr(),
+      get_story_machine_communicator_2_gr()) .
+    "<h2>" . get_story_people_solution_title_gr() . "</h2>" .
+    get_story_people_solution_1_gr() .
+    get_story_people_solution_2_gr();
 }
 
 function get_story_card_maturity(string $story_itself) {
@@ -69,7 +66,7 @@ function get_story_card_maturity(string $story_itself) {
 EOHTML;
 }
 
-function get_story_card_learning(
+function get_story_card_machine_communicator(
   string $story_left, string $story_right) {
 
   return <<<EOHTML

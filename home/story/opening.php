@@ -12,26 +12,31 @@ and programs come out.&quot;
 </p>
 <p>
 That's from a talk by Robert C. Martin.
+I was exactly like that,
+a numb mind that collapses if it dares wake up.
+I appreciate everyone,
+just it would be unethical of me, now, to go back.
 EOHTML;
 }
 
 function get_story_opening_gr() {
   return <<<EOHTML
 <p>
-Μια από τις φράσεις του κ.
+Περνάω μια φάση αυτοβελτίωσης από το 2022
+και με συγκινεί η φράση του
 Robert C. Martin
-που με συγκίνησαν περισσότερο είναι
 </p>
 <p>
 <i>
 &quot;Και ποιος είναι ο ορισμός του προγραμματιστή;
 Όλοι γνωρίζουμε τον ορισμό του προγραμματιστή.
-Ένας τύπος, κλεισμένος, πετάς κρέας
+Ένας τύπος σε ένα δωμάτιο, πετάς κρέας
 και βγαίνουν προγράμματα.&quot;
 </i>
 </p>
 <p>
-που άκουσα σε μια ομιλία του.
+Εκτιμώ καθένα για τους στόχους του, αλλά
+για μένα προσωπικά, τώρα, θα ήταν ανήθικο να πάω πίσω.
 EOHTML;
 }
 
