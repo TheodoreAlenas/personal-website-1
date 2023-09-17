@@ -18,13 +18,8 @@
   bottom: 0;
 }
 
-.hamburger-checkbox + label + .hamburger-nav-list {
+:not(.hamburger-on) .hamburger-checkbox:not(:checked) + label + .hamburger-nav-list {
   display: none;
-}
-.hamburger-checkbox:checked + label + .hamburger-nav-list,
-  .hamburger-on
-.hamburger-checkbox + label + .hamburger-nav-list {
-  display: block;
 }
 
  .debug-mode .hamburger-checkbox {
