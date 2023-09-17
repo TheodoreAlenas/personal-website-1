@@ -16,8 +16,11 @@ clean:
 	echo removing:; find target -maxdepth 1
 	rm -rf target/*
 
-tags: $(find . -name .git -prune -o -type f -print)
-	find . -name .git -prune -o -type f -print0 | xargs -0 ctags
+SOURCE_DIRS = home portfolio biography contact common
+SOURCE_FILES = $(shell find ${SOURCE_DIRS} -type f)
+
+tags: ${SOURCE_FILES}
+	ctags -R ${SOURCE_DIRS}
 
 COMMON = Makefile $(wildcard common/* common/*/*)
 
