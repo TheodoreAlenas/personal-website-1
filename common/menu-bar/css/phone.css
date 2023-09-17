@@ -18,7 +18,10 @@
   bottom: 0;
 }
 
-:not(.hamburger-on) .hamburger-checkbox:not(:checked) + label + .hamburger-nav-list {
+:not(.hamburger-on)
+.hamburger-checkbox:not(:checked)
++ label
++ .hamburger-nav-list {
   display: none;
 }
 
