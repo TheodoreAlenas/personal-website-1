@@ -1,14 +1,6 @@
 /* License at the bottom. */
 
-html {
-  color-scheme: light dark;
-}
-
-body {
-  font-family: system-ui;
-  line-height: 1.6;
-  margin: 0 0;
-}
+html { color-scheme: light dark; }
 
 .be-like-h2, h2 {
   margin-bottom: 4rem;
@@ -33,19 +25,19 @@ body {
     margin-bottom: 2rem;
   }
 }
-.desktop-screen { font-size: 1.5rem; }
+.desktop-screen { font-size: 1.3rem; }
 .desktop-screen .m-like-h2,
 .desktop-screen .be-like-h2,
 .desktop-screen h2 {
-  margin-top: 12rem;
+  margin-top: 20rem;
   margin-bottom: 4rem;
 }
 @media screen and (min-width: 1200px) {
-  .free-media-query { font-size: 1.5rem; }
+  .free-media-query { font-size: 1.3rem; }
   .free-media-query .m-like-h2,
   .free-media-query .be-like-h2,
   .free-media-query h2 {
-    margin-top: 12rem;
+    margin-top: 20rem;
     margin-bottom: 4rem;
   }
 }

@@ -26,7 +26,7 @@ EOHTML . get_all_file_contents(["common/light-dark-theme/functions.js"]) . <<<EO
     </script>
 
   </head>
-  <body>
+  <body class="default-ln-h default-font-family default-font-size m0">
     <input
       id="dark-theme-switch"
       type="checkbox"

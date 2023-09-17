@@ -28,17 +28,8 @@ clean:
 	echo removing:; find target -maxdepth 1
 	rm -rf target/*
 
-ln:
-	find ./* -type l -exec rm -v {} \;
-	ln -sf images img
-	ln -sf biography bio
-	ln -sf portfolio por
-	ln -sf common com
-	ln -sf push.sh p
-	ln -sf hinting-hamburger home/hh
-	ln -sf menu-bar common/menu
-	ln -sf css-snippets common/css
-	ln -sf light-dark-theme common/ld
+tags: $(find . -name .git -prune -o -type f -print)
+	find . -name .git -prune -o -type f -print0 | xargs -0 ctags
 
 target/%/index.html: home/index-%.php target/banner.css home/mod.php $(wildcard home/*/*) ${COMMON}
 	@dirname $@ | xargs mkdir -pv

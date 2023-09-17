@@ -13,7 +13,7 @@
   justify-content: space-evenly;
 }
 .grid { display: grid; }
-.gap-2 { gap: 2rem; }
+.gap-2 { gap: 3rem; }
 .grid-col-to-row { grid-auto-flow: column; }
 @media screen and (max-width: 1200px) {
   .free-media-query .grid-col-to-row { grid-auto-flow: row; }

@@ -1,8 +1,9 @@
 /* License at the bottom. */
 
-.ln-h-1em {
-  line-height: 1em;
-}
+.default-font-family { font-family: system-ui; }
+.default-ln-h { line-height: 1.6; }
+
+.ln-h-1em { line-height: 1em; }
 
 .txt-cent { text-align: center; }
 @media screen and (max-width: 1200px) {
@@ -15,17 +16,16 @@
   line-height: 2em;
 }
 .phone-screen .phone-smol { font-size: 75%; }
+.desktop-screen .desktop-smol { font-size: 75%; }
 @media screen and (max-width: 1200px) {
   .free-media-query .phone-smol { font-size: 75%; }
 }
+@media screen and (min-width: 1200px) {
+  .free-media-query .desktop-smol { font-size: 75%; }
+}
 
-.fat {
-  font-size: 130%;
-}
-.ffat {
-  font-size: 130%;
-  letter-spacing: 0.1rem;
-}
+.fat { font-size: 130%; }
+.ffat { font-size: 130%; letter-spacing: 0.1rem; }
 
 /*
 Copyright (c) 2023 Dimakopoulos Theodoros
