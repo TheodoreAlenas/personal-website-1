@@ -100,6 +100,7 @@
 .bar-center	./common/css-snippets/width-border.css	/^.bar-center {$/;"	c
 .be-like-h2	./common/wraps/html-body.css	/^.be-like-h2, h2 {$/;"	c
 .bg-select	./common/css-snippets/popup.css	/^.bg-select, .debug-mode .bg-select {$/;"	c
+.bg2	./common/light-dark-theme/from-outside.css	/^.bg2 { background-color: var(--background-2); }$/;"	c
 .block	./common/css-snippets/display-position.css	/^.block , .inside-block > * { display: block; }$/;"	c
 .blue	./common/light-dark-theme/panels.css	/^.blue {$/;"	c
 .brown	./common/light-dark-theme/panels.css	/^.brown {$/;"	c
@@ -116,7 +117,9 @@
 .debug-mode .menu-bar span	./common/menu-bar/css/default.css	/^.debug-mode .menu-bar span {$/;"	s
 .debug-mode .menu-bar span	./target/menu-bar.css	/^.debug-mode .menu-bar span {$/;"	s
 .debug-red	./common/light-dark-theme/panels.css	/^.debug-red {$/;"	c
-.desktop-screen	./common/wraps/html-body.css	/^.desktop-screen { font-size: 1.5rem; }$/;"	c
+.default-font-family	./common/css-snippets/text.css	/^.default-font-family { font-family: system-ui; }$/;"	c
+.default-ln-h	./common/css-snippets/text.css	/^.default-ln-h { line-height: 1.6; }$/;"	c
+.desktop-screen	./common/wraps/html-body.css	/^.desktop-screen { font-size: 1.3rem; }$/;"	c
 .desktop-screen .be-like-h2	./common/wraps/html-body.css	/^.desktop-screen .be-like-h2,$/;"	c
 .desktop-screen .desktop-iinside-p2 > * > *	./common/css-snippets/margin-padding.css	/^.desktop-screen .desktop-iinside-p2 > * > * { padding: 1rem 1rem; }$/;"	s
 .desktop-screen .desktop-iinside-p3 > * > *	./common/css-snippets/margin-padding.css	/^.desktop-screen .desktop-iinside-p3 > * > * { padding: 3rem 2rem; }$/;"	s
@@ -139,13 +142,14 @@
 .face-and-name > *:first-child	./contact/face-and-name/m.css	/^.face-and-name > *:first-child {$/;"	s
 .face-and-name > *:nth-child(2)	./contact/face-and-name/m.css	/^.face-and-name > *:nth-child(2) {$/;"	s
 .face-and-name > *:nth-child(3)	./contact/face-and-name/m.css	/^.face-and-name > *:nth-child(3) {$/;"	s
-.fat	./common/css-snippets/text.css	/^.fat {$/;"	c
+.fat	./common/css-snippets/text.css	/^.fat { font-size: 130%; }$/;"	c
 .fat-ghost-on-check:checked + label::before	./common/css-snippets/popup.css	/^.fat-ghost-on-check:checked + label::before {$/;"	s
-.ffat	./common/css-snippets/text.css	/^.ffat {$/;"	c
+.ffat	./common/css-snippets/text.css	/^.ffat { font-size: 130%; letter-spacing: 0.1rem; }$/;"	c
+.fg2	./common/light-dark-theme/from-outside.css	/^.fg2 { color: var(--foreground-2); }$/;"	c
 .flex-row-spar	./common/css-snippets/display-position.css	/^.flex-row-spar {$/;"	c
 .flex-row-spbet	./common/css-snippets/display-position.css	/^.flex-row-spbet {$/;"	c
 .free-media-query	./common/wraps/html-body.css	/^  .free-media-query { font-size: 1.2rem; }$/;"	c
-.free-media-query	./common/wraps/html-body.css	/^  .free-media-query { font-size: 1.5rem; }$/;"	c
+.free-media-query	./common/wraps/html-body.css	/^  .free-media-query { font-size: 1.3rem; }$/;"	c
 .free-media-query .be-like-h2	./common/wraps/html-body.css	/^  .free-media-query .be-like-h2,$/;"	c
 .free-media-query .desktop	./common/css-snippets/fade.css	/^  .free-media-query .desktop { display: none; }$/;"	c
 .free-media-query .desktop-iinside-p2 > * > *	./common/css-snippets/margin-padding.css	/^  .free-media-query .desktop-iinside-p2 > * > * { padding: 1rem 1rem; }$/;"	s
@@ -172,7 +176,7 @@
 .free-media-query .phone-smol	./common/css-snippets/text.css	/^  .free-media-query .phone-smol { font-size: 75%; }$/;"	c
 .free-media-query .phone-txt-cent	./common/css-snippets/text.css	/^  .free-media-query .phone-txt-cent { text-align: center; }$/;"	c
 .free-media-query h2	./common/wraps/html-body.css	/^  .free-media-query h2 {$/;"	s
-.gap-2	./common/css-snippets/display-position.css	/^.gap-2 { gap: 2rem; }$/;"	c
+.gap-2	./common/css-snippets/display-position.css	/^.gap-2 { gap: 3rem; }$/;"	c
 .grid	./common/css-snippets/display-position.css	/^.grid { display: grid; }$/;"	c
 .grid-col-to-row	./common/css-snippets/display-position.css	/^.grid-col-to-row { grid-auto-flow: column; }$/;"	c
 .hamburger-checkbox	./common/menu-bar/css/phone.css	/^.hamburger-checkbox {$/;"	c
@@ -215,7 +219,7 @@
 .light-themed	./common/light-dark-theme/links.css	/^.light-themed {$/;"	c
 .light-themed	./common/light-dark-theme/panels.css	/^.light-themed {$/;"	c
 .light-themed .inverse-theme	./common/light-dark-theme/from-outside.css	/^.light-themed .inverse-theme {$/;"	c
-.ln-h-1em	./common/css-snippets/text.css	/^.ln-h-1em {$/;"	c
+.ln-h-1em	./common/css-snippets/text.css	/^.ln-h-1em { line-height: 1em; }$/;"	c
 .lrline	./common/css-snippets/width-border.css	/^.lrline {$/;"	c
 .m0	./common/css-snippets/margin-padding.css	/^.m0 { margin: 0; }$/;"	c
 .m0a	./common/css-snippets/margin-padding.css	/^.m0a { margin: 0 auto; }$/;"	c
@@ -317,6 +321,7 @@ Running	./README.md	/^## Running$/;"	s	chapter:Theodore's Home Page
 Rust Compiler Presentation	./prototype/portfolio.html	/^      <h2>Rust Compiler Presentation<\/h2>$/;"	i
 TESTS	./Makefile	/^TESTS = $(addprefix target\/test\/,$(addsuffix .html,${TESTS_NAKED}))$/;"	m
 TESTS_NAKED	./Makefile	/^TESTS_NAKED = banner menu-bar contact face-and-name$/;"	m
+THE_USUAL =	./Makefile	/^define THE_USUAL =$/;"	m
 Technical side	./README.md	/^## Technical side$/;"	s	chapter:Theodore's Home Page
 Theodore - (broken)	./target/en/portfolio/tdd.html	/^    <title>Theodore - (broken)<\/title>$/;"	j
 Theodore - Biography	./target/en/biography.html	/^    <title>Theodore - Biography<\/title>$/;"	j
@@ -344,10 +349,9 @@ a:not(.dont-be-like-link):visited	./common/light-dark-theme/links.css	/^a:visite
 a:not(.dont-be-like-link):visited:hover	./common/light-dark-theme/links.css	/^a:visited:hover .be-like-link, a:not(.dont-be-like-link):visited:hover {$/;"	c
 a:visited .be-like-link	./common/light-dark-theme/links.css	/^a:visited .be-like-link, a:not(.dont-be-like-link):visited {$/;"	c
 a:visited:hover .be-like-link	./common/light-dark-theme/links.css	/^a:visited:hover .be-like-link, a:not(.dont-be-like-link):visited:hover {$/;"	c
-all	./Makefile	/^all: ${MAINS} ${TESTS} target\/images$/;"	t
+all	./Makefile	/^all: tags ${MAINS} ${TESTS} target\/images$/;"	t
 applyStoredTheme	./common/light-dark-theme/functions.js	/^function applyStoredTheme() {$/;"	f
 atlas.grnet webpage redesign, UI/UX	./prototype/portfolio.html	/^      <h2><a href="https:\/\/atlas.grnet">atlas.grnet<\/a> webpage redesign, UI\/UX<\/h2>$/;"	i
-body	./common/wraps/html-body.css	/^body {$/;"	s
 clean	./Makefile	/^clean:$/;"	t
 dark-theme-switch	./target/en/biography.html	/^      id="dark-theme-switch"$/;"	I
 dark-theme-switch	./target/en/contact.html	/^      id="dark-theme-switch"$/;"	I
@@ -473,37 +477,37 @@ get_typical_title	./common/wraps/typical-layouts.php	/^function get_typical_titl
 get_welcome	./home/banner/welcome.php	/^function get_welcome(String $language) {$/;"	f
 h2	./common/wraps/html-body.css	/^.be-like-h2, h2 {$/;"	s
 h2.saner-h2	./common/wraps/html-body.css	/^h2.saner-h2 {$/;"	c
-hamburger-checkbox-160	./target/test/menu-bar.html	/^  id='hamburger-checkbox-160'$/;"	I
-hamburger-checkbox-167	./target/test/menu-bar.html	/^  id='hamburger-checkbox-167'$/;"	I
-hamburger-checkbox-220	./target/test/menu-bar.html	/^  id='hamburger-checkbox-220'$/;"	I
-hamburger-checkbox-231	./target/test/menu-bar.html	/^  id='hamburger-checkbox-231'$/;"	I
-hamburger-checkbox-236	./target/gr/biography.html	/^  id='hamburger-checkbox-236'$/;"	I
-hamburger-checkbox-276	./target/test/menu-bar.html	/^  id='hamburger-checkbox-276'$/;"	I
-hamburger-checkbox-32	./target/test/menu-bar.html	/^  id='hamburger-checkbox-32'$/;"	I
-hamburger-checkbox-320	./target/test/menu-bar.html	/^  id='hamburger-checkbox-320'$/;"	I
-hamburger-checkbox-398	./target/test/menu-bar.html	/^  id='hamburger-checkbox-398'$/;"	I
-hamburger-checkbox-417	./target/test/contact.html	/^  id='hamburger-checkbox-417'$/;"	I
-hamburger-checkbox-432	./target/test/menu-bar.html	/^  id='hamburger-checkbox-432'$/;"	I
-hamburger-checkbox-447	./target/gr/index.html	/^  id='hamburger-checkbox-447'$/;"	I
-hamburger-checkbox-476	./target/test/face-and-name.html	/^  id='hamburger-checkbox-476'$/;"	I
-hamburger-checkbox-554	./target/en/portfolio.html	/^  id='hamburger-checkbox-554'$/;"	I
-hamburger-checkbox-561	./target/test/menu-bar.html	/^  id='hamburger-checkbox-561'$/;"	I
-hamburger-checkbox-597	./target/gr/contact.html	/^  id='hamburger-checkbox-597'$/;"	I
-hamburger-checkbox-616	./target/en/index.html	/^  id='hamburger-checkbox-616'$/;"	I
+hamburger-checkbox-162	./target/en/index.html	/^  id='hamburger-checkbox-162'$/;"	I
+hamburger-checkbox-176	./target/test/menu-bar.html	/^  id='hamburger-checkbox-176'$/;"	I
+hamburger-checkbox-196	./target/test/menu-bar.html	/^  id='hamburger-checkbox-196'$/;"	I
+hamburger-checkbox-213	./target/test/menu-bar.html	/^  id='hamburger-checkbox-213'$/;"	I
+hamburger-checkbox-257	./target/test/menu-bar.html	/^  id='hamburger-checkbox-257'$/;"	I
+hamburger-checkbox-265	./target/en/contact.html	/^  id='hamburger-checkbox-265'$/;"	I
+hamburger-checkbox-273	./target/test/menu-bar.html	/^  id='hamburger-checkbox-273'$/;"	I
+hamburger-checkbox-288	./target/test/menu-bar.html	/^  id='hamburger-checkbox-288'$/;"	I
+hamburger-checkbox-301	./target/test/menu-bar.html	/^  id='hamburger-checkbox-301'$/;"	I
+hamburger-checkbox-311	./target/en/portfolio.html	/^  id='hamburger-checkbox-311'$/;"	I
+hamburger-checkbox-330	./target/en/biography.html	/^  id='hamburger-checkbox-330'$/;"	I
+hamburger-checkbox-34	./target/test/contact.html	/^  id='hamburger-checkbox-34'$/;"	I
+hamburger-checkbox-357	./target/test/menu-bar.html	/^  id='hamburger-checkbox-357'$/;"	I
+hamburger-checkbox-374	./target/gr/index.html	/^  id='hamburger-checkbox-374'$/;"	I
+hamburger-checkbox-476	./target/gr/contact.html	/^  id='hamburger-checkbox-476'$/;"	I
+hamburger-checkbox-490	./target/gr/portfolio.html	/^  id='hamburger-checkbox-490'$/;"	I
+hamburger-checkbox-546	./target/test/menu-bar.html	/^  id='hamburger-checkbox-546'$/;"	I
+hamburger-checkbox-56	./target/test/menu-bar.html	/^  id='hamburger-checkbox-56'$/;"	I
+hamburger-checkbox-589	./target/test/menu-bar.html	/^  id='hamburger-checkbox-589'$/;"	I
+hamburger-checkbox-610	./target/test/face-and-name.html	/^  id='hamburger-checkbox-610'$/;"	I
+hamburger-checkbox-617	./target/test/menu-bar.html	/^  id='hamburger-checkbox-617'$/;"	I
 hamburger-checkbox-639	./target/en/portfolio/tdd.html	/^  id='hamburger-checkbox-639'$/;"	I
-hamburger-checkbox-654	./target/test/menu-bar.html	/^  id='hamburger-checkbox-654'$/;"	I
-hamburger-checkbox-716	./target/test/banner.html	/^  id='hamburger-checkbox-716'$/;"	I
-hamburger-checkbox-716	./target/test/menu-bar.html	/^  id='hamburger-checkbox-716'$/;"	I
-hamburger-checkbox-754	./target/test/menu-bar.html	/^  id='hamburger-checkbox-754'$/;"	I
-hamburger-checkbox-79	./target/test/menu-bar.html	/^  id='hamburger-checkbox-79'$/;"	I
+hamburger-checkbox-639	./target/test/menu-bar.html	/^  id='hamburger-checkbox-639'$/;"	I
+hamburger-checkbox-69	./target/test/menu-bar.html	/^  id='hamburger-checkbox-69'$/;"	I
+hamburger-checkbox-720	./target/test/banner.html	/^  id='hamburger-checkbox-720'$/;"	I
+hamburger-checkbox-742	./target/test/menu-bar.html	/^  id='hamburger-checkbox-742'$/;"	I
+hamburger-checkbox-840	./target/gr/biography.html	/^  id='hamburger-checkbox-840'$/;"	I
+hamburger-checkbox-851	./target/test/menu-bar.html	/^  id='hamburger-checkbox-851'$/;"	I
 hamburger-checkbox-882	./target/gr/portfolio/tdd.html	/^  id='hamburger-checkbox-882'$/;"	I
-hamburger-checkbox-894	./target/test/menu-bar.html	/^  id='hamburger-checkbox-894'$/;"	I
-hamburger-checkbox-924	./target/en/contact.html	/^  id='hamburger-checkbox-924'$/;"	I
-hamburger-checkbox-927	./target/en/biography.html	/^  id='hamburger-checkbox-927'$/;"	I
-hamburger-checkbox-951	./target/test/menu-bar.html	/^  id='hamburger-checkbox-951'$/;"	I
-hamburger-checkbox-966	./target/test/menu-bar.html	/^  id='hamburger-checkbox-966'$/;"	I
-hamburger-checkbox-989	./target/gr/portfolio.html	/^  id='hamburger-checkbox-989'$/;"	I
-html	./common/wraps/html-body.css	/^html {$/;"	s
+hamburger-checkbox-953	./target/test/menu-bar.html	/^  id='hamburger-checkbox-953'$/;"	I
+html	./common/wraps/html-body.css	/^html { color-scheme: light dark; }$/;"	s
 images	./Makefile	/^images:$/;"	t
 localize_theodore	./common/wraps/typical-layouts.php	/^function localize_theodore(string $language) {$/;"	f
 makeItBright	./common/light-dark-theme/functions.js	/^function makeItBright() {$/;"	f

@@ -58,7 +58,7 @@ function get_story_card_maturity(string $story_itself) {
   <div class='phone-scroll-x phone-smol'>
   <pre
     class='
-      brown round mtb-like-p pad-no-ln-h w-h-max-cont
+      blue round mtb-like-p pad-no-ln-h w-h-max-cont
       phone-m0a desktop-smol
   '>$html_styled_tmux</pre>
   </div>

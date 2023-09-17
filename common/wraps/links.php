@@ -8,7 +8,7 @@ function get_a_tag(String $which, String $language) {
 
 function get_im_here_link(String $which, String $language) {
   $name = get_link_name_and_url($which, $language)[0];
-  return "<span class='inverse-theme'>$name</span>";
+  return "<span class='bg2 fg2'>$name</span>";
 }
 
 function get_maybe_im_here_link(

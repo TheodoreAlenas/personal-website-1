@@ -1,14 +1,20 @@
 .light-themed,
 .dark-themed .inverse-theme {
   --background-normal: #fff;
+  --background-2: var(--code-background);
   --foreground-normal: #000;
+  --foreground-2: #ddd;
 }
 .dark-themed,
 .light-themed .inverse-theme {
   --background-normal: #404045;
+  --background-2: #ddd;
   --foreground-normal: #ddd;
+  --foreground-2: #000;
 }
 
+.fg2 { color: var(--foreground-2); }
+.bg2 { background-color: var(--background-2); }
 
 .inverse-theme,
 .theme-wrapper {
