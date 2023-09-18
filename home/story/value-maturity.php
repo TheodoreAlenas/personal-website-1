@@ -12,18 +12,17 @@ function get_story_maturity_en() {
   return <<<EOHTML
 
 <p>
-I'm entering an industry that has been flooding
-desparately with cheap young men since the late 70s,
-and I'll be one of them.
-People haven't seen maturity,
-they haven't heard stories of it,
-and it's become a legend.
+The industry seems to have a mixed sense of maturity.
+I'll be a cheap young man like the rest,
+which is expected in any industry for a newcomer,
+but a lot of people seem to view maturity like
+a legend or even a utopia.
 </p>
 <p>
-I do believe though.
-There are good reasons why the others don't,
-it's not random that skill has bad reputation,
-but I believe.
+I do believe though that one day I'll become
+someone equivalent to an experienced artist,
+where I'll work seemingly slow but actually
+I'll deliver valuable software at moderate speeds.
 </p>
 <p>
 I've written programs that I use,
@@ -40,18 +39,17 @@ function get_story_maturity_gr() {
   return <<<EOHTML
 
 <p>
-Δυστυχώς η πληροφορική φημίζεται για
-το φθηνό εργατικό δυναμικό της, σαν εμένα.
-Ο κλάδος πλημμυρίζει με νέους από τα τέλη του 70
-και η έννοια της ώριμης δουλειάς είναι θρύλος,
-λίγοι έχουν δει προγραμματιστή που να
-θυμίζει τον Kent Beck.
+Η έννοια της ωριμότητας στον κλάδο είναι υποκειμενική.
+Θα ξεκινήσω σαν φθηνό εργατικό δυναμικό,
+όπως είναι αναμενόμενο σε κάθε κλάδο,
+αλλά για πολλούς η έννοια της ωριμότητας είναι
+ουτοπική.
 </p>
 <p>
-Έχω πειστεί όμως ότι μια μέρα θα μπορώ να δουλεύω
-χαλαρά, ευσυνείδητα και αξιόπιστα.
-Έχουν δίκιο αυτοί που αποφεύγουν τέτοιες σκέψεις,
-αλλά πιστεύω ότι υπάρχει φως στο τέλος.
+Προσωπικά όμως πιστεύω ότι μια μέρα θα γίνω
+όπως είναι ένας έμπειρος ζωγράφος,
+που με αργές κινήσεις πετυχαίνει αντίστοιχο χρόνο
+με έναν αρχάριο αλλά παράγει καλύτερο έργο.
 </p>
 <p>
 Έχω φτιάξει προγράμματα που χρησιμοποιώ,

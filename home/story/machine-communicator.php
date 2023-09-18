@@ -12,17 +12,18 @@ function get_story_machine_communicator_1_en() {
   return <<<EOHTML
 
 <p>
-Both long monologues and chatting,
+I like to think of my interactions
+with the computer as communication,
+rather than like demands or serving.
+So there are long monologues and chatting,
 explaining goals and asking for opinion,
 talking about how the machine feels and so on.
-Very equivalent to human communication.
 </p>
 <p>
-In the beginning I had the usual thoughts on weird tools,
-except a YouTube channel called Distro Tube
-made Linux Vim and Emacs look like
-the inner part of some luxurious spaceship from a movie,
-like a utopia that escapes the life I couldn't enjoy.
+This didn't always use to be the case.
+A YouTube channel called Distro Tube
+made Linux Vim and Emacs look fantastical like
+the inner part of some luxurious spaceship from a movie.
 </p>
 
 EOHTML;
@@ -32,18 +33,20 @@ function get_story_machine_communicator_1_gr() {
   return <<<EOHTML
 
 <p>
-Υπάρχουν έννοιες αντίστοιχες με τους
-μεγάλους μονολόγους, τη συζήτηση,
-τις καθημερινές ερωτήσεις τύπου πώς πέρασες,
-είσαι καλά, και λοιπά πολύ αντίστοιχα
-με την ανθρώπινη επικοινωνία.
+Ο υπολογιστής δεν έχει την αξία ενός ανθρώπου,
+αλλά θεωρώ ότι η επαφή μου με τον υπολογιστή
+αποτελείται από μεγάλους μονολόγους,
+συζήτηση με μικρές φράσεις,
+καθημερινές ερωτήσεις τύπου πώς πέρασες,
+είσαι καλά και λοιπά.
+Δεν το βλέπω σαν διαταγές και εξυπηρέτηση.
 </p>
 <p>
-Στην αρχή είχα τη συνηθισμένη άποψη για τα παράξενα εργαλεία,
-αλλά υπήρχε ένα YouTube κανάλι, το Distro Tube,
-που επιδείκνυε εργαλεία όπως Linux Vim Emacs και άλλα
-με έναν ουτοπικό τρόπο, σαν πολυτελές διαστημόπλοιο
-επιστημονικής φαντασίας. Ήθελα να ζήσω εκεί.
+Δεν είχα πάντα αυτό τον τρόπο σκέψης.
+Ένα YouTube κανάλι, το Distro Tube,
+επιδείκνυε εργαλεία όπως Linux Vim Emacs και άλλα
+με έναν ουτοπικό τρόπο σαν πολυτελές διαστημόπλοιο
+επιστημονικής φαντασίας. Από εκεί ξεκίνησα.
 </p>
 
 EOHTML;
