@@ -13,9 +13,8 @@ and programs come out.&quot;
 <p>
 That's from a talk by Robert C. Martin.
 I was exactly like that,
-a numb mind that collapses if it dares wake up.
-I appreciate everyone,
-just it would be unethical of me, now, to go back.
+a numb mind that dares wake up sometimes, and collapses.
+I look up to average people a lot.
 EOHTML;
 }
 
@@ -35,8 +34,7 @@ Robert C. Martin
 </i>
 </p>
 <p>
-Εκτιμώ καθένα για τους στόχους του, αλλά
-για μένα προσωπικά, τώρα, θα ήταν ανήθικο να πάω πίσω.
+Πολλές φορές θαυμάζω τον μέσο άνθρωπο.
 EOHTML;
 }
 
