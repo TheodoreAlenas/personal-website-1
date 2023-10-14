@@ -5,8 +5,8 @@
 }
 .banner-grid {
   grid-template-columns: auto;
-  grid-template-rows: 25vw auto;
-  gap: 1rem;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "hello" "face";
   margin: 1rem 1rem;
 }
 .banner-welcome {
@@ -14,8 +14,11 @@
   text-align: center;
 }
 .banner-grid img {
-  width: 50%;
   margin: 0 auto;
+}
+.banner-faces img {
+  height: unset;
+  width: 100%;
 }
 /*
 Copyright (c) 2023 Dimakopoulos Theodoros

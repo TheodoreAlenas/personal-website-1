@@ -4,28 +4,26 @@
   width: min(30cm, 60%);
   margin: 10vh auto;
   overflow-x: hidden;
-}
-.banner-faces {
-  width: max-content;
-  font-size: 0;
+  font-size: min(3rem, 2.5vw);
 }
 .banner-faces img {
-  height: 2cm;
+  height: 1.5em;
   background-size: cover;
 }
 .banner-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 25vw;
-  gap: 10%;
+  grid-template-columns: 50% 10% auto;
+  grid-template-areas: "hello gap face";
   margin-bottom: -0.5cm;
 }
 .banner-welcome {
-  font-size: min(3rem, 2.5vw);
+  grid-area: hello;
   margin: auto 0;
 }
 .banner-grid img {
-  height: 100%;
+  grid-area: face;
+  width: 8.65em;
+  height: 8em;
   border-radius: 50%;
   background-size: cover;
 }
