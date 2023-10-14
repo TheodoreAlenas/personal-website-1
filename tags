@@ -8,6 +8,7 @@
 !_TAG_FIELD_DESCRIPTION	name	/tag name/
 !_TAG_FIELD_DESCRIPTION	pattern	/pattern/
 !_TAG_FIELD_DESCRIPTION	typeref	/Type and name of a variable or typedef/
+!_TAG_FIELD_DESCRIPTION!XML	uri	/uri associated with name prefix/
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
 !_TAG_KIND_DESCRIPTION!CSS	c,class	/classes/
@@ -40,6 +41,9 @@
 !_TAG_KIND_DESCRIPTION!PHP	n,namespace	/namespaces/
 !_TAG_KIND_DESCRIPTION!PHP	t,trait	/traits/
 !_TAG_KIND_DESCRIPTION!PHP	v,variable	/variables/
+!_TAG_KIND_DESCRIPTION!XML	i,id	/id attributes/
+!_TAG_KIND_DESCRIPTION!XML	n,nsprefix	/namespace prefixes/
+!_TAG_KIND_DESCRIPTION!XML	r,root	/root elements/
 !_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
@@ -48,8 +52,9 @@
 !_TAG_PARSER_VERSION!HTML	0.0	/current.age/
 !_TAG_PARSER_VERSION!JavaScript	0.0	/current.age/
 !_TAG_PARSER_VERSION!PHP	0.0	/current.age/
+!_TAG_PARSER_VERSION!XML	0.0	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
-!_TAG_PROC_CWD	/home/aleena/code/for/me/personal-home-page/	//
+!_TAG_PROC_CWD	/home/aleena/my/php/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
@@ -257,6 +262,7 @@
 .txt-cent	common/css-snippets/text.css	/^.txt-cent { text-align: center; }$/;"	c
 .w-h-max-cont	common/css-snippets/width-border.css	/^.w-h-max-cont {$/;"	c
 :not(.hamburger-on) .hamburger-checkbox:not(:checked) + label + .hamburger-nav-list	common/menu-bar/css/phone.css	/^+ .hamburger-nav-list {$/;"	c
+PART_OF_LICENSE	common/wraps/ends-of-main-html.php	/^$PART_OF_LICENSE = <<<EOPART_OF_LICENSE$/;"	v
 a .be-like-link	common/light-dark-theme/links.css	/^a .be-like-link, a:not(.dont-be-like-link) {$/;"	c
 a:hover .be-like-link	common/light-dark-theme/links.css	/^a:hover .be-like-link, a:not(.dont-be-like-link):hover {$/;"	c
 a:not(.dont-be-like-link)	common/light-dark-theme/links.css	/^a .be-like-link, a:not(.dont-be-like-link) {$/;"	c
@@ -266,10 +272,12 @@ a:not(.dont-be-like-link):visited:hover	common/light-dark-theme/links.css	/^a:vi
 a:visited .be-like-link	common/light-dark-theme/links.css	/^a:visited .be-like-link, a:not(.dont-be-like-link):visited {$/;"	c
 a:visited:hover .be-like-link	common/light-dark-theme/links.css	/^a:visited:hover .be-like-link, a:not(.dont-be-like-link):visited:hover {$/;"	c
 applyStoredTheme	common/light-dark-theme/functions.js	/^function applyStoredTheme() {$/;"	f
+extract_text	biography/xml.php	/^function extract_text($node, $language) {$/;"	f
+extract_text_from	biography/xml.php	/^function extract_text_from($file_name, $language) {$/;"	f
 forEachThemeSwitch	common/light-dark-theme/functions.js	/^function forEachThemeSwitch(callback) {$/;"	f
 getThemeIsDark	common/light-dark-theme/functions.js	/^function getThemeIsDark() {$/;"	f
 get_a_tag	common/wraps/links.php	/^function get_a_tag(String $which, String $language) {$/;"	f
-get_all_file_contents	common/wraps/ends-of-main-html.php	/^function get_all_file_contents(array $file_names) {$/;"	f
+get_all_file_contents	common/wraps/ends-of-main-html.php	/^function get_all_file_contents(array $file_names,$/;"	f
 get_banner	home/banner/mod.php	/^function get_banner(String $language) {$/;"	f
 get_banner_and_css	home/banner/mod.php	/^function get_banner_and_css(String $language) {$/;"	f
 get_banner_faces	home/banner/faces.php	/^function get_banner_faces() {$/;"	f
