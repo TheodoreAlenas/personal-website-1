@@ -1,0 +1,36 @@
+<body>
+  <h2>
+    <gr>Μινιμαλισμός</gr>
+    <en>Minimalism</en>
+  </h2>
+  <p>
+    <gr>
+      Για 2 χρόνια, οι εργασίες της σχολής γίνονταν σε
+      ένα 30GB Arch Linux partition με
+      260 BK/s μέγιστη και αυξομοιούμενη ταχύτητα δικτύου,
+      κυρίως χρησιμοποιώντας NeoVim.
+    </gr>
+    <en>
+      Studied exclusively on a 30GB Arch Linux partition with
+      260 BK/s maximum and unstable internet speed,
+      to do University projects using mostly NeoVim, for 2 years.
+    </en>
+  </p>
+  <p>
+    <gr>
+      Από το Φθινόπωρο του 2023,
+      είναι άνετη η πολύωρη χρήση του Vi χωρίς terminal multiplexing,
+      όπως και η χρήση των εργαλείων tmux, emacs, zsh bash και dash,
+      που σημαίνει κάθε POSIX compliant shell.
+    </gr>
+    <en>
+      By autumn 2023,
+      using Vi without terminal multiplexing is comfortable,
+      ard tmux, emacs, zsh bash and even dash,
+      therefore any POSIX compliant shell,
+      are all decently comfortable
+      to use for extensive periods of time.
+    </en>
+  </p>
+
+</body>

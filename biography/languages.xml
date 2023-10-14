@@ -1,0 +1,36 @@
+<all>
+  <h2><en>Languages</en></h2>
+  <p>
+    <en>
+      Did 5am morning warm-ups and afternoon exercises
+      on and off using C, Python, Haskell and Matlab
+      (GNU Octave to be exact)
+      on an about bi-daily basis since Autumn of 2023.
+      The algorithms were about parallelism,
+      data structures and data manipulation,
+      using TDD, TCR or neither,
+      often in Vi (not Vim).
+    </en>
+  </p>
+  <p>
+    <en>
+      Outside deliberate pracrice and onfortunately
+      as a painkiller for loneliness,
+      I've got some touch with
+      Rust AWK and GNU Make, BF, J slightly,
+      lisp and Typescript.
+      I do agree that everything surrounding Typescript
+      is emotionally painful except eth syntax.
+    </en>
+  </p>
+  <p>
+    <en>
+      Both for myself and for the University,
+      I familiarized with
+      C++, Python, PHP, LaTeX, HTML CSS and Javascript,
+      Java, Bourne and POSIX shell scripting ("bash" let's say)
+      The aforementioned warm-ups were also done
+      on languages for the University.
+    </en>
+  </p>
+</all>
