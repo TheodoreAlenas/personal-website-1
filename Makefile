@@ -21,6 +21,8 @@ SOURCE_FILES = $(shell find ${SOURCE_DIRS} -type f)
 
 tags: ${SOURCE_FILES}
 	ctags -R ${SOURCE_DIRS}
+TAGS: ${SOURCE_FILES}
+	etags ${SOURCE_FILES}
 
 COMMON = Makefile $(wildcard common/* common/*/*)
 

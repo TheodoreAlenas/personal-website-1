@@ -1,0 +1,359 @@
+
+home/story/people-solution.php,295
+function get_story_people_solution_title_en(4,33
+function get_story_people_solution_title_gr(9,162
+function get_story_people_solution_1_en(15,347
+function get_story_people_solution_1_gr(37,823
+function get_story_people_solution_2_en(60,1672
+function get_story_people_solution_2_gr(89,2619
+
+home/story/opening.php,74
+function get_story_opening_en(4,33
+function get_story_opening_gr(21,390
+
+home/story/value-maturity.php,165
+function get_story_maturity_title_en(4,33
+function get_story_maturity_title_gr(7,110
+function get_story_maturity_en(11,209
+function get_story_maturity_gr(38,888
+
+home/story/mod.php,312
+function get_story_and_css(9,222
+function get_story(16,321
+function get_story_en(23,446
+function get_story_gr(37,962
+function get_story_card_maturity(51,1478
+    class='='57,1720
+function get_story_card_machine_communicator(69,1904
+      class='round ='round79,2129
+function get_file_contents(96,2484
+
+home/story/machine-communicator.php,325
+function get_story_machine_communicator_title_en(4,33
+function get_story_machine_communicator_title_gr(7,127
+function get_story_machine_communicator_1_en(11,249
+function get_story_machine_communicator_1_gr(32,767
+function get_story_machine_communicator_2_en(54,1714
+function get_story_machine_communicator_2_gr(74,2244
+
+home/banner/test.php,40
+function get_banner_test_subject(8,144
+
+home/banner/faces.php,31
+function get_banner_faces(3,7
+
+home/banner/css/wrappings.php,110
+function phone_media_wrap(4,33
+function prepend_class_to(10,173
+function prepend_class_to_open_file(18,368
+
+home/banner/mod.php,62
+function get_banner_and_css(6,88
+function get_banner(10,196
+
+home/banner/welcome.php,68
+function get_welcome(4,33
+function get_banner_welcome_face(10,212
+
+home/hinting-hamburger/mod.php,78
+function get_hamburger_hint_and_css(4,33
+function get_hamburger_hint(11,198
+
+home/mod.php,30
+function get_home_html(9,205
+
+portfolio/this-site-ls.php,89
+function get_portfolio_snippet_this_site(4,33
+function get_contact_extra_table(17,1285
+
+portfolio/unused-ideas/tdd/mod.php,73
+function get_portfolio_tdd_html(6,84
+function get_file_contents(17,282
+
+portfolio/mod.php,336
+function get_portfolio_html(7,128
+function get_portfolio_contents(18,300
+function get_portfolio_this_site_title_en(51,1123
+function get_portfolio_this_site_title_gr(55,1197
+function get_portfolio_card_text_en(59,1291
+function get_portfolio_card_text_gr(70,1497
+function get_portfolio_card(83,1853
+    class='blue ='blue88,2020
+
+biography/xml.php,64
+function extract_text(4,76
+function extract_text_from(47,1073
+
+biography/youtube.xml,68
+      Recorded <youtube>YouTube videos</youtube> using ffmpeg,5,65
+
+biography/minimalism.xml,144
+      260 BK/s s10,236
+      260 BK/s maximum and unstable internet speed,15,472
+      to do University projects using mostly NeoVim,16,524
+
+biography/content.php,485
+function get_bio_content(4,33
+function get_bio_school_en(28,593
+function get_bio_school_gr(44,931
+function get_bio_uni_en(58,1338
+function get_bio_uni_gr(80,1903
+function get_bio_team_projects_en(100,2725
+function get_bio_team_projects_gr(125,3274
+function get_bio_internship_en(147,4302
+function get_bio_internship_gr(165,4752
+function get_bio_piano_en(184,5509
+function get_bio_piano_gr(197,5743
+function get_bio_drawing_en(209,6011
+function get_bio_drawing_gr(233,6657
+
+biography/languages.xml,131
+      on and off using C,6,106
+      on and off using C, Python,6,106
+      on and off using C, Python, Haskell and Matlab6,106
+
+biography/mod.php,34
+function get_biography_html(6,97
+
+contact/test.php,41
+function get_contact_test_subject(8,142
+
+contact/face-and-name/test.php,47
+function get_face_and_name_test_subject(8,163
+
+contact/face-and-name/m.css,223
+@media screen and 19,378
+@media screen and 37,740
+.face-and-name > *:nth-child(child43,859
+.phone-screen .face-and-name > *:nth-child(child49,959
+@media screen and 52,1034
+.face-and-name > *:nth-child(child58,1162
+
+contact/face-and-name/mod.php,78
+function get_face_and_name_aaand_css(4,33
+function get_face_and_name(22,368
+
+contact/extra-table.php,39
+function get_contact_extra_table(4,33
+
+contact/note.php,72
+function get_contact_note_en(4,33
+function get_contact_note_gr(16,263
+
+contact/mod.php,193
+function get_contact_html(9,206
+function get_contact_and_css(23,478
+function get_contact_and_css_en(30,633
+function get_contact_and_css_gr(39,898
+function get_contact_face_and_css(48,1163
+
+common/menu-bar/test.php,112
+function get_draft_gr_menu(7,116
+function get_draft_en_menu(10,191
+function get_menu_bar_test_subject(14,267
+
+common/menu-bar/custom.php,282
+function get_custom_menu_bar_and_css(4,33
+function get_menu_bar_css(11,190
+function get_custom_menu_bar(18,367
+function get_hamburger_checkbox_pair(42,956
+  class='hamburger-checkbox ='hamburger-checkbox48,1124
+  class='abs-t-r ='abs-t-r52,1231
+function wrap_in_li(59,1344
+
+common/menu-bar/css/default.css,49
+.debug-mode .menu-bar a,1,0
+.menu-bar,bar5,82
+
+common/menu-bar/mod.php,400
+function get_menu_bar_and_css(7,118
+function get_menu_bar_for_test_navigation_and_css(13,271
+function get_menu_bar(17,414
+function get_menu_bar_theme_button(28,789
+  class='theme-switch ='theme-switch33,929
+function get_menu_bar_localized_theme_label(42,1074
+function get_menu_bar_lang_link(49,1215
+function get_menu_bar_main_links(64,1545
+function get_menu_bar_for_test_navigation(75,1826
+
+common/testing/layout.css,34
+  border: black 1px solid;17,276
+
+common/testing/util.php,174
+function wrap_in_asymmetric_grid(8,172
+function wrap_callable_in_asymmetric_grid(14,332
+function wrap_4_elements_in_asymmetric_grid(20,511
+function wrap_for_test(44,1010
+
+common/css-snippets/popup.css,24
+.bg-select,select3,30
+
+common/css-snippets/text.css,96
+@media screen and 9,183
+.smol,smol14,340
+@media screen and 20,511
+@media screen and 23,605
+
+common/css-snippets/morph.css,308
+.dont-be-like-table,table22,333
+.dont-be-like-table > tbody,23,354
+.dont-be-like-table > tbody > tr,24,383
+@media screen and 28,477
+.phone-screen .phone-dont-be-like-table,table36,771
+.phone-screen .phone-dont-be-like-table > tbody,37,812
+.phone-screen .phone-dont-be-like-table > tbody > tr,38,861
+
+common/css-snippets/fade.css,49
+@media screen and 2,42
+@media screen and 7,175
+
+common/css-snippets/display-position.css,241
+.gap-2 { gap: 3rem;rem16,273
+@media screen and 18,340
+@media screen and 24,562
+.inl-bl,bl29,719
+.inl-bl, .inside-inl-bl > * { display: inline-block;block29,719
+.block block30,774
+.block , .inside-block > * { display: block;30,774
+
+common/css-snippets/margin-padding.css,1161
+  line-height: 1em;em4,49
+  padding-top: 5px;px5,69
+.p1,p18,92
+.p1, .inside-p1 > *, .iinside-p1 > * > * { padding: 0.5rem 0.5rem;rem8,92
+.p2,p210,162
+.p2, .inside-p2 > *, .iinside-p2 > * > * { padding: 1rem 1rem;rem10,162
+.p3,p327,658
+.p3, .inside-p3 > *, .iinside-p3 > * > * { padding: 3rem 2rem;rem27,658
+.m3,m328,723
+.m3, .inside-m3 > *, .iinside-m3 > * > * { margin: 3rem 2rem;rem28,723
+.iinside-mtb3 > * > * { margin-top: 3rem;rem30,788
+.iinside-mtb3 > * > * { margin-top: 3rem; margin-bottom: 3rem;rem30,788
+@media screen and 31,853
+.phone-screen .phone-mtb3,mtb339,1073
+  margin-top: 3rem;rem42,1182
+  margin-bottom: 3rem;rem43,1202
+@media screen and 46,1228
+.desktop-screen .desktop-iinside-p2 > * > * { padding: 1rem 1rem;rem50,1414
+.desktop-screen .desktop-iinside-p3 > * > * { padding: 3rem 2rem;rem51,1482
+@media screen and 53,1551
+.iinside-last-child-fat > *:last-child > * { padding-right: 4rem;rem64,1758
+.iinside-first-child-fat > *:first-child > * { padding-left: 4rem;rem65,1826
+  padding-left: 4rem;rem67,1943
+  padding-right: 4rem;rem68,1965
+@media screen and 74,2081
+@media screen and 85,2378
+
+common/light-dark-theme/links.css,144
+a .be-like-link,link18,332
+a:visited .be-like-link,link24,505
+a:hover .be-like-link,link27,598
+a:visited:hover .be-like-link,link32,753
+
+common/light-dark-theme/functions.js,390
+function setUpThemeSwitches(3,27
+function applyStoredTheme(7,106
+function forEachThemeSwitch(14,212
+function makeItToggleTheTheme(19,408
+function getThemeIsDark(23,510
+function storeDarkTheme(26,600
+function storeLightTheme(29,680
+function showDarkness(32,762
+function showBrightness(37,930
+function makeItDark(43,1101
+function makeItBright(47,1165
+function toggleTheme(52,1235
+
+common/light-dark-theme/from-outside.css,82
+.light-themed,themed1,0
+.dark-themed,themed8,171
+.inverse-theme,theme19,414
+
+common/wraps/links.php,198
+function get_a_tag(4,33
+function get_im_here_link(9,187
+function get_maybe_im_here_link(14,353
+function get_link_name(23,569
+function get_link_url(27,684
+function get_link_name_and_url(31,798
+
+common/wraps/ends-of-main-html.php,159
+function get_top_of_file(4,33
+      class="theme-wrapper"="theme-wrapper"34,731
+function get_bottom_of_file(42,858
+function get_all_file_contents(71,1993
+
+common/wraps/gather-css.php,177
+function get_high_priority_common_css_files(4,33
+function get_low_priority_common_css_files(11,167
+function get_css_snippet_files(15,258
+function get_css_theme_files(27,596
+
+common/wraps/typical-layouts.php,284
+function get_typical_layout(9,212
+function get_typical_layout_custom(27,602
+function get_typical_title(42,928
+function localize_theodore(50,1109
+function get_menu_bar_and_typical_css(57,1240
+function get_typical_menu_wrapping(73,1594
+function get_typical_main_wrapping(83,1742
+
+common/wraps/html-body.css,506
+.be-like-h1,h15,66
+.be-like-h2,h211,145
+@media screen and 18,263
+@media screen and 22,387
+.phone-screen .m-like-h2,h226,473
+.phone-screen .be-like-h2,h227,499
+@media screen and 32,590
+.desktop-screen .m-like-h2,h240,773
+.desktop-screen .be-like-h2,h241,801
+@media screen and 46,897
+.phone-screen .m-like-h1,h155,1082
+.phone-screen .be-like-h1,h156,1108
+@media screen and 61,1199
+.desktop-screen .m-like-h1,h169,1382
+.desktop-screen .be-like-h1,h170,1410
+@media screen and 75,1506
+
+common/light-dark-theme/panels.css,0
+
+common/css-snippets/width-border.css,0
+
+common/menu-bar/css/phone.css,0
+
+contact/index-gr.php,0
+
+contact/index-en.php,0
+
+biography/index-gr.php,0
+
+biography/index-en.php,0
+
+portfolio/unused-ideas/contents.html,0
+
+portfolio/unused-ideas/tdd/contents.html,0
+
+portfolio/unused-ideas/tdd/index-gr.php,0
+
+portfolio/unused-ideas/tdd/index-en.php,0
+
+portfolio/unused-ideas/tmp.html,0
+
+portfolio/index-gr.php,0
+
+portfolio/index-en.php,0
+
+home/hinting-hamburger/m.css,0
+
+home/index-gr.php,0
+
+home/banner/css/phone.css,0
+
+home/banner/css/include-to-get-media-queries.php,0
+
+home/banner/css/default.css,0
+
+home/index-en.php,0
+
+home/story/c-tdd-long-thin.html,0
