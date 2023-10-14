@@ -64,8 +64,8 @@
 !_TAG_ROLE_DESCRIPTION!HTML!stylesheet	extFile	/referenced as external files/
 .abs-t-r	common/css-snippets/morph.css	/^.abs-t-r {$/;"	c
 .absolute	common/css-snippets/display-position.css	/^.absolute { position: absolute; }$/;"	c
-.banner-faces	home/banner/css/default.css	/^.banner-faces {$/;"	c
 .banner-faces img	home/banner/css/default.css	/^.banner-faces img {$/;"	s
+.banner-faces img	home/banner/css/phone.css	/^.banner-faces img {$/;"	s
 .banner-grid	home/banner/css/default.css	/^.banner-grid {$/;"	c
 .banner-grid	home/banner/css/phone.css	/^.banner-grid {$/;"	c
 .banner-grid img	home/banner/css/default.css	/^.banner-grid img {$/;"	s
