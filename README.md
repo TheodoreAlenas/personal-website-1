@@ -1,5 +1,9 @@
 # Theodore's Home Page
 
+Old version of my site, the text isn't presentable.
+It's static and made with improvised abstract PHP code.
+Below is the original text of the README.
+
 ## Goal
 
 A website whos purpose is to look at it,
